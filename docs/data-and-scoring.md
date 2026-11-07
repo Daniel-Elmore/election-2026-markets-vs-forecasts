@@ -234,7 +234,7 @@ Confirm all notebook records succeeded, `code_cells` is positive for each notebo
 
 The project provides a Matplotlib canvas, consistent source and party colors, direct-label bars, and PNG exports. Use the canvas axes for other chart forms.
 
-Install Franklin Gothic Demi Condensed and Franklin Gothic Medium Condensed on the rendering machine. Alternatively, set TKC_FONT_DIR to a directory containing FRADMCN.TTF and FRAMDCN.TTF. The renderer requires those fonts. The logo is included with the package.
+The renderer prefers Franklin Gothic Demi Condensed and Franklin Gothic Medium Condensed. TKC_FONT_DIR optionally supplies local FRADMCN.TTF and FRAMDCN.TTF files. If a role has no local or installed Franklin Gothic font, it uses the bundled Barlow Condensed SemiBold for headlines and emphasis or Medium for supporting text. Each role resolves independently, so partial font installations work. The free fallback fonts and their SIL Open Font License are included with the package and require no runtime download. Run provenance records the selected family, filename, hash, and fallback status. The logo is included with the package.
 
 Generic canvas axes use TKC v2 typography with Franklin Gothic Medium Condensed supporting ticks at 28px, light-blue labels and no tick marks. Axis titles use Franklin Gothic Demi Condensed at 34px in white. Sizes scale from a 1080px short edge. Scientific-notation offsets use the supporting font. Chart-specific spines and gridlines can be configured on the returned axes.
 

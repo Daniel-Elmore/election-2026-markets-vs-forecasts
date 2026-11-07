@@ -11,3 +11,6 @@ outputs/
 
 # Local agent workflow state
 .unlazy/
+
+# Package build artifacts
+/build/

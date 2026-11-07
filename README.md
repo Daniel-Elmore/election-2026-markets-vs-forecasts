@@ -17,7 +17,7 @@ python scripts/render_smoke.py
 python scripts/run_notebooks.py --snapshot current-partial
 ```
 
-Chart rendering requires Franklin Gothic Demi Condensed and Franklin Gothic Medium Condensed. Install the fonts or set TKC_FONT_DIR to a directory containing FRADMCN.TTF and FRAMDCN.TTF. The plotting smoke command saves lint results and returns a nonzero exit code if rendering or automated checks fail. Visual review is also required for final figures.
+Charts prefer Franklin Gothic Demi Condensed and Franklin Gothic Medium Condensed when installed. Otherwise, they automatically use the included free Barlow Condensed SemiBold and Medium fonts. Rendering works offline without installing fonts. TKC_FONT_DIR optionally selects a directory containing FRADMCN.TTF and FRAMDCN.TTF. The plotting smoke command saves lint results and returns a nonzero exit code if rendering or automated checks fail. Visual review is also required for final figures.
 
 Choose a results snapshot explicitly when validating or running notebooks. The current-partial snapshot contains preliminary recorded results. The ddhq-20261104-222052-est snapshot has documented House control derived from district calls. The synthetic-complete snapshot supplies invented software test data. For independent notebook execution, set CONGRESS_SCORECARD_SNAPSHOT before launching the notebook frontend.
 
@@ -35,4 +35,4 @@ The notebooks currently contain analysis outlines. The [analysis plan](docs/anal
 
 ## License
 
-The project’s original software code is licensed under the [MIT License](LICENSE). Third-party data and source captures remain subject to their respective terms. The TKC logo and branding remain subject to their respective rights.
+The project’s original software code is licensed under the [MIT License](LICENSE). Third-party data and source captures remain subject to their respective terms. The TKC logo and branding remain subject to their respective rights. Bundled Barlow Condensed fonts use the included [SIL Open Font License](src/congress_scorecard/assets/fonts/OFL.txt).

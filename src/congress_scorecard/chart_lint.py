@@ -4,6 +4,8 @@ from pathlib import Path
 from matplotlib.text import Text
 from PIL import Image
 
+from .plotting import font_properties
+
 
 def lint_chart(canvas, png):
     """Return failures for image dimensions, text bounds, and text collisions."""
@@ -21,13 +23,12 @@ def lint_chart(canvas, png):
     margin_x = canvas.W * .05
     margin_y = canvas.H * (.12 if (canvas.W, canvas.H) == (1080, 1920) else .05)
     boxes = []
+    allowed_fonts = {font_properties(role).get_name() for role in ("body", "headline", "emphasis")}
     for artist in canvas.fig.findobj(match=Text):
         text = artist.get_text().strip()
         if not text or not artist.get_visible():
             continue
-        if artist.get_fontproperties().get_name() not in (
-            "Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond"
-        ):
+        if artist.get_fontproperties().get_name() not in allowed_fonts:
             failures.append(f"Unexpected font family: {text!r}.")
         box = artist.get_window_extent(renderer)
         if (box.x0 < margin_x - 2 or box.x1 > canvas.W - margin_x + 2

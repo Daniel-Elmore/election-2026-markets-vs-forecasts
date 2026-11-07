@@ -36,16 +36,15 @@ def font_properties(role="body"):
     directory = os.environ.get("TKC_FONT_DIR")
     if directory:
         path = Path(directory) / filename
-        if not path.is_file():
-            raise FileNotFoundError(f"Required font file missing: {path}")
-        return font_manager.FontProperties(fname=str(path))
+        if path.is_file():
+            return font_manager.FontProperties(fname=str(path))
     try:
         path = font_manager.findfont(family, fallback_to_default=False)
-    except ValueError as error:
-        raise RuntimeError(
-            f"Install {family} or set TKC_FONT_DIR to the directory containing {filename}."
-        ) from error
-    return font_manager.FontProperties(fname=path)
+        return font_manager.FontProperties(fname=path)
+    except ValueError:
+        fallback = "BarlowCondensed-Medium.ttf" if role == "body" else "BarlowCondensed-SemiBold.ttf"
+        path = Path(__file__).with_name("assets") / "fonts" / fallback
+        return font_manager.FontProperties(fname=str(path))
 
 
 def _wrap(fig, text, font, size, width):
@@ -245,7 +244,7 @@ def graphics_assets():
             path = Path(font.get_file())
             assets["fonts"][role] = {
                 "filename": path.name, "family": font.get_name(), "sha256": sha256(path),
-                "status": "available",
+                "status": "available", "fallback": font.get_name() == "Barlow Condensed",
             }
         except (ImportError, RuntimeError, FileNotFoundError) as error:
             assets["fonts"][role] = {"status": "unavailable", "reason": type(error).__name__}

@@ -67,3 +67,67 @@ def test_generic_axes_follow_tkc_typography_after_tick_changes():
         assert axis.label.get_color() == WHITE
         assert axis.get_offset_text().get_fontproperties().get_file() == body.get_file()
         assert axis.get_offset_text().get_color() == BLUE
+
+
+@pytest.mark.parametrize("role,filename", [
+    ("headline", "BarlowCondensed-SemiBold.ttf"),
+    ("emphasis", "BarlowCondensed-SemiBold.ttf"),
+    ("body", "BarlowCondensed-Medium.ttf"),
+])
+def test_missing_franklin_uses_bundled_fallback(monkeypatch, tmp_path, role, filename):
+    from matplotlib import font_manager
+    from congress_scorecard.plotting import font_properties, graphics_assets
+
+    original = font_manager.findfont
+
+    def without_franklin(family, *args, **kwargs):
+        if isinstance(family, str) and family.startswith("Franklin Gothic"):
+            raise ValueError("Font unavailable for test")
+        return original(family, *args, **kwargs)
+
+    monkeypatch.setattr(font_manager, "findfont", without_franklin)
+    monkeypatch.setenv("TKC_FONT_DIR", str(tmp_path))
+    font = font_properties(role)
+    assert font.get_name() == "Barlow Condensed"
+    assert font.get_file().endswith(filename)
+    assert graphics_assets()["fonts"][role]["fallback"] is True
+
+
+def test_partial_explicit_font_directory(monkeypatch, tmp_path):
+    import shutil
+    from matplotlib import font_manager
+    from congress_scorecard.data import project_root
+    from congress_scorecard.plotting import font_properties
+
+    source = project_root() / "src/congress_scorecard/assets/fonts/BarlowCondensed-Medium.ttf"
+    explicit = tmp_path / "FRAMDCN.TTF"
+    shutil.copyfile(source, explicit)
+    monkeypatch.setenv("TKC_FONT_DIR", str(tmp_path))
+    def unavailable(*args, **kwargs):
+        raise ValueError("Font unavailable for test")
+
+    monkeypatch.setattr(font_manager, "findfont", unavailable)
+    assert font_properties("body").get_file() == str(explicit)
+    assert font_properties("headline").get_file().endswith("BarlowCondensed-SemiBold.ttf")
+
+
+def test_fallback_smoke_render_passes_lint(monkeypatch, tmp_path):
+    import json
+    import runpy
+    from matplotlib import font_manager
+    from congress_scorecard.data import project_root
+
+    original = font_manager.findfont
+
+    def without_franklin(family, *args, **kwargs):
+        if isinstance(family, str) and family.startswith("Franklin Gothic"):
+            raise ValueError("Font unavailable for test")
+        return original(family, *args, **kwargs)
+
+    monkeypatch.delenv("TKC_FONT_DIR", raising=False)
+    monkeypatch.setattr(font_manager, "findfont", without_franklin)
+    main = runpy.run_path(str(project_root() / "scripts/render_smoke.py"))["main"]
+    assert main(["--out", str(tmp_path)]) == 0
+    report = json.loads((tmp_path / "lint.json").read_text())
+    assert report["passed"]
+    assert all(font["fallback"] for font in report["graphics_assets"]["fonts"].values())

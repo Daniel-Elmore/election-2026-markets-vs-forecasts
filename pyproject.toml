@@ -24,4 +24,4 @@ addopts = "--basetemp=../_scratch/part-1/pytest"
 
 
 [tool.setuptools.package-data]
-congress_scorecard = ["assets/*.png"]
+congress_scorecard = ["assets/*.png", "assets/fonts/*.ttf", "assets/fonts/*.txt", "assets/fonts/*.md"]
