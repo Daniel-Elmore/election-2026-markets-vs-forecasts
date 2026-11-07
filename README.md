@@ -1,4 +1,4 @@
-# Congress Scorecard 2026
+# 2026 Election — Markets vs. Forecasts
 
 A comparison of the November 2, 2026 prediction-market and forecast snapshots for 35 Senate races and House control.
 
@@ -32,3 +32,7 @@ Runs preserve earlier outputs under outputs/<snapshot>/<run-id>/. Each run recor
 | 3 | [Kalshi trading volume](notebooks/03_kalshi_trading_volume.ipynb) | Volume concentration and how forecast comparisons change with volume |
 
 The notebooks currently contain analysis outlines. The [analysis plan](docs/analysis-plan.md) defines the scoring rules and comparisons. The [data guide](data/README.md) describes the recorded inputs and their limitations.
+
+## License
+
+The project’s original software code is licensed under the [MIT License](LICENSE). Third-party data and source captures remain subject to their respective terms. The TKC logo and branding remain subject to their respective rights.
