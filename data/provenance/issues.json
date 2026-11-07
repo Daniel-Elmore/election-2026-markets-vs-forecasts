@@ -1,0 +1,63 @@
+{
+  "review_date": "2026-11-06",
+  "issues": [
+    {
+      "id": "resolution-source",
+      "status": "resolved",
+      "finding": "Current analysis rule 8 specifies DDHQ. The archived Senate import's AP-convention change note describes an earlier rule.",
+      "evidence": ["docs/analysis-plan.md", "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json"],
+      "decision": "Use verified DDHQ calls. Never infer winners from reported vote leads."
+    },
+    {
+      "id": "pending-senate",
+      "status": "open",
+      "finding": "AK-SEN and MS-SEN have no DDHQ call in the archived November 4 capture.",
+      "omission": "Exclude their outcomes from scores and matched contrasts. Keep both forecast rows and planned sample membership."
+    },
+    {
+      "id": "house-lineage",
+      "status": "open",
+      "finding": "Frozen House data is dated November 6, with 254 D, 161 R, 20 unresolved. The November 4 archive has 247 D, 152 R, 36 unresolved.",
+      "decision": "Current partial snapshot carries the frozen recorded counts with control unverified. The separate dated November 4 adapter has verified threshold control.",
+      "approved_exception": "DDHQ-called district winners reaching 218 seats qualify for control scoring.",
+      "omission": "Final seat error and national-vote scoring remain unavailable in both real snapshots."
+    },
+    {
+      "id": "vote-completeness-and-round",
+      "status": "open",
+      "finding": "All Senate results use published toplines. No separate ranked-choice round was returned. Estimated reporting is insufficient evidence of final or comparable vote shares.",
+      "decision": "Current primary vote-share eligibility is zero. Future snapshots must document completeness and source-specific target compatibility.",
+      "omission": "Exclude unknown ranked-choice targets, including AK-SEN and ME-SEN, from primary comparable-share scores."
+    },
+    {
+      "id": "caucus",
+      "status": "open",
+      "finding": "The plan assumes all four independents caucus with Democrats. A candidate campaign release says Osborn, Bodnar and Bengs would caucus with neither party. Supporting Democratic-caucus statements for all four are unavailable.",
+      "source": "https://www.sethformontana.com/news/independent-candidates-seth-bodnar-dan-osborn-and-brian-bengs-put-the-caucus-question-to-rest",
+      "decision": "Retain rule 10 primary and single-independent-exclusion scenarios in the interface. Gate caucus seats and control pending an approved methodology decision, evidence, holdover seats and tie convention.",
+      "omission": "Candidate A counts remain available independently of caucus coding."
+    },
+    {
+      "id": "forecast-provenance",
+      "status": "open",
+      "finding": "Workbook records November 2 row timestamps but lacks source-specific publication times, retrieval timezone, dated page captures, and Economist model update metadata. VoteHub is recorded as Complete. No Legacy values were collected.",
+      "decision": "Preserve row timestamps as recorded. Do not treat them as verified source publication times."
+    },
+    {
+      "id": "kalshi-measures",
+      "status": "open",
+      "finding": "Original capture does not identify last trade, midpoint, bid or ask, the volume field, or its units. Current API documentation distinguishes these fields, but cannot establish the meaning of an old manual record.",
+      "source": "https://docs.kalshi.com/api-reference/market/get-market",
+      "approved_exception": "Provisional scoring may use raw recorded probabilities and the explicit A/B-normalized sensitivity.",
+      "omission": "Currency labels and the dollar-denominated thin-market cutoff require unit verification. Recorded-unit shares, ranks, concentration and common relative weights remain available.",
+      "additional_contract_issue": "KY-SEN links to a Louisiana-named Kalshi URL. Its frozen note says link and volume confirmed as entered. Keep the recorded values and flag unresolved contract identity."
+    },
+    {
+      "id": "recounts",
+      "status": "open",
+      "finding": "Archived import does not record recount status.",
+      "decision": "Represent unknown status explicitly. Known active recounts are ineligible for outcome and share scoring until resolved."
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "workbooks": {
+    "Election-Night-2026-Markets-Scorecard - Copy.xlsx": "c0f11f1b96b365c10ba17d3f4adbc90d3e20b944e35d36991e00dc61ccb00fcd",
+    "Election-Night-2026-Markets-Scorecard.xlsx": "1d0185124728eb4843d364085133dc6574dfcc36072ae3cf06fbb022f6b0e4a7",
+    "Election-Night-2026-Markets-Scorecard.backup-20261104-220502-EST.xlsx": "1d0185124728eb4843d364085133dc6574dfcc36072ae3cf06fbb022f6b0e4a7",
+    "Election-Night-2026-Markets-Scorecard.DDHQ-results-20261104-220502-EST.xlsx": "d32166d00821123e3c560b33d60b87838d3cd39795ce38bc67264269a9e64300",
+    "Election-Night-2026-Markets-Scorecard.DDHQ-results-20261104-220502-EST.before-House-20261104-222052-EST.xlsx": "d32166d00821123e3c560b33d60b87838d3cd39795ce38bc67264269a9e64300",
+    "Election-Night-2026-Markets-Scorecard.DDHQ-Senate-House-results-20261104-222052-EST.xlsx": "06535a7490277b3aa4acf3320a3764d03450a4909fe6bba9c7b042ae923d6af7"
+  },
+  "captures": {
+    "ddhq-senate-provenance-20261104-220502-EST.json": "35a6b34c8f0c1dfa9d0b163f1794786ab8c3b676232de91c4033b52fa197f54b",
+    "ddhq-house-provenance-20261104-222052-EST.json": "e0665ed08a2b733e793d4a52d43128e73aa67438954e587f9d9168987a437766",
+    "ddhq-senate-snapshot-20261104-220502-EST.json": "5250cf158a3247fefefe4dc49d0b3c485fc79b2ab5316162a418c88e1e48106b",
+    "ddhq-house-snapshot-20261104-222052-EST.json": "c8e28eb5c98a3f8ac3fdcc5eb4b2565a4f13f6aa6c3ef0292fb03768ce8fa112"
+  },
+  "known_discrepancies": [
+    "House workbook/CSV row is dated November 6 and differs from November 4 archive.",
+    "Archived Senate AP convention note predates current DDHQ rule.",
+    "KY-SEN Kalshi URL names Louisiana. Frozen note says confirmed as entered; contract identity remains unverified.",
+    "Forecast workbook has no comments or saved price-measure/volume-unit captures.",
+    "Snapshot Record_Timestamp is a row recording time, not source-specific publication/retrieval evidence."
+  ]
+}

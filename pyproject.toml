@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "congress-scorecard"
+version = "0.1.0"
+description = "Frozen forecast preparation and snapshot-aware Congress scoring"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.0,<3,!=2.4.0", "pandas>=2.2,<4"]
+
+[project.optional-dependencies]
+notebooks = ["nbclient>=0.10,<0.11", "nbformat>=5.10,<6", "ipykernel>=6.29,<8"]
+plotting = ["matplotlib==3.10.8", "Pillow==12.2.0"]
+audit = ["openpyxl>=3.1,<4"]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--basetemp=../_scratch/part-1/pytest"
+
+
+[tool.setuptools.package-data]
+congress_scorecard = ["assets/*.png"]

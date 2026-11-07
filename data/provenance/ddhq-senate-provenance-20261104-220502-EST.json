@@ -1,0 +1,963 @@
+{
+  "retrievedAtUtc": "2026-11-05T03:05:02.090703+00:00",
+  "retrievedAtEastern": "2026-11-04T22:05:02.090703-05:00",
+  "timestampTimezone": "America/New_York (EST, UTC-05:00)",
+  "callSource": "Decision Desk HQ",
+  "callConventionChange": "DDHQ calls replace the analysis plan AP-call convention for this import only. The analysis plan file is unchanged.",
+  "shareScale": "0-100; margin in percentage points; denominator includes all counted candidate votes in the selected round",
+  "roundPolicy": "Latest available ranked-choice round; published topline if no separate rounds returned",
+  "baselineSha256": "1d0185124728eb4843d364085133dc6574dfcc36072ae3cf06fbb022f6b0e4a7",
+  "rows": [
+    {
+      "row": 2,
+      "raceId": "AK-SEN",
+      "ddhqRaceId": 294672,
+      "candidateAId": 23403,
+      "candidateBId": 8293,
+      "winner": null,
+      "calledCandidateIds": [],
+      "callTimes": [],
+      "percentIn": 70.15,
+      "shares": [
+        48.17318804302565,
+        47.875152643719034,
+        3.9516593132553233
+      ],
+      "sourceLastUpdated": "2026-11-05T00:26:01.702Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": "No separate ranked-choice rounds were returned; published topline totals used."
+    },
+    {
+      "row": 3,
+      "raceId": "AL-SEN",
+      "ddhqRaceId": 294671,
+      "candidateAId": 839410,
+      "candidateBId": 9657,
+      "winner": "Barry Moore",
+      "calledCandidateIds": [
+        9657
+      ],
+      "callTimes": [
+        {
+          "cand_id": 9657,
+          "called_time": "2026-11-04T03:05:39.474Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        45.24473363660333,
+        54.75526636339667,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T17:18:45.153Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 4,
+      "raceId": "AR-SEN",
+      "ddhqRaceId": 294673,
+      "candidateAId": 807545,
+      "candidateBId": 807544,
+      "winner": "Tom Cotton",
+      "calledCandidateIds": [
+        807544
+      ],
+      "callTimes": [
+        {
+          "cand_id": 807544,
+          "called_time": "2026-11-04T03:33:14.254Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        42.37418138094239,
+        54.223656991001114,
+        3.4021616280564975
+      ],
+      "sourceLastUpdated": "2026-11-04T21:24:22.294Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 5,
+      "raceId": "CO-SEN",
+      "ddhqRaceId": 294674,
+      "candidateAId": 13804,
+      "candidateBId": 1049168,
+      "winner": "John Hickenlooper",
+      "calledCandidateIds": [
+        13804
+      ],
+      "callTimes": [
+        {
+          "cand_id": 13804,
+          "called_time": "2026-11-04T02:00:00.453Z"
+        }
+      ],
+      "percentIn": 83.67,
+      "shares": [
+        59.93280757764763,
+        35.72958115736728,
+        4.337611264985094
+      ],
+      "sourceLastUpdated": "2026-11-05T02:20:12.811Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 6,
+      "raceId": "DE-SEN",
+      "ddhqRaceId": 294675,
+      "candidateAId": 1128829,
+      "candidateBId": 84943,
+      "winner": "Chris Coons",
+      "calledCandidateIds": [
+        1128829
+      ],
+      "callTimes": [
+        {
+          "cand_id": 1128829,
+          "called_time": "2026-11-04T01:00:00.135Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        63.56519646347237,
+        36.43480353652763,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T08:52:22.609Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 7,
+      "raceId": "FL-SEN",
+      "ddhqRaceId": 294676,
+      "candidateAId": 30375,
+      "candidateBId": 44540,
+      "winner": "Ashley Moody",
+      "calledCandidateIds": [
+        44540
+      ],
+      "callTimes": [
+        {
+          "cand_id": 44540,
+          "called_time": "2026-11-04T01:00:20.450Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        47.98399586802938,
+        50.873123015835596,
+        1.1428811161350212
+      ],
+      "sourceLastUpdated": "2026-11-04T08:00:41.049Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 8,
+      "raceId": "GA-SEN",
+      "ddhqRaceId": 294677,
+      "candidateAId": 2273,
+      "candidateBId": 21626,
+      "winner": "Jon Ossoff",
+      "calledCandidateIds": [
+        2273
+      ],
+      "callTimes": [
+        {
+          "cand_id": 2273,
+          "called_time": "2026-11-04T00:18:06.612Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        59.02911166656734,
+        40.97088833343266,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T22:42:24.941Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 9,
+      "raceId": "IA-SEN",
+      "ddhqRaceId": 294680,
+      "candidateAId": 862685,
+      "candidateBId": 12916,
+      "winner": "Josh Turek",
+      "calledCandidateIds": [
+        862685
+      ],
+      "callTimes": [
+        {
+          "cand_id": 862685,
+          "called_time": "2026-11-04T04:16:45.628Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        50.50710461474396,
+        46.396485546138976,
+        3.0964098391170602
+      ],
+      "sourceLastUpdated": "2026-11-04T20:52:25.251Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 10,
+      "raceId": "ID-SEN",
+      "ddhqRaceId": 294678,
+      "candidateAId": 67970,
+      "candidateBId": 843707,
+      "winner": "Jim Risch",
+      "calledCandidateIds": [
+        843707
+      ],
+      "callTimes": [
+        {
+          "cand_id": 843707,
+          "called_time": "2026-11-04T05:30:24.901Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        33.538067116096016,
+        56.527771328546365,
+        9.934161555357623
+      ],
+      "sourceLastUpdated": "2026-11-04T19:40:28.438Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 11,
+      "raceId": "IL-SEN",
+      "ddhqRaceId": 294679,
+      "candidateAId": 808142,
+      "candidateBId": 808135,
+      "winner": "Juliana Stratton",
+      "calledCandidateIds": [
+        808142
+      ],
+      "callTimes": [
+        {
+          "cand_id": 808142,
+          "called_time": "2026-11-04T01:00:00.135Z"
+        }
+      ],
+      "percentIn": 92.02,
+      "shares": [
+        60.86368563960203,
+        37.55921865818322,
+        1.5770957022147474
+      ],
+      "sourceLastUpdated": "2026-11-04T21:26:16.185Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 12,
+      "raceId": "KS-SEN",
+      "ddhqRaceId": 294681,
+      "candidateAId": 1066261,
+      "candidateBId": 361,
+      "winner": "Adam Hamilton",
+      "calledCandidateIds": [
+        1066261
+      ],
+      "callTimes": [
+        {
+          "cand_id": 1066261,
+          "called_time": "2026-11-04T03:48:01.567Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        50.9828616180381,
+        45.98313481222453,
+        3.0340035697373695
+      ],
+      "sourceLastUpdated": "2026-11-05T00:47:18.264Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 13,
+      "raceId": "KY-SEN",
+      "ddhqRaceId": 294682,
+      "candidateAId": 808465,
+      "candidateBId": 808471,
+      "winner": "Andy Barr",
+      "calledCandidateIds": [
+        808471
+      ],
+      "callTimes": [
+        {
+          "cand_id": 808471,
+          "called_time": "2026-11-04T01:26:19.301Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        42.92898526850025,
+        54.9710312049827,
+        2.09998352651705
+      ],
+      "sourceLastUpdated": "2026-11-05T02:26:49.391Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 14,
+      "raceId": "LA-SEN",
+      "ddhqRaceId": 294683,
+      "candidateAId": 838597,
+      "candidateBId": 838598,
+      "winner": "Julia Letlow",
+      "calledCandidateIds": [
+        838598
+      ],
+      "callTimes": [
+        {
+          "cand_id": 838598,
+          "called_time": "2026-11-04T05:32:18.951Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        49.11815201058067,
+        50.88184798941933,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T07:12:46.021Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 15,
+      "raceId": "MA-SEN",
+      "ddhqRaceId": 294685,
+      "candidateAId": 8273,
+      "candidateBId": 84377,
+      "winner": "Edward Markey",
+      "calledCandidateIds": [
+        8273
+      ],
+      "callTimes": [
+        {
+          "cand_id": 8273,
+          "called_time": "2026-11-04T01:00:00.135Z"
+        }
+      ],
+      "percentIn": 90.62,
+      "shares": [
+        63.52053497858315,
+        32.0069027427106,
+        4.472562278706248
+      ],
+      "sourceLastUpdated": "2026-11-05T00:01:17.289Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 16,
+      "raceId": "ME-SEN",
+      "ddhqRaceId": 294684,
+      "candidateAId": 1322,
+      "candidateBId": 8245,
+      "winner": "Troy Jackson",
+      "calledCandidateIds": [
+        1322
+      ],
+      "callTimes": [
+        {
+          "cand_id": 1322,
+          "called_time": "2026-11-04T06:10:03.513Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        52.44498521344466,
+        46.27486369408244,
+        1.280151092472896
+      ],
+      "sourceLastUpdated": "2026-11-05T00:23:47.647Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": "No separate ranked-choice rounds were returned; published topline totals used."
+    },
+    {
+      "row": 17,
+      "raceId": "MI-SEN",
+      "ddhqRaceId": 294686,
+      "candidateAId": 10307,
+      "candidateBId": 8219,
+      "winner": "Abdul El-Sayed",
+      "calledCandidateIds": [
+        10307
+      ],
+      "callTimes": [
+        {
+          "cand_id": 10307,
+          "called_time": "2026-11-04T06:15:03.611Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        52.51412158666724,
+        45.48080917420304,
+        2.0050692391297282
+      ],
+      "sourceLastUpdated": "2026-11-04T21:46:38.397Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 18,
+      "raceId": "MN-SEN",
+      "ddhqRaceId": 294687,
+      "candidateAId": 319444,
+      "candidateBId": 751496,
+      "winner": "Peggy Flanagan",
+      "calledCandidateIds": [
+        319444
+      ],
+      "callTimes": [
+        {
+          "cand_id": 319444,
+          "called_time": "2026-11-04T05:03:00.143Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        53.77772608949551,
+        43.6030801817228,
+        2.6191937287816853
+      ],
+      "sourceLastUpdated": "2026-11-04T22:30:58.851Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 19,
+      "raceId": "MS-SEN",
+      "ddhqRaceId": 294688,
+      "candidateAId": 808400,
+      "candidateBId": 808399,
+      "winner": null,
+      "calledCandidateIds": [],
+      "callTimes": [],
+      "percentIn": 95,
+      "shares": [
+        49.0443757057573,
+        48.84965503319294,
+        2.105969261049767
+      ],
+      "sourceLastUpdated": "2026-11-04T23:38:29.086Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 20,
+      "raceId": "MT-SEN",
+      "ddhqRaceId": 294689,
+      "candidateAId": 838634,
+      "candidateBId": 862657,
+      "winner": "Kurt Alme",
+      "calledCandidateIds": [
+        862657
+      ],
+      "callTimes": [
+        {
+          "cand_id": 862657,
+          "called_time": "2026-11-04T06:13:17.930Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        37.53432122128634,
+        48.57984066505023,
+        13.885838113663437
+      ],
+      "sourceLastUpdated": "2026-11-04T22:53:00.619Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 21,
+      "raceId": "NC-SEN",
+      "ddhqRaceId": 294694,
+      "candidateAId": 807678,
+      "candidateBId": 807672,
+      "winner": "Roy Cooper",
+      "calledCandidateIds": [
+        807678
+      ],
+      "callTimes": [
+        {
+          "cand_id": 807678,
+          "called_time": "2026-11-04T01:23:35.540Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        58.689269191119905,
+        39.073371009491964,
+        2.237359799388129
+      ],
+      "sourceLastUpdated": "2026-11-04T19:00:55.923Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 22,
+      "raceId": "NE-SEN",
+      "ddhqRaceId": 294690,
+      "candidateAId": 101441,
+      "candidateBId": 838935,
+      "winner": "Pete Ricketts",
+      "calledCandidateIds": [
+        838935
+      ],
+      "callTimes": [
+        {
+          "cand_id": 838935,
+          "called_time": "2026-11-04T06:34:09.318Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        43.61612671219913,
+        50.44194069964255,
+        5.9419325881583145
+      ],
+      "sourceLastUpdated": "2026-11-04T19:38:36.092Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 23,
+      "raceId": "NH-SEN",
+      "ddhqRaceId": 294691,
+      "candidateAId": 10573,
+      "candidateBId": 376262,
+      "winner": "Chris Pappas",
+      "calledCandidateIds": [
+        10573
+      ],
+      "callTimes": [
+        {
+          "cand_id": 10573,
+          "called_time": "2026-11-04T01:00:04.020Z"
+        }
+      ],
+      "percentIn": 90.27,
+      "shares": [
+        56.437879985590214,
+        41.68304271887426,
+        1.8790772955355268
+      ],
+      "sourceLastUpdated": "2026-11-04T22:26:10.418Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 24,
+      "raceId": "NJ-SEN",
+      "ddhqRaceId": 294692,
+      "candidateAId": 8290,
+      "candidateBId": 950670,
+      "winner": "Cory Booker",
+      "calledCandidateIds": [
+        8290
+      ],
+      "callTimes": [
+        {
+          "cand_id": 8290,
+          "called_time": "2026-11-04T01:00:00.135Z"
+        }
+      ],
+      "percentIn": 93.54,
+      "shares": [
+        62.13374715163724,
+        35.29650100023093,
+        2.5697518481318355
+      ],
+      "sourceLastUpdated": "2026-11-04T21:42:14.757Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 25,
+      "raceId": "NM-SEN",
+      "ddhqRaceId": 294693,
+      "candidateAId": 859944,
+      "candidateBId": 71624,
+      "winner": "Ben Ray Lujan",
+      "calledCandidateIds": [
+        859944
+      ],
+      "callTimes": [
+        {
+          "cand_id": 859944,
+          "called_time": "2026-11-04T02:32:49.387Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        63.15403165159382,
+        36.84596834840618,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T08:22:50.920Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 26,
+      "raceId": "OH-SEN",
+      "ddhqRaceId": 294695,
+      "candidateAId": 837070,
+      "candidateBId": 837072,
+      "winner": "Sherrod Brown",
+      "calledCandidateIds": [
+        837070
+      ],
+      "callTimes": [
+        {
+          "cand_id": 837070,
+          "called_time": "2026-11-04T04:15:17.315Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        50.005552449129894,
+        45.15303788508842,
+        4.841409665781679
+      ],
+      "sourceLastUpdated": "2026-11-04T10:40:07.666Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 27,
+      "raceId": "OK-SEN",
+      "ddhqRaceId": 294696,
+      "candidateAId": 986017,
+      "candidateBId": 9929,
+      "winner": "Kevin Hern",
+      "calledCandidateIds": [
+        9929
+      ],
+      "callTimes": [
+        {
+          "cand_id": 9929,
+          "called_time": "2026-11-04T01:00:00.135Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        39.27868600236866,
+        57.20473159369264,
+        3.5165824039387013
+      ],
+      "sourceLastUpdated": "2026-11-04T19:12:00.522Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 28,
+      "raceId": "OR-SEN",
+      "ddhqRaceId": 294697,
+      "candidateAId": 843744,
+      "candidateBId": 843752,
+      "winner": "Jeff Merkley",
+      "calledCandidateIds": [
+        843744
+      ],
+      "callTimes": [
+        {
+          "cand_id": 843744,
+          "called_time": "2026-11-04T04:00:00.182Z"
+        }
+      ],
+      "percentIn": 71.1,
+      "shares": [
+        56.61186468205943,
+        40.5575944757923,
+        2.8305408421482796
+      ],
+      "sourceLastUpdated": "2026-11-04T23:05:31.141Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 29,
+      "raceId": "RI-SEN",
+      "ddhqRaceId": 294698,
+      "candidateAId": 11479,
+      "candidateBId": 84409,
+      "winner": "Jack Reed",
+      "calledCandidateIds": [
+        11479
+      ],
+      "callTimes": [
+        {
+          "cand_id": 11479,
+          "called_time": "2026-11-04T01:00:00.135Z"
+        }
+      ],
+      "percentIn": 90.44,
+      "shares": [
+        66.82858485184066,
+        29.398637538172423,
+        3.772777609986912
+      ],
+      "sourceLastUpdated": "2026-11-05T01:04:00.990Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 30,
+      "raceId": "SC-SEN",
+      "ddhqRaceId": 294699,
+      "candidateAId": 44405,
+      "candidateBId": 1126122,
+      "winner": "Annie Andrews",
+      "calledCandidateIds": [
+        44405
+      ],
+      "callTimes": [
+        {
+          "cand_id": 44405,
+          "called_time": "2026-11-04T02:54:50.328Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        51.247255389171805,
+        46.76359620961009,
+        1.9891484012181009
+      ],
+      "sourceLastUpdated": "2026-11-04T19:33:02.604Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 31,
+      "raceId": "SD-SEN",
+      "ddhqRaceId": 294700,
+      "candidateAId": 680919,
+      "candidateBId": 8297,
+      "winner": "Mike Rounds",
+      "calledCandidateIds": [
+        8297
+      ],
+      "callTimes": [
+        {
+          "cand_id": 8297,
+          "called_time": "2026-11-04T03:02:54.183Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        39.49771539828114,
+        60.50228460171886,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T23:55:41.989Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 32,
+      "raceId": "TN-SEN",
+      "ddhqRaceId": 294701,
+      "candidateAId": 14138,
+      "candidateBId": 14150,
+      "winner": "Bill Hagerty",
+      "calledCandidateIds": [
+        14150
+      ],
+      "callTimes": [
+        {
+          "cand_id": 14150,
+          "called_time": "2026-11-04T03:51:06.950Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        42.93155831514608,
+        55.09487625162935,
+        1.973565433224573
+      ],
+      "sourceLastUpdated": "2026-11-04T08:16:31.719Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 33,
+      "raceId": "TX-SEN",
+      "ddhqRaceId": 294702,
+      "candidateAId": 807934,
+      "candidateBId": 807771,
+      "winner": "James Talarico",
+      "calledCandidateIds": [
+        807934
+      ],
+      "callTimes": [
+        {
+          "cand_id": 807934,
+          "called_time": "2026-11-04T03:14:19.163Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        55.081648055704115,
+        42.99104531300436,
+        1.9273066312915241
+      ],
+      "sourceLastUpdated": "2026-11-05T00:05:17.198Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 34,
+      "raceId": "VA-SEN",
+      "ddhqRaceId": 294703,
+      "candidateAId": 8258,
+      "candidateBId": 232931,
+      "winner": "Mark Warner",
+      "calledCandidateIds": [
+        8258
+      ],
+      "callTimes": [
+        {
+          "cand_id": 8258,
+          "called_time": "2026-11-04T00:00:00.112Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        61.09933340127626,
+        38.90066659872374,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T08:15:18.098Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 35,
+      "raceId": "WV-SEN",
+      "ddhqRaceId": 294704,
+      "candidateAId": 837082,
+      "candidateBId": 837086,
+      "winner": "Shelley Moore Capito",
+      "calledCandidateIds": [
+        837086
+      ],
+      "callTimes": [
+        {
+          "cand_id": 837086,
+          "called_time": "2026-11-04T00:30:00.430Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        37.91076647176566,
+        58.33174387070324,
+        3.757489657531093
+      ],
+      "sourceLastUpdated": "2026-11-04T07:36:07.229Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    },
+    {
+      "row": 36,
+      "raceId": "WY-SEN",
+      "ddhqRaceId": 294705,
+      "candidateAId": 29909,
+      "candidateBId": 10529,
+      "winner": "Harriet Hageman",
+      "calledCandidateIds": [
+        10529
+      ],
+      "callTimes": [
+        {
+          "cand_id": 10529,
+          "called_time": "2026-11-04T02:00:00.453Z"
+        }
+      ],
+      "percentIn": 95,
+      "shares": [
+        34.764010381620686,
+        65.2359896183793,
+        0.0
+      ],
+      "sourceLastUpdated": "2026-11-04T07:02:41.529Z",
+      "reportingType": "estimated",
+      "roundUsed": "Published topline",
+      "roundLimitation": null
+    }
+  ],
+  "verification": {
+    "rowsVerified": 35,
+    "called": 33,
+    "uncalled": [
+      "AK-SEN",
+      "MS-SEN"
+    ],
+    "changedPackageParts": [
+      "xl/worksheets/sheet2.xml",
+      "xl/calcChain.xml"
+    ],
+    "unrelatedSheetsByteIdentical": true,
+    "allOriginalMarginFormulasPreserved": true,
+    "allVoteSharesAndMarginsReconciled": true,
+    "validatedSha256": "d32166d00821123e3c560b33d60b87838d3cd39795ce38bc67264269a9e64300",
+    "status": "complete; user selected separate results workbook",
+    "backup": "Election-Night-2026-Markets-Scorecard.backup-20261104-220502-EST.xlsx",
+    "output": "Election-Night-2026-Markets-Scorecard.DDHQ-results-20261104-220502-EST.xlsx",
+    "originalReplaced": false
+  }
+}

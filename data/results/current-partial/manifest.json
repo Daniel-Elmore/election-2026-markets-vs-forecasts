@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "current-partial",
+  "synthetic": false,
+  "description": "Preserved preliminary results adapter",
+  "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
+  "house_timestamp": "2026-11-06T20:25:52-05:00",
+  "caucus_analysis_approved": false,
+  "volume_units": null,
+  "kalshi_price_measure": null,
+  "qualifications": [
+    "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
+    "Currency volume labels and dollar cutoff unavailable pending unit verification.",
+    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+  ],
+  "approved_exceptions": [
+    "DDHQ district threshold of 218 may establish House control with evidence.",
+    "Provisional Kalshi scoring may use preserved recorded probabilities."
+  ],
+  "hashes": {
+    "data/results/current-partial/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
+    "data/results/current-partial/house_results.csv": "d9f74d8977e7f699c10fef4645f34b6c0a6045ddcb05b919cbcee984177fc0a5",
+    "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
+    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
+  }
+}

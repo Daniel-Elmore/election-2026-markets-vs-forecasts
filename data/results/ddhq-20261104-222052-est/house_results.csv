@@ -1,0 +1,2 @@
+race_id,dem_seats,gop_seats,undecided_seats,control,control_source,control_timestamp,control_verified,control_evidence,control_method,seats_final,seats_evidence,dem_share,gop_share,vote_complete,vote_evidence,vote_compatible,snapshot_timestamp
+House,247,152,36,Democratic,DDHQ,2026-11-04T22:20:52.470153-05:00,True,data/provenance/ddhq-house-provenance-20261104-222052-EST.json,district_threshold,False,,55.08858273519632,43.48362571747099,False,,,2026-11-04T22:20:52.470153-05:00

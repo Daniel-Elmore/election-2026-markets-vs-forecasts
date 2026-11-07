@@ -1,0 +1,8 @@
+{
+  "hashes": {
+    "data/input/senate_forecasts.csv": "46f37d594e18c07a6ab6b46528ffd78e8c792175e3f86ff566fb222955e7f942",
+    "data/input/house_forecasts.csv": "25351dd48a982e3503d04efb7b62501e08766c9ac45c2d44b97f97237660a3b8",
+    "data/input/senate_results.csv": "fd69cd30c30cb834ba3ae9839b3b3c5175a7d948d945aeb5d143e0ed43803740",
+    "data/input/house_results.csv": "a93108a4750b51a2399f4a453a9c82e67bd1ef9a570709ef0859317f3b92f028"
+  }
+}

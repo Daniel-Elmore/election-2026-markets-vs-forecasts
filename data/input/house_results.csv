@@ -1,0 +1,2 @@
+RaceID,DEM_Vote_Share,GOP_Vote_Share,Actual_Margin,DEM_Seats,GOP_Seats,Undecided_Seats,House_Control,Record_Timestamp,Notes
+House,55.3,43.3,12,254,161,20,Democratic,2026-11-06T20:25:52,"DDHQ; 435 voting districts, DC excluded. Partial reported vote; 3 districts have no votes reported. Seats are called winners; 2 LA runoffs unresolved. Control derived from called seats; direct chamber feed unavailable. Timestamp: Eastern."

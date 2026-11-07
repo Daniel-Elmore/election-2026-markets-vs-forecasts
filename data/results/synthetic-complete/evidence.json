@@ -1,0 +1,3584 @@
+{
+  "synthetic": true,
+  "source": "Illustrative DDHQ-shaped fixture",
+  "rows": [
+    {
+      "raceId": "AK-SEN",
+      "winner": "Mary Peltola",
+      "candidateAId": 1,
+      "candidateBId": 2,
+      "calledCandidateIds": [
+        1
+      ],
+      "callTimes": [
+        {
+          "cand_id": 1,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "AL-SEN",
+      "winner": "Barry Moore",
+      "candidateAId": 3,
+      "candidateBId": 4,
+      "calledCandidateIds": [
+        4
+      ],
+      "callTimes": [
+        {
+          "cand_id": 4,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "AR-SEN",
+      "winner": "Hallie Shoffner",
+      "candidateAId": 5,
+      "candidateBId": 6,
+      "calledCandidateIds": [
+        5
+      ],
+      "callTimes": [
+        {
+          "cand_id": 5,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "CO-SEN",
+      "winner": "Mark Baisley",
+      "candidateAId": 7,
+      "candidateBId": 8,
+      "calledCandidateIds": [
+        8
+      ],
+      "callTimes": [
+        {
+          "cand_id": 8,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "DE-SEN",
+      "winner": "Chris Coons",
+      "candidateAId": 9,
+      "candidateBId": 10,
+      "calledCandidateIds": [
+        9
+      ],
+      "callTimes": [
+        {
+          "cand_id": 9,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "FL-SEN",
+      "winner": "Ashley Moody",
+      "candidateAId": 11,
+      "candidateBId": 12,
+      "calledCandidateIds": [
+        12
+      ],
+      "callTimes": [
+        {
+          "cand_id": 12,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "GA-SEN",
+      "winner": "Jon Ossoff",
+      "candidateAId": 13,
+      "candidateBId": 14,
+      "calledCandidateIds": [
+        13
+      ],
+      "callTimes": [
+        {
+          "cand_id": 13,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "IA-SEN",
+      "winner": "Ashley Hinson",
+      "candidateAId": 15,
+      "candidateBId": 16,
+      "calledCandidateIds": [
+        16
+      ],
+      "callTimes": [
+        {
+          "cand_id": 16,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "ID-SEN",
+      "winner": "Todd Achilles",
+      "candidateAId": 17,
+      "candidateBId": 18,
+      "calledCandidateIds": [
+        17
+      ],
+      "callTimes": [
+        {
+          "cand_id": 17,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "IL-SEN",
+      "winner": "Don Tracy",
+      "candidateAId": 19,
+      "candidateBId": 20,
+      "calledCandidateIds": [
+        20
+      ],
+      "callTimes": [
+        {
+          "cand_id": 20,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "KS-SEN",
+      "winner": "Adam Hamilton",
+      "candidateAId": 21,
+      "candidateBId": 22,
+      "calledCandidateIds": [
+        21
+      ],
+      "callTimes": [
+        {
+          "cand_id": 21,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "KY-SEN",
+      "winner": "Andy Barr",
+      "candidateAId": 23,
+      "candidateBId": 24,
+      "calledCandidateIds": [
+        24
+      ],
+      "callTimes": [
+        {
+          "cand_id": 24,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "LA-SEN",
+      "winner": "Jamie Davis",
+      "candidateAId": 25,
+      "candidateBId": 26,
+      "calledCandidateIds": [
+        25
+      ],
+      "callTimes": [
+        {
+          "cand_id": 25,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "MA-SEN",
+      "winner": "John Deaton",
+      "candidateAId": 27,
+      "candidateBId": 28,
+      "calledCandidateIds": [
+        28
+      ],
+      "callTimes": [
+        {
+          "cand_id": 28,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "ME-SEN",
+      "winner": "Troy Jackson",
+      "candidateAId": 29,
+      "candidateBId": 30,
+      "calledCandidateIds": [
+        29
+      ],
+      "callTimes": [
+        {
+          "cand_id": 29,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "MI-SEN",
+      "winner": "Mike Rogers",
+      "candidateAId": 31,
+      "candidateBId": 32,
+      "calledCandidateIds": [
+        32
+      ],
+      "callTimes": [
+        {
+          "cand_id": 32,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "MN-SEN",
+      "winner": "Peggy Flanagan",
+      "candidateAId": 33,
+      "candidateBId": 34,
+      "calledCandidateIds": [
+        33
+      ],
+      "callTimes": [
+        {
+          "cand_id": 33,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "MS-SEN",
+      "winner": "Cindy Hyde-Smith",
+      "candidateAId": 35,
+      "candidateBId": 36,
+      "calledCandidateIds": [
+        36
+      ],
+      "callTimes": [
+        {
+          "cand_id": 36,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "MT-SEN",
+      "winner": "Seth Bodnar",
+      "candidateAId": 37,
+      "candidateBId": 38,
+      "calledCandidateIds": [
+        37
+      ],
+      "callTimes": [
+        {
+          "cand_id": 37,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "NC-SEN",
+      "winner": "Michael Whatley",
+      "candidateAId": 39,
+      "candidateBId": 40,
+      "calledCandidateIds": [
+        40
+      ],
+      "callTimes": [
+        {
+          "cand_id": 40,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "NE-SEN",
+      "winner": "Dan Osborn",
+      "candidateAId": 41,
+      "candidateBId": 42,
+      "calledCandidateIds": [
+        41
+      ],
+      "callTimes": [
+        {
+          "cand_id": 41,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "NH-SEN",
+      "winner": "John Sununu",
+      "candidateAId": 43,
+      "candidateBId": 44,
+      "calledCandidateIds": [
+        44
+      ],
+      "callTimes": [
+        {
+          "cand_id": 44,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "NJ-SEN",
+      "winner": "Cory Booker",
+      "candidateAId": 45,
+      "candidateBId": 46,
+      "calledCandidateIds": [
+        45
+      ],
+      "callTimes": [
+        {
+          "cand_id": 45,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "NM-SEN",
+      "winner": "Larry Marker",
+      "candidateAId": 47,
+      "candidateBId": 48,
+      "calledCandidateIds": [
+        48
+      ],
+      "callTimes": [
+        {
+          "cand_id": 48,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "OH-SEN",
+      "winner": "Sherrod Brown",
+      "candidateAId": 49,
+      "candidateBId": 50,
+      "calledCandidateIds": [
+        49
+      ],
+      "callTimes": [
+        {
+          "cand_id": 49,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "OK-SEN",
+      "winner": "Kevin Hern",
+      "candidateAId": 51,
+      "candidateBId": 52,
+      "calledCandidateIds": [
+        52
+      ],
+      "callTimes": [
+        {
+          "cand_id": 52,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "OR-SEN",
+      "winner": "Jeff Merkley",
+      "candidateAId": 53,
+      "candidateBId": 54,
+      "calledCandidateIds": [
+        53
+      ],
+      "callTimes": [
+        {
+          "cand_id": 53,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "RI-SEN",
+      "winner": "Raymond McKay",
+      "candidateAId": 55,
+      "candidateBId": 56,
+      "calledCandidateIds": [
+        56
+      ],
+      "callTimes": [
+        {
+          "cand_id": 56,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "SC-SEN",
+      "winner": "Annie Andrews",
+      "candidateAId": 57,
+      "candidateBId": 58,
+      "calledCandidateIds": [
+        57
+      ],
+      "callTimes": [
+        {
+          "cand_id": 57,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "SD-SEN",
+      "winner": "Mike Rounds",
+      "candidateAId": 59,
+      "candidateBId": 60,
+      "calledCandidateIds": [
+        60
+      ],
+      "callTimes": [
+        {
+          "cand_id": 60,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "TN-SEN",
+      "winner": "Marquita Bradshaw",
+      "candidateAId": 61,
+      "candidateBId": 62,
+      "calledCandidateIds": [
+        61
+      ],
+      "callTimes": [
+        {
+          "cand_id": 61,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "TX-SEN",
+      "winner": "Ken Paxton",
+      "candidateAId": 63,
+      "candidateBId": 64,
+      "calledCandidateIds": [
+        64
+      ],
+      "callTimes": [
+        {
+          "cand_id": 64,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "VA-SEN",
+      "winner": "Mark Warner",
+      "candidateAId": 65,
+      "candidateBId": 66,
+      "calledCandidateIds": [
+        65
+      ],
+      "callTimes": [
+        {
+          "cand_id": 65,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "WV-SEN",
+      "winner": "Shelley Moore Capito",
+      "candidateAId": 67,
+      "candidateBId": 68,
+      "calledCandidateIds": [
+        68
+      ],
+      "callTimes": [
+        {
+          "cand_id": 68,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "raceId": "WY-SEN",
+      "winner": "James Byrd",
+      "candidateAId": 69,
+      "candidateBId": 70,
+      "calledCandidateIds": [
+        69
+      ],
+      "callTimes": [
+        {
+          "cand_id": 69,
+          "called_time": "2026-11-06T23:00:00-05:00"
+        }
+      ]
+    }
+  ],
+  "retrievedAtEastern": "2026-11-06T23:00:00-05:00",
+  "calledSeatsByParty": {
+    "Democratic": 240,
+    "Republican": 195
+  },
+  "races": [
+    {
+      "raceId": 0,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        1
+      ]
+    },
+    {
+      "raceId": 1,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        2
+      ]
+    },
+    {
+      "raceId": 2,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        3
+      ]
+    },
+    {
+      "raceId": 3,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        4
+      ]
+    },
+    {
+      "raceId": 4,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        5
+      ]
+    },
+    {
+      "raceId": 5,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        6
+      ]
+    },
+    {
+      "raceId": 6,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        7
+      ]
+    },
+    {
+      "raceId": 7,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        8
+      ]
+    },
+    {
+      "raceId": 8,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        9
+      ]
+    },
+    {
+      "raceId": 9,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        10
+      ]
+    },
+    {
+      "raceId": 10,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        11
+      ]
+    },
+    {
+      "raceId": 11,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        12
+      ]
+    },
+    {
+      "raceId": 12,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        13
+      ]
+    },
+    {
+      "raceId": 13,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        14
+      ]
+    },
+    {
+      "raceId": 14,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        15
+      ]
+    },
+    {
+      "raceId": 15,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        16
+      ]
+    },
+    {
+      "raceId": 16,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        17
+      ]
+    },
+    {
+      "raceId": 17,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        18
+      ]
+    },
+    {
+      "raceId": 18,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        19
+      ]
+    },
+    {
+      "raceId": 19,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        20
+      ]
+    },
+    {
+      "raceId": 20,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        21
+      ]
+    },
+    {
+      "raceId": 21,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        22
+      ]
+    },
+    {
+      "raceId": 22,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        23
+      ]
+    },
+    {
+      "raceId": 23,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        24
+      ]
+    },
+    {
+      "raceId": 24,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        25
+      ]
+    },
+    {
+      "raceId": 25,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        26
+      ]
+    },
+    {
+      "raceId": 26,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        27
+      ]
+    },
+    {
+      "raceId": 27,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        28
+      ]
+    },
+    {
+      "raceId": 28,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        29
+      ]
+    },
+    {
+      "raceId": 29,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        30
+      ]
+    },
+    {
+      "raceId": 30,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        31
+      ]
+    },
+    {
+      "raceId": 31,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        32
+      ]
+    },
+    {
+      "raceId": 32,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        33
+      ]
+    },
+    {
+      "raceId": 33,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        34
+      ]
+    },
+    {
+      "raceId": 34,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        35
+      ]
+    },
+    {
+      "raceId": 35,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        36
+      ]
+    },
+    {
+      "raceId": 36,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        37
+      ]
+    },
+    {
+      "raceId": 37,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        38
+      ]
+    },
+    {
+      "raceId": 38,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        39
+      ]
+    },
+    {
+      "raceId": 39,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        40
+      ]
+    },
+    {
+      "raceId": 40,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        41
+      ]
+    },
+    {
+      "raceId": 41,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        42
+      ]
+    },
+    {
+      "raceId": 42,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        43
+      ]
+    },
+    {
+      "raceId": 43,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        44
+      ]
+    },
+    {
+      "raceId": 44,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        45
+      ]
+    },
+    {
+      "raceId": 45,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        46
+      ]
+    },
+    {
+      "raceId": 46,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        47
+      ]
+    },
+    {
+      "raceId": 47,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        48
+      ]
+    },
+    {
+      "raceId": 48,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        49
+      ]
+    },
+    {
+      "raceId": 49,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        50
+      ]
+    },
+    {
+      "raceId": 50,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        51
+      ]
+    },
+    {
+      "raceId": 51,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        52
+      ]
+    },
+    {
+      "raceId": 52,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        53
+      ]
+    },
+    {
+      "raceId": 53,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        54
+      ]
+    },
+    {
+      "raceId": 54,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        55
+      ]
+    },
+    {
+      "raceId": 55,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        56
+      ]
+    },
+    {
+      "raceId": 56,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        57
+      ]
+    },
+    {
+      "raceId": 57,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        58
+      ]
+    },
+    {
+      "raceId": 58,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        59
+      ]
+    },
+    {
+      "raceId": 59,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        60
+      ]
+    },
+    {
+      "raceId": 60,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        61
+      ]
+    },
+    {
+      "raceId": 61,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        62
+      ]
+    },
+    {
+      "raceId": 62,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        63
+      ]
+    },
+    {
+      "raceId": 63,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        64
+      ]
+    },
+    {
+      "raceId": 64,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        65
+      ]
+    },
+    {
+      "raceId": 65,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        66
+      ]
+    },
+    {
+      "raceId": 66,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        67
+      ]
+    },
+    {
+      "raceId": 67,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        68
+      ]
+    },
+    {
+      "raceId": 68,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        69
+      ]
+    },
+    {
+      "raceId": 69,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        70
+      ]
+    },
+    {
+      "raceId": 70,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        71
+      ]
+    },
+    {
+      "raceId": 71,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        72
+      ]
+    },
+    {
+      "raceId": 72,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        73
+      ]
+    },
+    {
+      "raceId": 73,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        74
+      ]
+    },
+    {
+      "raceId": 74,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        75
+      ]
+    },
+    {
+      "raceId": 75,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        76
+      ]
+    },
+    {
+      "raceId": 76,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        77
+      ]
+    },
+    {
+      "raceId": 77,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        78
+      ]
+    },
+    {
+      "raceId": 78,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        79
+      ]
+    },
+    {
+      "raceId": 79,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        80
+      ]
+    },
+    {
+      "raceId": 80,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        81
+      ]
+    },
+    {
+      "raceId": 81,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        82
+      ]
+    },
+    {
+      "raceId": 82,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        83
+      ]
+    },
+    {
+      "raceId": 83,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        84
+      ]
+    },
+    {
+      "raceId": 84,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        85
+      ]
+    },
+    {
+      "raceId": 85,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        86
+      ]
+    },
+    {
+      "raceId": 86,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        87
+      ]
+    },
+    {
+      "raceId": 87,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        88
+      ]
+    },
+    {
+      "raceId": 88,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        89
+      ]
+    },
+    {
+      "raceId": 89,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        90
+      ]
+    },
+    {
+      "raceId": 90,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        91
+      ]
+    },
+    {
+      "raceId": 91,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        92
+      ]
+    },
+    {
+      "raceId": 92,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        93
+      ]
+    },
+    {
+      "raceId": 93,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        94
+      ]
+    },
+    {
+      "raceId": 94,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        95
+      ]
+    },
+    {
+      "raceId": 95,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        96
+      ]
+    },
+    {
+      "raceId": 96,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        97
+      ]
+    },
+    {
+      "raceId": 97,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        98
+      ]
+    },
+    {
+      "raceId": 98,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        99
+      ]
+    },
+    {
+      "raceId": 99,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        100
+      ]
+    },
+    {
+      "raceId": 100,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        101
+      ]
+    },
+    {
+      "raceId": 101,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        102
+      ]
+    },
+    {
+      "raceId": 102,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        103
+      ]
+    },
+    {
+      "raceId": 103,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        104
+      ]
+    },
+    {
+      "raceId": 104,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        105
+      ]
+    },
+    {
+      "raceId": 105,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        106
+      ]
+    },
+    {
+      "raceId": 106,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        107
+      ]
+    },
+    {
+      "raceId": 107,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        108
+      ]
+    },
+    {
+      "raceId": 108,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        109
+      ]
+    },
+    {
+      "raceId": 109,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        110
+      ]
+    },
+    {
+      "raceId": 110,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        111
+      ]
+    },
+    {
+      "raceId": 111,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        112
+      ]
+    },
+    {
+      "raceId": 112,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        113
+      ]
+    },
+    {
+      "raceId": 113,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        114
+      ]
+    },
+    {
+      "raceId": 114,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        115
+      ]
+    },
+    {
+      "raceId": 115,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        116
+      ]
+    },
+    {
+      "raceId": 116,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        117
+      ]
+    },
+    {
+      "raceId": 117,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        118
+      ]
+    },
+    {
+      "raceId": 118,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        119
+      ]
+    },
+    {
+      "raceId": 119,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        120
+      ]
+    },
+    {
+      "raceId": 120,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        121
+      ]
+    },
+    {
+      "raceId": 121,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        122
+      ]
+    },
+    {
+      "raceId": 122,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        123
+      ]
+    },
+    {
+      "raceId": 123,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        124
+      ]
+    },
+    {
+      "raceId": 124,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        125
+      ]
+    },
+    {
+      "raceId": 125,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        126
+      ]
+    },
+    {
+      "raceId": 126,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        127
+      ]
+    },
+    {
+      "raceId": 127,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        128
+      ]
+    },
+    {
+      "raceId": 128,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        129
+      ]
+    },
+    {
+      "raceId": 129,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        130
+      ]
+    },
+    {
+      "raceId": 130,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        131
+      ]
+    },
+    {
+      "raceId": 131,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        132
+      ]
+    },
+    {
+      "raceId": 132,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        133
+      ]
+    },
+    {
+      "raceId": 133,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        134
+      ]
+    },
+    {
+      "raceId": 134,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        135
+      ]
+    },
+    {
+      "raceId": 135,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        136
+      ]
+    },
+    {
+      "raceId": 136,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        137
+      ]
+    },
+    {
+      "raceId": 137,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        138
+      ]
+    },
+    {
+      "raceId": 138,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        139
+      ]
+    },
+    {
+      "raceId": 139,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        140
+      ]
+    },
+    {
+      "raceId": 140,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        141
+      ]
+    },
+    {
+      "raceId": 141,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        142
+      ]
+    },
+    {
+      "raceId": 142,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        143
+      ]
+    },
+    {
+      "raceId": 143,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        144
+      ]
+    },
+    {
+      "raceId": 144,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        145
+      ]
+    },
+    {
+      "raceId": 145,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        146
+      ]
+    },
+    {
+      "raceId": 146,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        147
+      ]
+    },
+    {
+      "raceId": 147,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        148
+      ]
+    },
+    {
+      "raceId": 148,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        149
+      ]
+    },
+    {
+      "raceId": 149,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        150
+      ]
+    },
+    {
+      "raceId": 150,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        151
+      ]
+    },
+    {
+      "raceId": 151,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        152
+      ]
+    },
+    {
+      "raceId": 152,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        153
+      ]
+    },
+    {
+      "raceId": 153,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        154
+      ]
+    },
+    {
+      "raceId": 154,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        155
+      ]
+    },
+    {
+      "raceId": 155,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        156
+      ]
+    },
+    {
+      "raceId": 156,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        157
+      ]
+    },
+    {
+      "raceId": 157,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        158
+      ]
+    },
+    {
+      "raceId": 158,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        159
+      ]
+    },
+    {
+      "raceId": 159,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        160
+      ]
+    },
+    {
+      "raceId": 160,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        161
+      ]
+    },
+    {
+      "raceId": 161,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        162
+      ]
+    },
+    {
+      "raceId": 162,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        163
+      ]
+    },
+    {
+      "raceId": 163,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        164
+      ]
+    },
+    {
+      "raceId": 164,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        165
+      ]
+    },
+    {
+      "raceId": 165,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        166
+      ]
+    },
+    {
+      "raceId": 166,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        167
+      ]
+    },
+    {
+      "raceId": 167,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        168
+      ]
+    },
+    {
+      "raceId": 168,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        169
+      ]
+    },
+    {
+      "raceId": 169,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        170
+      ]
+    },
+    {
+      "raceId": 170,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        171
+      ]
+    },
+    {
+      "raceId": 171,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        172
+      ]
+    },
+    {
+      "raceId": 172,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        173
+      ]
+    },
+    {
+      "raceId": 173,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        174
+      ]
+    },
+    {
+      "raceId": 174,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        175
+      ]
+    },
+    {
+      "raceId": 175,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        176
+      ]
+    },
+    {
+      "raceId": 176,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        177
+      ]
+    },
+    {
+      "raceId": 177,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        178
+      ]
+    },
+    {
+      "raceId": 178,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        179
+      ]
+    },
+    {
+      "raceId": 179,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        180
+      ]
+    },
+    {
+      "raceId": 180,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        181
+      ]
+    },
+    {
+      "raceId": 181,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        182
+      ]
+    },
+    {
+      "raceId": 182,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        183
+      ]
+    },
+    {
+      "raceId": 183,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        184
+      ]
+    },
+    {
+      "raceId": 184,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        185
+      ]
+    },
+    {
+      "raceId": 185,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        186
+      ]
+    },
+    {
+      "raceId": 186,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        187
+      ]
+    },
+    {
+      "raceId": 187,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        188
+      ]
+    },
+    {
+      "raceId": 188,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        189
+      ]
+    },
+    {
+      "raceId": 189,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        190
+      ]
+    },
+    {
+      "raceId": 190,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        191
+      ]
+    },
+    {
+      "raceId": 191,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        192
+      ]
+    },
+    {
+      "raceId": 192,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        193
+      ]
+    },
+    {
+      "raceId": 193,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        194
+      ]
+    },
+    {
+      "raceId": 194,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        195
+      ]
+    },
+    {
+      "raceId": 195,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        196
+      ]
+    },
+    {
+      "raceId": 196,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        197
+      ]
+    },
+    {
+      "raceId": 197,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        198
+      ]
+    },
+    {
+      "raceId": 198,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        199
+      ]
+    },
+    {
+      "raceId": 199,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        200
+      ]
+    },
+    {
+      "raceId": 200,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        201
+      ]
+    },
+    {
+      "raceId": 201,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        202
+      ]
+    },
+    {
+      "raceId": 202,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        203
+      ]
+    },
+    {
+      "raceId": 203,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        204
+      ]
+    },
+    {
+      "raceId": 204,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        205
+      ]
+    },
+    {
+      "raceId": 205,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        206
+      ]
+    },
+    {
+      "raceId": 206,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        207
+      ]
+    },
+    {
+      "raceId": 207,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        208
+      ]
+    },
+    {
+      "raceId": 208,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        209
+      ]
+    },
+    {
+      "raceId": 209,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        210
+      ]
+    },
+    {
+      "raceId": 210,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        211
+      ]
+    },
+    {
+      "raceId": 211,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        212
+      ]
+    },
+    {
+      "raceId": 212,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        213
+      ]
+    },
+    {
+      "raceId": 213,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        214
+      ]
+    },
+    {
+      "raceId": 214,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        215
+      ]
+    },
+    {
+      "raceId": 215,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        216
+      ]
+    },
+    {
+      "raceId": 216,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        217
+      ]
+    },
+    {
+      "raceId": 217,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        218
+      ]
+    },
+    {
+      "raceId": 218,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        219
+      ]
+    },
+    {
+      "raceId": 219,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        220
+      ]
+    },
+    {
+      "raceId": 220,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        221
+      ]
+    },
+    {
+      "raceId": 221,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        222
+      ]
+    },
+    {
+      "raceId": 222,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        223
+      ]
+    },
+    {
+      "raceId": 223,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        224
+      ]
+    },
+    {
+      "raceId": 224,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        225
+      ]
+    },
+    {
+      "raceId": 225,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        226
+      ]
+    },
+    {
+      "raceId": 226,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        227
+      ]
+    },
+    {
+      "raceId": 227,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        228
+      ]
+    },
+    {
+      "raceId": 228,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        229
+      ]
+    },
+    {
+      "raceId": 229,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        230
+      ]
+    },
+    {
+      "raceId": 230,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        231
+      ]
+    },
+    {
+      "raceId": 231,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        232
+      ]
+    },
+    {
+      "raceId": 232,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        233
+      ]
+    },
+    {
+      "raceId": 233,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        234
+      ]
+    },
+    {
+      "raceId": 234,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        235
+      ]
+    },
+    {
+      "raceId": 235,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        236
+      ]
+    },
+    {
+      "raceId": 236,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        237
+      ]
+    },
+    {
+      "raceId": 237,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        238
+      ]
+    },
+    {
+      "raceId": 238,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        239
+      ]
+    },
+    {
+      "raceId": 239,
+      "winnerParty": "Democratic",
+      "calledCandidateIds": [
+        240
+      ]
+    },
+    {
+      "raceId": 240,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        241
+      ]
+    },
+    {
+      "raceId": 241,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        242
+      ]
+    },
+    {
+      "raceId": 242,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        243
+      ]
+    },
+    {
+      "raceId": 243,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        244
+      ]
+    },
+    {
+      "raceId": 244,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        245
+      ]
+    },
+    {
+      "raceId": 245,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        246
+      ]
+    },
+    {
+      "raceId": 246,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        247
+      ]
+    },
+    {
+      "raceId": 247,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        248
+      ]
+    },
+    {
+      "raceId": 248,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        249
+      ]
+    },
+    {
+      "raceId": 249,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        250
+      ]
+    },
+    {
+      "raceId": 250,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        251
+      ]
+    },
+    {
+      "raceId": 251,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        252
+      ]
+    },
+    {
+      "raceId": 252,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        253
+      ]
+    },
+    {
+      "raceId": 253,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        254
+      ]
+    },
+    {
+      "raceId": 254,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        255
+      ]
+    },
+    {
+      "raceId": 255,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        256
+      ]
+    },
+    {
+      "raceId": 256,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        257
+      ]
+    },
+    {
+      "raceId": 257,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        258
+      ]
+    },
+    {
+      "raceId": 258,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        259
+      ]
+    },
+    {
+      "raceId": 259,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        260
+      ]
+    },
+    {
+      "raceId": 260,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        261
+      ]
+    },
+    {
+      "raceId": 261,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        262
+      ]
+    },
+    {
+      "raceId": 262,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        263
+      ]
+    },
+    {
+      "raceId": 263,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        264
+      ]
+    },
+    {
+      "raceId": 264,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        265
+      ]
+    },
+    {
+      "raceId": 265,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        266
+      ]
+    },
+    {
+      "raceId": 266,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        267
+      ]
+    },
+    {
+      "raceId": 267,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        268
+      ]
+    },
+    {
+      "raceId": 268,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        269
+      ]
+    },
+    {
+      "raceId": 269,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        270
+      ]
+    },
+    {
+      "raceId": 270,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        271
+      ]
+    },
+    {
+      "raceId": 271,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        272
+      ]
+    },
+    {
+      "raceId": 272,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        273
+      ]
+    },
+    {
+      "raceId": 273,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        274
+      ]
+    },
+    {
+      "raceId": 274,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        275
+      ]
+    },
+    {
+      "raceId": 275,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        276
+      ]
+    },
+    {
+      "raceId": 276,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        277
+      ]
+    },
+    {
+      "raceId": 277,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        278
+      ]
+    },
+    {
+      "raceId": 278,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        279
+      ]
+    },
+    {
+      "raceId": 279,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        280
+      ]
+    },
+    {
+      "raceId": 280,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        281
+      ]
+    },
+    {
+      "raceId": 281,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        282
+      ]
+    },
+    {
+      "raceId": 282,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        283
+      ]
+    },
+    {
+      "raceId": 283,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        284
+      ]
+    },
+    {
+      "raceId": 284,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        285
+      ]
+    },
+    {
+      "raceId": 285,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        286
+      ]
+    },
+    {
+      "raceId": 286,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        287
+      ]
+    },
+    {
+      "raceId": 287,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        288
+      ]
+    },
+    {
+      "raceId": 288,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        289
+      ]
+    },
+    {
+      "raceId": 289,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        290
+      ]
+    },
+    {
+      "raceId": 290,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        291
+      ]
+    },
+    {
+      "raceId": 291,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        292
+      ]
+    },
+    {
+      "raceId": 292,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        293
+      ]
+    },
+    {
+      "raceId": 293,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        294
+      ]
+    },
+    {
+      "raceId": 294,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        295
+      ]
+    },
+    {
+      "raceId": 295,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        296
+      ]
+    },
+    {
+      "raceId": 296,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        297
+      ]
+    },
+    {
+      "raceId": 297,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        298
+      ]
+    },
+    {
+      "raceId": 298,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        299
+      ]
+    },
+    {
+      "raceId": 299,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        300
+      ]
+    },
+    {
+      "raceId": 300,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        301
+      ]
+    },
+    {
+      "raceId": 301,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        302
+      ]
+    },
+    {
+      "raceId": 302,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        303
+      ]
+    },
+    {
+      "raceId": 303,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        304
+      ]
+    },
+    {
+      "raceId": 304,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        305
+      ]
+    },
+    {
+      "raceId": 305,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        306
+      ]
+    },
+    {
+      "raceId": 306,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        307
+      ]
+    },
+    {
+      "raceId": 307,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        308
+      ]
+    },
+    {
+      "raceId": 308,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        309
+      ]
+    },
+    {
+      "raceId": 309,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        310
+      ]
+    },
+    {
+      "raceId": 310,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        311
+      ]
+    },
+    {
+      "raceId": 311,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        312
+      ]
+    },
+    {
+      "raceId": 312,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        313
+      ]
+    },
+    {
+      "raceId": 313,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        314
+      ]
+    },
+    {
+      "raceId": 314,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        315
+      ]
+    },
+    {
+      "raceId": 315,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        316
+      ]
+    },
+    {
+      "raceId": 316,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        317
+      ]
+    },
+    {
+      "raceId": 317,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        318
+      ]
+    },
+    {
+      "raceId": 318,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        319
+      ]
+    },
+    {
+      "raceId": 319,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        320
+      ]
+    },
+    {
+      "raceId": 320,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        321
+      ]
+    },
+    {
+      "raceId": 321,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        322
+      ]
+    },
+    {
+      "raceId": 322,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        323
+      ]
+    },
+    {
+      "raceId": 323,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        324
+      ]
+    },
+    {
+      "raceId": 324,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        325
+      ]
+    },
+    {
+      "raceId": 325,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        326
+      ]
+    },
+    {
+      "raceId": 326,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        327
+      ]
+    },
+    {
+      "raceId": 327,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        328
+      ]
+    },
+    {
+      "raceId": 328,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        329
+      ]
+    },
+    {
+      "raceId": 329,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        330
+      ]
+    },
+    {
+      "raceId": 330,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        331
+      ]
+    },
+    {
+      "raceId": 331,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        332
+      ]
+    },
+    {
+      "raceId": 332,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        333
+      ]
+    },
+    {
+      "raceId": 333,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        334
+      ]
+    },
+    {
+      "raceId": 334,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        335
+      ]
+    },
+    {
+      "raceId": 335,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        336
+      ]
+    },
+    {
+      "raceId": 336,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        337
+      ]
+    },
+    {
+      "raceId": 337,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        338
+      ]
+    },
+    {
+      "raceId": 338,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        339
+      ]
+    },
+    {
+      "raceId": 339,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        340
+      ]
+    },
+    {
+      "raceId": 340,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        341
+      ]
+    },
+    {
+      "raceId": 341,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        342
+      ]
+    },
+    {
+      "raceId": 342,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        343
+      ]
+    },
+    {
+      "raceId": 343,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        344
+      ]
+    },
+    {
+      "raceId": 344,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        345
+      ]
+    },
+    {
+      "raceId": 345,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        346
+      ]
+    },
+    {
+      "raceId": 346,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        347
+      ]
+    },
+    {
+      "raceId": 347,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        348
+      ]
+    },
+    {
+      "raceId": 348,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        349
+      ]
+    },
+    {
+      "raceId": 349,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        350
+      ]
+    },
+    {
+      "raceId": 350,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        351
+      ]
+    },
+    {
+      "raceId": 351,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        352
+      ]
+    },
+    {
+      "raceId": 352,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        353
+      ]
+    },
+    {
+      "raceId": 353,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        354
+      ]
+    },
+    {
+      "raceId": 354,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        355
+      ]
+    },
+    {
+      "raceId": 355,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        356
+      ]
+    },
+    {
+      "raceId": 356,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        357
+      ]
+    },
+    {
+      "raceId": 357,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        358
+      ]
+    },
+    {
+      "raceId": 358,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        359
+      ]
+    },
+    {
+      "raceId": 359,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        360
+      ]
+    },
+    {
+      "raceId": 360,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        361
+      ]
+    },
+    {
+      "raceId": 361,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        362
+      ]
+    },
+    {
+      "raceId": 362,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        363
+      ]
+    },
+    {
+      "raceId": 363,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        364
+      ]
+    },
+    {
+      "raceId": 364,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        365
+      ]
+    },
+    {
+      "raceId": 365,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        366
+      ]
+    },
+    {
+      "raceId": 366,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        367
+      ]
+    },
+    {
+      "raceId": 367,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        368
+      ]
+    },
+    {
+      "raceId": 368,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        369
+      ]
+    },
+    {
+      "raceId": 369,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        370
+      ]
+    },
+    {
+      "raceId": 370,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        371
+      ]
+    },
+    {
+      "raceId": 371,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        372
+      ]
+    },
+    {
+      "raceId": 372,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        373
+      ]
+    },
+    {
+      "raceId": 373,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        374
+      ]
+    },
+    {
+      "raceId": 374,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        375
+      ]
+    },
+    {
+      "raceId": 375,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        376
+      ]
+    },
+    {
+      "raceId": 376,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        377
+      ]
+    },
+    {
+      "raceId": 377,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        378
+      ]
+    },
+    {
+      "raceId": 378,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        379
+      ]
+    },
+    {
+      "raceId": 379,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        380
+      ]
+    },
+    {
+      "raceId": 380,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        381
+      ]
+    },
+    {
+      "raceId": 381,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        382
+      ]
+    },
+    {
+      "raceId": 382,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        383
+      ]
+    },
+    {
+      "raceId": 383,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        384
+      ]
+    },
+    {
+      "raceId": 384,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        385
+      ]
+    },
+    {
+      "raceId": 385,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        386
+      ]
+    },
+    {
+      "raceId": 386,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        387
+      ]
+    },
+    {
+      "raceId": 387,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        388
+      ]
+    },
+    {
+      "raceId": 388,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        389
+      ]
+    },
+    {
+      "raceId": 389,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        390
+      ]
+    },
+    {
+      "raceId": 390,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        391
+      ]
+    },
+    {
+      "raceId": 391,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        392
+      ]
+    },
+    {
+      "raceId": 392,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        393
+      ]
+    },
+    {
+      "raceId": 393,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        394
+      ]
+    },
+    {
+      "raceId": 394,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        395
+      ]
+    },
+    {
+      "raceId": 395,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        396
+      ]
+    },
+    {
+      "raceId": 396,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        397
+      ]
+    },
+    {
+      "raceId": 397,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        398
+      ]
+    },
+    {
+      "raceId": 398,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        399
+      ]
+    },
+    {
+      "raceId": 399,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        400
+      ]
+    },
+    {
+      "raceId": 400,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        401
+      ]
+    },
+    {
+      "raceId": 401,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        402
+      ]
+    },
+    {
+      "raceId": 402,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        403
+      ]
+    },
+    {
+      "raceId": 403,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        404
+      ]
+    },
+    {
+      "raceId": 404,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        405
+      ]
+    },
+    {
+      "raceId": 405,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        406
+      ]
+    },
+    {
+      "raceId": 406,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        407
+      ]
+    },
+    {
+      "raceId": 407,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        408
+      ]
+    },
+    {
+      "raceId": 408,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        409
+      ]
+    },
+    {
+      "raceId": 409,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        410
+      ]
+    },
+    {
+      "raceId": 410,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        411
+      ]
+    },
+    {
+      "raceId": 411,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        412
+      ]
+    },
+    {
+      "raceId": 412,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        413
+      ]
+    },
+    {
+      "raceId": 413,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        414
+      ]
+    },
+    {
+      "raceId": 414,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        415
+      ]
+    },
+    {
+      "raceId": 415,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        416
+      ]
+    },
+    {
+      "raceId": 416,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        417
+      ]
+    },
+    {
+      "raceId": 417,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        418
+      ]
+    },
+    {
+      "raceId": 418,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        419
+      ]
+    },
+    {
+      "raceId": 419,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        420
+      ]
+    },
+    {
+      "raceId": 420,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        421
+      ]
+    },
+    {
+      "raceId": 421,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        422
+      ]
+    },
+    {
+      "raceId": 422,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        423
+      ]
+    },
+    {
+      "raceId": 423,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        424
+      ]
+    },
+    {
+      "raceId": 424,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        425
+      ]
+    },
+    {
+      "raceId": 425,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        426
+      ]
+    },
+    {
+      "raceId": 426,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        427
+      ]
+    },
+    {
+      "raceId": 427,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        428
+      ]
+    },
+    {
+      "raceId": 428,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        429
+      ]
+    },
+    {
+      "raceId": 429,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        430
+      ]
+    },
+    {
+      "raceId": 430,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        431
+      ]
+    },
+    {
+      "raceId": 431,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        432
+      ]
+    },
+    {
+      "raceId": 432,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        433
+      ]
+    },
+    {
+      "raceId": 433,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        434
+      ]
+    },
+    {
+      "raceId": 434,
+      "winnerParty": "Republican",
+      "calledCandidateIds": [
+        435
+      ]
+    }
+  ],
+  "note": "SYNTHETIC complete results for software tests. Not observed election data."
+}
