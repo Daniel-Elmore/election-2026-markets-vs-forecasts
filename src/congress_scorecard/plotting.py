@@ -99,6 +99,7 @@ class Canvas:
             offset.set_fontproperties(body_font)
             offset.set_fontsize(label_size)
             offset.set_color(BLUE)
+        ax.xaxis.labelpad = 4 + 16 * self.scale * 72 / DPI
         for spine in ax.spines.values():
             spine.set_visible(False)
         return ax
@@ -130,7 +131,7 @@ def make_canvas(title, *, subtitle, source, fmt="broadcast", logo_size="medium")
     sub = fig.text(margin_x / width, (title_bottom - 12 * scale) / height,
                    subtitle_text, va="top", color=BLUE, fontproperties=body_font,
                    fontsize=36 * scale * 72 / DPI)
-    divider_y = sub.get_window_extent(fig.canvas.get_renderer()).y0 - 18 * scale
+    divider_y = sub.get_window_extent(fig.canvas.get_renderer()).y0 - 12 * scale
     from matplotlib.lines import Line2D
     fig.add_artist(Line2D([margin_x / width, 1 - margin_x / width],
                          [divider_y / height] * 2, transform=fig.transFigure,

@@ -189,3 +189,86 @@ def test_cli_reports_failed_validation_without_changes(publication, monkeypatch,
     assert "--reviewed" in capsys.readouterr().err
     assert publication_bytes(f.root) == before
     assert publisher.main(["--run", str(f.run), "--reviewed"]) == 0
+
+
+@pytest.fixture
+def accuracy_publication(publication):
+    import shutil
+    from matplotlib import get_data_path
+    from matplotlib.font_manager import FontProperties
+    f = publication
+    part = "02_forecast_accuracy"
+    notebook = f"notebooks/{part}.ipynb"
+    shutil.copyfile(f.root / publisher.NOTEBOOK, f.root / notebook)
+    shutil.copyfile(f.run / publisher.NOTEBOOK, f.run / notebook)
+    for directory in ("tables", "figures"):
+        shutil.copytree(f.run / directory / publisher.PART, f.run / directory / part)
+    analysis = f.run / "tables" / part / "analysis-provenance.json"
+    font = Path(get_data_path()) / "fonts/ttf/DejaVuSans.ttf"
+    symbols = [{"filename": font.name, "family": FontProperties(fname=str(font)).get_name(),
+                "sha256": sha256(font), "characters": ["ρ"], "role": "rho_symbol"}]
+    edit_json(analysis, lambda a: a.update(editable_source=notebook, settings={"simulation_seed": 20261105},
+                                          primary={"n_planned": 15, "n_eligible": 13}, primary_sign_flip={"patterns": 8192},
+                                          symbol_fonts=symbols))
+    edit_json(f.manifest, lambda m: m["notebooks"].append(
+        {"name": f"{part}.ipynb", "status": "succeeded", "code_cells": 1}))
+    return f
+
+
+def test_part_two_promotion_preserves_part_one(accuracy_publication, monkeypatch):
+    f = accuracy_publication
+    before = publication_bytes(f.root)
+    monkeypatch.setattr(publisher, "project_root", lambda: f.root)
+    assert publisher.main(["--run", str(f.run), "--reviewed", "--part", "02_forecast_accuracy"]) == 0
+    assert publication_bytes(f.root) == before
+    p = publisher.read_json(f.root / "figures/02_forecast_accuracy/provenance.json")
+    assert p["editable_source"] == "notebooks/02_forecast_accuracy.ipynb"
+    assert p["settings"]["simulation_seed"] == 20261105
+    # Promoting the default part must likewise preserve the accuracy publication.
+    accuracy = {p: p.read_bytes() for p in (f.root / "figures/02_forecast_accuracy").iterdir()}
+    publisher.publish(f.root, f.run, reviewed=True)
+    assert all(p.read_bytes() == value for p, value in accuracy.items())
+
+
+@pytest.mark.parametrize("case", ["synthetic", "stale", "lint", "unknown", "rollback",
+                                  "missing_symbol", "altered_symbol", "wrong_symbol_character", "wrong_symbol_role",
+                                  "wrong_symbol_font"])
+def test_part_two_rejections_and_rollback(accuracy_publication, monkeypatch, case):
+    f = accuracy_publication
+    before = {p.relative_to(f.root): p.read_bytes() for p in f.root.rglob("*") if p.is_file()}
+    part = "02_forecast_accuracy"
+    if case == "synthetic":
+        edit_json(f.manifest, lambda m: m.update(synthetic=True))
+    elif case == "stale":
+        edit_json(f.manifest, lambda m: m.update(source_hashes={}))
+    elif case == "lint":
+        edit_json(f.run / "tables" / part / "analysis-provenance.json",
+                  lambda a: a["figures"][0].update(lint_passed=False))
+    elif case == "unknown":
+        part = "03_kalshi_trading_volume"
+    elif case.startswith("missing_symbol"):
+        edit_json(f.run / "tables" / part / "analysis-provenance.json", lambda a: a.pop("symbol_fonts"))
+    elif case in ("altered_symbol", "wrong_symbol_character", "wrong_symbol_role", "wrong_symbol_font"):
+        key, value = {"altered_symbol": ("sha256", "0" * 64),
+                      "wrong_symbol_character": ("characters", ["x"]),
+                      "wrong_symbol_role": ("role", "all_text"),
+                      "wrong_symbol_font": ("filename", "Other.ttf")}[case]
+        edit_json(f.run / "tables" / part / "analysis-provenance.json",
+                  lambda a: a["symbol_fonts"][0].update({key: value}))
+    else:
+        replace = publisher.os.replace
+        calls = 0
+
+        def fail(source, destination):
+            nonlocal calls
+            calls += 1
+            if calls == 3:
+                raise OSError("accuracy rollback")
+            return replace(source, destination)
+        monkeypatch.setattr(publisher.os, "replace", fail)
+    with pytest.raises((ValueError, OSError)):
+        publisher.publish(f.root, f.run, reviewed=True, part=part)
+    for name, value in before.items():
+        if not str(name).startswith("outputs"):
+            assert (f.root / name).read_bytes() == value
+    assert not any((f.root / "figures/02_forecast_accuracy").glob("*"))

@@ -299,7 +299,22 @@ python scripts/audit_inputs.py --workspace "absolute-path-to-original-parent"
 
 The audit reconciles all four CSVs with the hashed working workbook, compares the two forecast tabs with the original workbook, checks archived DDHQ call identifiers/timestamps and shares, and validates all three adapters.
 
-Verification covers scoring and data validation, snapshot switching, fresh notebook kernels, preserved run directories, and expected execution failures. The scorecard notebook is implemented; the forecast-accuracy and trading-volume notebooks remain outlines. The synthetic snapshot supplies software test data.
+Verification covers scoring and data validation, snapshot switching, fresh notebook kernels, preserved run directories, and expected execution failures. The scorecard and forecast-accuracy notebooks are implemented; the trading-volume notebook remains an outline. The synthetic snapshot supplies software test data.
+
+## Forecast-accuracy execution and publication
+
+Notebook 02 uses `load_context("02_forecast_accuracy")` and the same explicit snapshot and preserved-run mechanism. It keeps the 35/15/11 forecast-defined samples separate from scoring eligibility. All contrasts use paired eligible races and equal weights; vote-share eligibility is separate. The primary-only sign-flip analysis enumerates nonzero-pair signs, assuming independent symmetric differences. Paired bootstrap sensitivities use 10,000 replicates and seed 20261104. Calibration and model-conditional power use 20,000 draws, seed 20261105, and latent Gaussian correlations 0, 0.1, 0.25, and 0.5. This parameter is not binary outcome correlation. Numerical helper definitions remain in tagged notebook cells and require no additional dependency.
+
+Each run stores numerical tables under `tables/02_forecast_accuracy/` and PNGs under `figures/02_forecast_accuracy/`. Plotted CSVs identify the snapshot and synthetic status. The notebook contains the editable chart source and executed numerical tables. Real vote-share results are unavailable until a new validated snapshot supplies completeness and source-specific target compatibility. Synthetic complete execution verifies that branch without supplying election findings.
+
+The publisher accepts `--part 01_congress_scorecard` (default) or `--part 02_forecast_accuracy`. Python entry points `prepare_publication(root, run, *, part="01_congress_scorecard")` and `publish(root, run, *, reviewed=False, part="01_congress_scorecard")` accept the same selection. Validation and promotion operate only on that part. Numerical and visual review is required before `--reviewed`; synthetic runs remain unpublishable. Historical provenance for the other part continues to describe its original run and is not rewritten when shared code changes.
+
+Forecast-accuracy graphics use VoteHub as the display name; the captured version remains Complete and its Kalshi inputs remain disclosed. Greek ρ is drawn as a standalone symbol with Matplotlib's bundled DejaVu Sans, while surrounding text retains the selected Franklin Gothic or Barlow font. The exact symbol-font filename, SHA-256, character, and role are recorded in analysis and publication provenance. Lint permits only that standalone character from the resolved bundled font, and publication validates its metadata. No font download or additional dependency is required.
+
+```powershell
+python scripts/run_notebooks.py --snapshot ddhq-20261104-222052-est
+python scripts/publish_scorecard.py --run outputs/ddhq-20261104-222052-est/<run-id> --part 02_forecast_accuracy --reviewed
+```
 
 ## Senate caucus follow-up
 

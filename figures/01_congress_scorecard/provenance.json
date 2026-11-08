@@ -2,7 +2,7 @@
   "snapshot": "ddhq-20261104-222052-est",
   "synthetic": false,
   "structural_baseline": "29d4965",
-  "run_id": "20261108T054216194524Z-4f7d091d",
+  "run_id": "20261108T200656569113Z-44831f73",
   "review": {
     "numerical_and_visual_review_confirmed": true,
     "method": "Explicit --reviewed operator attestation; not automated visual approval"
@@ -101,14 +101,14 @@
     "src/congress_scorecard/__init__.py": "581291a6fab41b27d29f9ebb2e5256657eb7b8e2bbc402280b057ba1502c3f38",
     "src/congress_scorecard/runtime.py": "5ee115bf11bb55b6056e79570d792afebc3914c1f50f77bdef5e8ec1bab3d95f",
     "src/congress_scorecard/runner.py": "70d4d85fc1d1dd22bb53c04480305f75af989603909504ed8250efdeb275bf2b",
-    "src/congress_scorecard/plotting.py": "fcb92f1206784a787346f4797e6d6c3307bbd56a454dd4ffe08ecba59489679f",
-    "src/congress_scorecard/chart_lint.py": "250225dbf8e5d8aa5038cb0b42d7a5607beb2e11947dfff67488771e58b8ed8f",
+    "src/congress_scorecard/plotting.py": "a029cd9dc1d780ce7af5486685234d2e601646ed45fb3fd46a320f78b6cfaf8b",
+    "src/congress_scorecard/chart_lint.py": "b1be695265179ac00db3dfcebd8df9db10dd475cb6b4961d3a582f986a974c68",
     "scripts/build_initial_snapshots.py": "c09f3e3f6e216e6986b8144c2041b3d55b3403197c542da4e9bb812484d17748",
     "scripts/audit_inputs.py": "5877a1cfff358ed927549b388dbab2e92a41970ef7875045b12470e33cb6cc77",
     "scripts/validate_inputs.py": "419b741e1cf850bfb1efd2aa06de3cdf588e19629d3f000eb202f8c2eeac4f0b",
     "scripts/run_notebooks.py": "ec1fc8e6e0b65cf91cbddaad0723b28e40b8e1cd605966829a55cc67febd39c1",
     "scripts/render_smoke.py": "56de5af2b638cd45c237feccd3afeffcd4187d85a7b44111ba3560af958477f1",
-    "scripts/publish_scorecard.py": "989ae513135c43e4604939bd0b2c7f537d247839e51659b9b65b2abaa47f724c",
+    "scripts/publish_scorecard.py": "e0df1c7709ae7e48f889d9021e6cde73bd09e69f897f31fd2cc5a7d734299655",
     "pyproject.toml": "d231461374b57d88386e78d62fbc7c5d66a5d963c74cbff9b8720bafd6bc91f6"
   },
   "dependencies": {
@@ -122,65 +122,81 @@
     "Pillow": "12.2.0"
   },
   "editable_source": "notebooks/01_congress_scorecard.ipynb",
-  "notebook_sha256": "90d89837d2a40402bed410188cb2fac8f7c91b3e6b5253d6207b7b1477e992be",
+  "notebook_sha256": "4a643959ac99b86351361e1531e0887617181afd12db1cda9555881675ae884d",
   "figures": [
     {
       "image": "01-correct-calls.png",
       "data": "plot_01-correct-calls.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "The Toss-Ups Separated the Forecasts",
+      "subtitle": "The differences in their overall records came from Toss-Ups and forecasts without a favorite."
     },
     {
       "image": "02-expected-wins.png",
       "data": "plot_02-expected-wins.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "Every Source Expected Fewer Non-Republican Wins",
+      "subtitle": "Bars sum each source's win probabilities across the same 33 resolved races; the yellow line marks 20 actual wins."
     },
     {
       "image": "03-biggest-surprises.png",
       "data": "plot_03-biggest-surprises.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "South Carolina Was Everyone's Biggest Surprise",
+      "subtitle": "Each percentage is the chance a source gave the eventual winner; lower means a bigger surprise."
     },
     {
       "image": "04-gap-mixed.png",
       "data": "plot_04-gap-mixed.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "Kalshi Consistently Gave Non-Republican Candidates Higher Odds",
+      "subtitle": "Five largest gaps versus the equal-weight Economist–VoteHub average; positive gaps mean higher odds."
     },
     {
       "image": "05-gap-votehub.png",
       "data": "plot_05-gap-votehub.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "Kalshi Was Closer in Three Major VoteHub Disagreements",
+      "subtitle": "Among the five widest gaps, Louisiana favored VoteHub and Mississippi was uncalled; the other three outcomes favored Kalshi."
     },
     {
       "image": "06-gap-economist.png",
       "data": "plot_06-gap-economist.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "Kalshi Was Closer in Four of Five Major Disagreements",
+      "subtitle": "Nebraska was the lone exception favoring The Economist among the five races with the widest probability gaps."
     },
     {
       "image": "07-house-control.png",
       "data": "plot_07-house-control.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "House Control Offered Little Separation Between Sources",
+      "subtitle": "The probability forecasts converged on the winning party, while Cook reached the same conclusion through its ratings."
     },
     {
       "image": "08-cook-rating-outcomes.png",
       "data": "plot_08-cook-rating-outcomes.csv",
-      "lint_passed": true
+      "lint_passed": true,
+      "title": "Democrats Won All Six Resolved Toss-Ups",
+      "subtitle": "South Carolina was Cook's lone directional miss; its Toss-Up ratings did not pick a side."
     }
   ],
   "artifact_hashes": {
-    "01-correct-calls.png": "79dcaf05b11abe22a9ccdc66721ec5afa8f71c8d909eea3cbca6a294792578d1",
+    "01-correct-calls.png": "e82d65f39416a12b8c52171a1907554bcd6286d45855860b8c3eb944b3090f92",
     "plot_01-correct-calls.csv": "ae58f8b2a94e44df921c10c3849e60b67915571d81f9a18daa6993c032b6e194",
-    "02-expected-wins.png": "92931a3340e008f968adc1d3554d9921afe1000d35e5560b7f2a2826dc547469",
+    "02-expected-wins.png": "c38d246e337661959ee18443b77edb03dc3fb7a1fea658e7c4aba3061ab9e635",
     "plot_02-expected-wins.csv": "359c0a4d515fdf2f75758c7807384275294d5a0a74c8e268ee4d0d5f4bff76f5",
-    "03-biggest-surprises.png": "7b807073698893a691a11555fa9f7867b38648eb50d1a231856a44b424b5964a",
+    "03-biggest-surprises.png": "bc65d3a08e67d73b00cca2e7cc07ebd4dbfad53fa2ea522f1c4f6e2c7ea1dbde",
     "plot_03-biggest-surprises.csv": "cc1a9a4fd16628ac8cf38b1b1bbcb30dfec2a2f79543965e7ec62e16b9c59c8f",
-    "04-gap-mixed.png": "4afad7e884789566e1bfb86203f43f0ba238e68e9fb9757b28c8ded56e3279da",
+    "04-gap-mixed.png": "880bc753d4b531e293e9edc059ddd131a54e0c8883608e94bccb61f07f8b824a",
     "plot_04-gap-mixed.csv": "52372ab12e4623c5c91343aa3783ec7bf4544fe4cf1b163574487530ddbcb178",
-    "05-gap-votehub.png": "a4719c9107ba91ee9189f9b9d915d15c1d5a8e40e84df95492481d3afce00553",
+    "05-gap-votehub.png": "dcf990e78f2bb4e7d9c746268bbb0d868218f29e148d7db48a7c403e95894f0c",
     "plot_05-gap-votehub.csv": "a300c205661fbdf247209fb76121c76a951000b0e56d4322d3f42c2bac1d4ec9",
-    "06-gap-economist.png": "13b7c0396ad15610b664e50c666220808d3cf3047871700bbb34db4f5b99e8d4",
+    "06-gap-economist.png": "4bf17016e6d91fbaa776b084a802f9f5d2e060a5262feb1dc9556a108912378f",
     "plot_06-gap-economist.csv": "38d5048874de51c5d33c43e52f72e754518a1f48eaae49164acb66b85106244f",
-    "07-house-control.png": "ff62718594c51a878939b8fc1f3f05beea43c248fedeebdbb0ecb068bf086b33",
+    "07-house-control.png": "4611f0a87c5b5721a984321c4466d89c3e3b51d2093cce736fe7502a73e86c5f",
     "plot_07-house-control.csv": "e398587ff7c2cecf962f9fd89becd5dcf8f616449dd22135cb294cce0c47da76",
-    "08-cook-rating-outcomes.png": "8a1b9979708d36145efdb221020f4064ce4b06c1a388b50e05b872e9123302ef",
+    "08-cook-rating-outcomes.png": "b443674a62901a8419cb8bd80768d0b8ea607909fc9f29e73ee4bd8c16b989c5",
     "plot_08-cook-rating-outcomes.csv": "cf2a37041ec40b2bd6a71c54f8b92786f91bb4a55ece609cf947a819d8178c21"
   }
 }

@@ -18,6 +18,7 @@ from congress_scorecard.plotting import source_colors
 PART = "01_congress_scorecard"
 NOTEBOOK = f"notebooks/{PART}.ipynb"
 PUBLICATION = f"figures/{PART}"
+PARTS = (PART, "02_forecast_accuracy")
 
 
 def read_json(path):
@@ -49,7 +50,10 @@ def source_hashes(root):
     return {p.relative_to(root).as_posix(): sha256(p) for p in paths}
 
 
-def prepare_publication(root, run):
+def prepare_publication(root, run, *, part=PART):
+    require(part in PARTS, "Unsupported publication part")
+    notebook_name = f"notebooks/{part}.ipynb"
+    publication = f"figures/{part}"
     manifest = read_json(run / "run.json")
     require(manifest["status"] == "succeeded", "Run did not succeed")
     require(manifest["synthetic"] is False, "Synthetic runs cannot be published")
@@ -61,13 +65,13 @@ def prepare_publication(root, run):
     for name, digest in inputs.hashes.items():
         require(sha256(root / name) == digest, f"Input changed: {name}")
     require(manifest["source_hashes"] == source_hashes(root), "Stale source hashes; rerun first")
-    records = [r for r in manifest["notebooks"] if r["name"] == f"{PART}.ipynb"]
+    records = [r for r in manifest["notebooks"] if r["name"] == f"{part}.ipynb"]
     require(len(records) == 1 and records[0]["status"] == "succeeded",
             "Successful scorecard notebook missing")
-    notebook_path = run / NOTEBOOK
+    notebook_path = run / notebook_name
     notebook = nbformat.read(notebook_path, as_version=4)
     nbformat.validate(notebook)
-    current = nbformat.read(root / NOTEBOOK, as_version=4)
+    current = nbformat.read(root / notebook_name, as_version=4)
     require([(c.cell_type, c.source) for c in notebook.cells] ==
             [(c.cell_type, c.source) for c in current.cells], "Notebook source changed; rerun first")
     code = [c for c in notebook.cells if c.cell_type == "code" and c.source.strip()]
@@ -76,12 +80,12 @@ def prepare_publication(root, run):
             "Notebook contains unexecuted code")
     require(not any(o.output_type == "error" for c in code for o in c.outputs),
             "Notebook contains error outputs")
-    analysis = read_json(run / f"tables/{PART}/analysis-provenance.json")
+    analysis = read_json(run / f"tables/{part}/analysis-provenance.json")
     require(analysis["snapshot"] == inputs.snapshot_id and analysis["synthetic"] is False,
             "Analysis snapshot mismatch")
     require(analysis["input_hashes"] == inputs.hashes, "Analysis input mismatch")
     require(analysis["graphics_assets"] == manifest["graphics_assets"], "Graphics asset mismatch")
-    require(analysis["editable_source"] == NOTEBOOK, "Unexpected editable source")
+    require(analysis["editable_source"] == notebook_name, "Unexpected editable source")
     for chamber in ("senate", "house"):
         key = f"{chamber}_timestamp"
         require(analysis[key] == inputs.manifest[key], f"{chamber} timestamp mismatch")
@@ -89,10 +93,10 @@ def prepare_publication(root, run):
     names = figure_names(figures)
     require(all(r["lint_passed"] is True for r in figures), "A chart did not pass lint")
     require(set(analysis["artifact_hashes"]) == names, "Artifact hash list mismatch")
-    files = {NOTEBOOK: notebook_path.read_bytes()}
+    files = {notebook_name: notebook_path.read_bytes()}
     for name in sorted(names):
         directory = "figures" if name.endswith(".png") else "tables"
-        path = run / directory / PART / name
+        path = run / directory / part / name
         require(sha256(path) == analysis["artifact_hashes"][name], f"Artifact changed: {name}")
         if directory == "figures":
             with Image.open(path) as image:
@@ -106,7 +110,7 @@ def prepare_publication(root, run):
             for row in reader:
                 require(row["snapshot"] == inputs.snapshot_id and row["synthetic"] == "False",
                         f"CSV snapshot mismatch: {name}")
-        files[f"{PUBLICATION}/{name}"] = path.read_bytes()
+        files[f"{publication}/{name}"] = path.read_bytes()
     provenance = {
         "snapshot": inputs.snapshot_id, "synthetic": False,
         "structural_baseline": "29d4965", "run_id": run.name,
@@ -118,10 +122,23 @@ def prepare_publication(root, run):
         "qualifications": inputs.diagnostics["qualifications"],
         "source_colors": source_colors(), "neutral_color": "#80C2FC", "highlight_color": "#EEEAAC",
         "graphics_assets": manifest["graphics_assets"], "source_hashes": manifest["source_hashes"],
-        "dependencies": manifest["dependencies"], "editable_source": NOTEBOOK,
+        "dependencies": manifest["dependencies"], "editable_source": notebook_name,
         "notebook_sha256": sha256(notebook_path), "figures": figures,
         "artifact_hashes": analysis["artifact_hashes"],
     }
+    if part == "02_forecast_accuracy":
+        provenance["settings"] = analysis["settings"]
+        provenance["primary"] = analysis["primary"]
+        provenance["primary_sign_flip"] = analysis["primary_sign_flip"]
+        symbols = analysis.get("symbol_fonts")
+        from matplotlib import get_data_path
+        from matplotlib.font_manager import FontProperties
+        symbol_path = Path(get_data_path()) / "fonts/ttf/DejaVuSans.ttf"
+        expected = [{"filename": symbol_path.name,
+                     "family": FontProperties(fname=str(symbol_path)).get_name(),
+                     "sha256": sha256(symbol_path), "characters": ["ρ"], "role": "rho_symbol"}]
+        require(symbols == expected, "Unexpected symbol font provenance")
+        provenance["symbol_fonts"] = symbols
     # Omit machine-specific execution fields; every published reference is portable.
     portable = json.dumps(provenance, indent=2, ensure_ascii=False) + "\n"
     def local_path(value):
@@ -134,23 +151,25 @@ def prepare_publication(root, run):
         )
 
     require(not local_path(provenance), "Provenance contains a machine-specific path")
-    files[f"{PUBLICATION}/provenance.json"] = portable.encode("utf-8")
+    files[f"{publication}/provenance.json"] = portable.encode("utf-8")
     return files
 
 
-def publish(root, run, *, reviewed=False):
+def publish(root, run, *, reviewed=False, part=PART):
+    require(part in PARTS, "Unsupported publication part")
+    publication = f"figures/{part}"
     require(reviewed, "Pass --reviewed only after numerical and visual review")
     root, run = Path(root).resolve(), Path(run).resolve()
-    files = prepare_publication(root, run)
-    previous_path = root / PUBLICATION / "provenance.json"
+    files = prepare_publication(root, run, part=part)
+    previous_path = root / publication / "provenance.json"
     previous_names = figure_names(read_json(previous_path)["figures"]) if previous_path.exists() else set()
-    obsolete = {f"{PUBLICATION}/{name}" for name in previous_names} - files.keys()
+    obsolete = {f"{publication}/{name}" for name in previous_names} - files.keys()
     for name in files:
-        if name.startswith(PUBLICATION + "/") and name != f"{PUBLICATION}/provenance.json":
+        if name.startswith(publication + "/") and name != f"{publication}/provenance.json":
             require(not (root / name).exists() or Path(name).name in previous_names,
                     f"Publication would overwrite an unlisted file: {name}")
     affected = sorted(files.keys() | obsolete)
-    scratch = root.parent / "_scratch/part-2"
+    scratch = root.parent / "_scratch" / ("part-2" if part == PART else "part-3")
     scratch.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="publish-", dir=scratch) as temporary:
         staging = Path(temporary) / "staging"
@@ -194,10 +213,11 @@ def publish(root, run, *, reviewed=False):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", type=Path, required=True, help="One completed outputs/<snapshot>/<run-id> directory")
+    parser.add_argument("--part", choices=PARTS, default=PART, help="Notebook publication to promote")
     parser.add_argument("--reviewed", action="store_true", help="Confirm numerical and visual review is complete")
     args = parser.parse_args(argv)
     try:
-        count = publish(project_root(), args.run, reviewed=args.reviewed)
+        count = publish(project_root(), args.run, reviewed=args.reviewed, part=args.part)
     except Exception as error:
         print(f"PUBLICATION FAILED: {error}", file=sys.stderr)
         return 1

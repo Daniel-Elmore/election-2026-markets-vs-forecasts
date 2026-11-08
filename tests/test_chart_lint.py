@@ -43,6 +43,39 @@ def test_chart_lint_rejects_collisions_and_unreadable_image(chart, tmp_path):
     assert not lint_chart(chart, tmp_path / "missing.png")["passed"]
 
 
+@pytest.mark.parametrize("fallback", [False, True])
+def test_only_standalone_rho_uses_the_exact_bundled_symbol_font(monkeypatch, tmp_path, fallback):
+    import shutil
+    from matplotlib import font_manager, get_data_path
+    from matplotlib.font_manager import FontProperties
+    from congress_scorecard.chart_lint import lint_chart
+
+    if fallback:
+        original = font_manager.findfont
+        def without_franklin(family, *args, **kwargs):
+            if isinstance(family, str) and family.startswith("Franklin Gothic"):
+                raise ValueError("Unavailable for fallback verification")
+            return original(family, *args, **kwargs)
+        monkeypatch.setattr(font_manager, "findfont", without_franklin)
+        monkeypatch.setenv("TKC_FONT_DIR", str(tmp_path))
+    canvas = make_canvas("Checking a Greek symbol", subtitle="One approved symbol font.",
+                         source="Source: Software verification.")
+    bundled = Path(get_data_path()) / "fonts/ttf/DejaVuSans.ttf"
+    artist = canvas.fig.text(.5, .5, "ρ", fontproperties=FontProperties(fname=str(bundled)))
+    png = save_chart(canvas, "rho", out_dir=tmp_path)["png"]
+    assert lint_chart(canvas, png)["passed"]
+    artist.set_text("rho")
+    assert "Unexpected font family" in " ".join(lint_chart(canvas, png)["failures"])
+    artist.set_text("ρ")
+    serif = bundled.with_name("DejaVuSerif.ttf")
+    artist.set_fontproperties(FontProperties(fname=str(serif)))
+    assert "Unexpected font family" in " ".join(lint_chart(canvas, png)["failures"])
+    copied = tmp_path / "DejaVuSans.ttf"
+    shutil.copyfile(bundled, copied)
+    artist.set_fontproperties(FontProperties(fname=str(copied)))
+    assert "Unexpected font family" in " ".join(lint_chart(canvas, png)["failures"])
+
+
 def test_smoke_saves_lint_and_returns_failure(tmp_path, monkeypatch):
     script = project_root() / "scripts/render_smoke.py"
     main = runpy.run_path(str(script))["main"]

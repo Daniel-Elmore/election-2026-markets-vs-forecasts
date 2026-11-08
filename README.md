@@ -42,7 +42,9 @@ Replace `<run-id>` with the successful runner's directory name. `--reviewed` con
 | 2 | [Forecast accuracy](notebooks/02_forecast_accuracy.ipynb) | Proper scores, paired comparisons, calibration, and vote-share error |
 | 3 | [Kalshi trading volume](notebooks/03_kalshi_trading_volume.ipynb) | Volume concentration and how forecast comparisons change with volume |
 
-The Congress scorecard notebook contains the executed general-audience analysis and figures. The forecast-accuracy and trading-volume notebooks remain outlines. The [analysis plan](docs/analysis-plan.md) defines the scoring rules and comparisons. The [data guide](data/README.md) describes the recorded inputs and their limitations.
+The Congress scorecard and forecast-accuracy notebooks contain executed analyses and figures. Forecast accuracy leads with the paired Kalshi-versus-mixed-mean Brier contrast, with conditional uncertainty and dependence diagnostics. Real vote-share comparisons remain unavailable pending completeness and target-compatibility evidence. The trading-volume notebook remains an outline. The [analysis plan](docs/analysis-plan.md) defines the scoring rules and comparisons. The [data guide](data/README.md) describes the recorded inputs and their limitations.
+
+To publish a reviewed forecast-accuracy run, use `python scripts/publish_scorecard.py --run outputs/ddhq-20261104-222052-est/<run-id> --part 02_forecast_accuracy --reviewed`. Omitting `--part` retains Congress scorecard publication. Each command promotes only the selected notebook and its figures, plotted CSVs, and provenance.
 
 ## License
 

@@ -24,11 +24,15 @@ def lint_chart(canvas, png):
     margin_y = canvas.H * (.12 if (canvas.W, canvas.H) == (1080, 1920) else .05)
     boxes = []
     allowed_fonts = {font_properties(role).get_name() for role in ("body", "headline", "emphasis")}
+    from matplotlib import get_data_path
+    symbol_font = (Path(get_data_path()) / "fonts/ttf/DejaVuSans.ttf").resolve()
     for artist in canvas.fig.findobj(match=Text):
         text = artist.get_text().strip()
         if not text or not artist.get_visible():
             continue
-        if artist.get_fontproperties().get_name() not in allowed_fonts:
+        font_file = artist.get_fontproperties().get_file()
+        approved_symbol = text == "ρ" and font_file and Path(font_file).resolve() == symbol_font
+        if artist.get_fontproperties().get_name() not in allowed_fonts and not approved_symbol:
             failures.append(f"Unexpected font family: {text!r}.")
         box = artist.get_window_extent(renderer)
         if (box.x0 < margin_x - 2 or box.x1 > canvas.W - margin_x + 2
