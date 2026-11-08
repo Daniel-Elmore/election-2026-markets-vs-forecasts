@@ -1,3 +1,10 @@
 * text=auto eol=lf
 /data/** -text -whitespace
 *.png -text
+
+# Publication provenance hashes exact source and artifact bytes.
+/src/**/*.py -text whitespace=cr-at-eol
+/scripts/*.py -text whitespace=cr-at-eol
+/pyproject.toml -text whitespace=cr-at-eol
+/notebooks/*.ipynb -text whitespace=cr-at-eol
+/figures/** -text -whitespace

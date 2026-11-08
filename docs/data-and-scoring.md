@@ -230,6 +230,22 @@ python scripts/run_notebooks.py --snapshot synthetic-complete
 
 Confirm all notebook records succeeded, `code_cells` is positive for each notebook, and generated tables/figures contain the chosen snapshot label and coverage. Current outlines have zero code cells and are marked `outline_only` with run-level `integration_status="outlines_only"`. Their execution verifies the runner. The tests separately execute notebooks that import the shared context, switch snapshots, export coverage and prove kernel isolation.
 
+## Publishing a reviewed scorecard run
+
+`python scripts/run_notebooks.py --snapshot <snapshot>` creates a fresh run and prints its output directory. It never replaces the release notebook or `figures/01_congress_scorecard/`. Keep the desired run directory; do not combine artifacts from different runs.
+
+Before publication, reconcile headlines, rankings, exclusions, and plotted marks against the exported rows. Inspect every graphic at native, intended display, and thumbnail sizes, and confirm chart lint passed. Review qualifications, snapshot identifiers, chamber timestamps, and preliminary-result gates. Both approved font configurations have automated rendering checks; visual review remains a separate human or agent task.
+
+```powershell
+python scripts/publish_scorecard.py --run outputs/ddhq-20261104-222052-est/<run-id> --reviewed
+```
+
+The command requires an explicit numerical-and-visual-review attestation. It accepts only successful non-synthetic runs with an executed scorecard notebook matching the current notebook source. It checks the snapshot manifest, current input and source hashes, error-free executed cells, timestamps, chart lint records, PNG dimensions, CSV snapshot labels, and exact PNG/CSV hashes recorded in the run's `analysis-provenance.json`. Changed code or inputs require a fresh execution and review. The command does not independently establish scientific correctness or visual approval.
+
+Validation completes before publication changes. Replacements and backups are staged in the parent workspace's `_scratch/part-2/`. A replacement failure restores the prior managed files; the command returns a nonzero exit code. A successful promotion updates the executed notebook and the selected run's listed PNGs, CSVs, and `provenance.json`. Only superseded artifacts listed in the previous publication manifest are removed. Unlisted files and historical run directories remain intact. Publication provenance records the run identifier, review attestation, snapshot, inputs, source code, dependencies, brand assets, and final artifact hashes without local machine paths.
+
+An existing run without artifact hashes predates this procedure: rerun and review it rather than publishing it. Current-partial may be promoted after review with its own coverage and withheld-control labels; the dated archive remains the selected release until an explicit promotion changes it. Synthetic-complete remains verification-only.
+
 ## TKC plotting
 
 The project provides a Matplotlib canvas, consistent source and party colors, direct-label bars, and PNG exports. Use the canvas axes for other chart forms.
@@ -283,4 +299,15 @@ python scripts/audit_inputs.py --workspace "absolute-path-to-original-parent"
 
 The audit reconciles all four CSVs with the hashed working workbook, compares the two forecast tabs with the original workbook, checks archived DDHQ call identifiers/timestamps and shares, and validates all three adapters.
 
-Verification covers scoring and data validation, snapshot switching, fresh notebook kernels, preserved run directories, and expected execution failures. The three analysis notebooks are currently outlines. The synthetic snapshot supplies software test data.
+Verification covers scoring and data validation, snapshot switching, fresh notebook kernels, preserved run directories, and expected execution failures. The scorecard notebook is implemented; the forecast-accuracy and trading-volume notebooks remain outlines. The synthetic snapshot supplies software test data.
+
+## Senate caucus follow-up
+
+`senate_caucus_seats` intentionally remains unavailable. Resolving all 35 race winners updates Candidate A winner scoring but cannot unlock caucus seat totals or Senate control. A separate approved methodology and implementation must establish:
+
+- Evidence-backed caucus coding for each independent candidate and treatment of conflicting or absent statements, including the rule 10 sensitivity scenarios.
+- The Democratic-caucus composition of holdover seats, with dated supporting evidence.
+- Treatment of unresolved and recount-affected races in forecast totals, partial actual totals, and final seat errors.
+- The control threshold and tie-breaking convention, plus the evidence gate for an actual control outcome. Expected seat sums are not control probabilities; those require a published chamber forecast or an approved joint outcome model.
+
+The issue register's caucus entry remains open. No caucus rules, evidence, or chamber calculations change as part of the publication workflow.

@@ -17,8 +17,8 @@ DPI = 100
 
 
 def source_colors():
-    return dict(zip(SOURCE_ORDER, ("#EEEAAC", "#58B887", "#B493DE",
-                                   "#F3A35C", BLUE, "#F05B61")))
+    return dict(zip(SOURCE_ORDER, ("#58B887", "#F05B61", "#B493DE",
+                                   BLUE, BLUE, BLUE)))
 
 
 def party_colors():

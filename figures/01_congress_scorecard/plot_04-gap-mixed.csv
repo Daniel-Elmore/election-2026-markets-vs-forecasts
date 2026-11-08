@@ -1,0 +1,6 @@
+race_id,candidate_a,candidate_b,cook_rating,kalshi_a_probability,comparator_a_probability,gap_pp,eligible,winner,paired_brier_difference,closer,absolute_gap_pp,snapshot,synthetic,senate_timestamp,house_timestamp
+KS-SEN,Adam Hamilton,Roger Marshall,Toss-Up,0.63,0.46199999999999997,16.800000000000004,True,Adam Hamilton,-0.15254400000000004,Kalshi,16.800000000000004,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+TX-SEN,James Talarico,Ken Paxton,Toss-Up,0.76,0.611,14.900000000000002,True,James Talarico,-0.09372100000000001,Kalshi,14.900000000000002,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+IA-SEN,Josh Turek,Ashley Hinson,Toss-Up,0.5,0.3775,12.25,True,Josh Turek,-0.13750625000000005,Kalshi,12.25,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+LA-SEN,Jamie Davis,Julia Letlow,Solid R,0.14,0.0305,10.950000000000001,True,Julia Letlow,0.018669750000000002,Mixed benchmark,10.950000000000001,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+AK-SEN,Mary Peltola,Dan Sullivan,Toss-Up,0.71,0.6035,10.649999999999993,False,,,Unavailable,10.649999999999993,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00

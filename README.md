@@ -23,6 +23,17 @@ Choose a results snapshot explicitly when validating or running notebooks. The c
 
 Runs preserve earlier outputs under outputs/<snapshot>/<run-id>/. Each run records inputs, source code, dependencies, and graphics asset hashes. See the [data and scoring guide](docs/data-and-scoring.md) for schemas, interfaces, new snapshot preparation, and execution options.
 
+## Publishing the Scorecard
+
+Execution preserves a new run under `outputs/`; it does not update the GitHub-facing notebook or published figures. Run the selected snapshot, review its results and every graphic, then promote that exact run:
+
+```powershell
+python scripts/run_notebooks.py --snapshot ddhq-20261104-222052-est
+python scripts/publish_scorecard.py --run outputs/ddhq-20261104-222052-est/<run-id> --reviewed
+```
+
+Replace `<run-id>` with the successful runner's directory name. `--reviewed` confirms that you completed numerical and visual review; automated checks do not establish visual approval. Publication validates the run and promotes its executed scorecard notebook, PNGs, plotted-data CSVs, and portable provenance together. Synthetic runs cannot be published. See the [publication procedure](docs/data-and-scoring.md#publishing-a-reviewed-scorecard-run) for checks and recovery behavior.
+
 ## Notebooks
 
 | Part | Notebook | Focus |
@@ -31,7 +42,7 @@ Runs preserve earlier outputs under outputs/<snapshot>/<run-id>/. Each run recor
 | 2 | [Forecast accuracy](notebooks/02_forecast_accuracy.ipynb) | Proper scores, paired comparisons, calibration, and vote-share error |
 | 3 | [Kalshi trading volume](notebooks/03_kalshi_trading_volume.ipynb) | Volume concentration and how forecast comparisons change with volume |
 
-The notebooks currently contain analysis outlines. The [analysis plan](docs/analysis-plan.md) defines the scoring rules and comparisons. The [data guide](data/README.md) describes the recorded inputs and their limitations.
+The Congress scorecard notebook contains the executed general-audience analysis and figures. The forecast-accuracy and trading-volume notebooks remain outlines. The [analysis plan](docs/analysis-plan.md) defines the scoring rules and comparisons. The [data guide](data/README.md) describes the recorded inputs and their limitations.
 
 ## License
 

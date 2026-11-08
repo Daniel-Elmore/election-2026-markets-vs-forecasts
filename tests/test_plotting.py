@@ -5,8 +5,10 @@ from congress_scorecard.plotting import party_colors, source_colors
 
 def test_stable_colors():
     colors = source_colors()
-    assert colors["kalshi"] == "#EEEAAC"
-    assert colors["economist"] == "#58B887"
+    assert colors["kalshi"] == "#58B887"
+    assert colors["economist"] == "#F05B61"
+    assert colors["votehub"] == "#B493DE"
+    assert colors["cook"] == colors["model_mean"] == colors["blend"] == "#80C2FC"
     assert colors["kalshi"] != colors["economist"]
     assert party_colors()["democrat"] == "#80C2FC"
 

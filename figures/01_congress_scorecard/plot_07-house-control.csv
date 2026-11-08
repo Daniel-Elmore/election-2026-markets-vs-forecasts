@@ -1,0 +1,4 @@
+source,winning_party,winner_probability,status,winner_probability_pct,snapshot,synthetic,senate_timestamp,house_timestamp
+Kalshi,Democratic,0.938,qualified,93.8,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+Economist,Democratic,0.94,qualified,94.0,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+VoteHub Complete,Democratic,0.892,qualified,89.2,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00

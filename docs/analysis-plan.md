@@ -125,6 +125,45 @@ Caveat: volume is cumulative at the snapshot. It does not measure liquidity at t
 - Coding independents as Democratic-caucusing is an assumption. Control results are shown under the recoding sensitivity in rule 10.
 - Significance tests and bootstrap intervals describe this election's races and depend on the stated assumptions. They do not establish how forecasters or markets perform across election environments.
 
+# Repo Structure
+The repo structure should stay as follows:
+congress-scorecard-2026/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── pyproject.toml
+├── requirements.lock
+├── notebooks/
+│   ├── 01_congress_scorecard.ipynb
+│   ├── 02_forecast_accuracy.ipynb
+│   └── 03_kalshi_trading_volume.ipynb
+├── data/
+│   ├── README.md
+│   ├── input/
+│   │   ├── senate_forecasts.csv
+│   │   ├── house_forecasts.csv
+│   │   ├── senate_results.csv
+│   │   └── house_results.csv
+│   └── provenance/
+│       └── sources.csv
+├── src/
+│   └── congress_scorecard/
+│       ├── __init__.py
+│       ├── data.py
+│       └── scoring.py
+├── scripts/
+│   └── prepare_data.py
+├── tests/
+│   ├── test_data.py
+│   └── test_scoring.py
+├── docs/
+│   └── analysis-plan.md
+├── figures/
+└── .github/
+    └── workflows/
+        └── checks.yml
+
+
 ## Sources
 
 - [VoteHub 2026 midterm methodology](https://votehub.com/wp-content/uploads/2026/05/2026_votehub_midterm_methodology.pdf)
