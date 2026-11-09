@@ -18,7 +18,7 @@ from congress_scorecard.plotting import source_colors
 PART = "01_congress_scorecard"
 NOTEBOOK = f"notebooks/{PART}.ipynb"
 PUBLICATION = f"figures/{PART}"
-PARTS = (PART, "02_forecast_accuracy")
+PARTS = (PART, "02_forecast_accuracy", "03_kalshi_trading_volume")
 
 
 def read_json(path):
@@ -139,6 +139,13 @@ def prepare_publication(root, run, *, part=PART):
                      "sha256": sha256(symbol_path), "characters": ["ρ"], "role": "rho_symbol"}]
         require(symbols == expected, "Unexpected symbol font provenance")
         provenance["symbol_fonts"] = symbols
+    if part == "03_kalshi_trading_volume" and "volume_unit_evidence" in analysis:
+        for key in ("volume_units", "volume_unit_evidence", "volume_cutoff", "recorded_volume"):
+            provenance[key] = analysis[key]
+        provenance["qualifications"] = [
+            note for note in provenance["qualifications"]
+            if not note.startswith("Currency volume labels and dollar cutoff unavailable")
+        ]
     # Omit machine-specific execution fields; every published reference is portable.
     portable = json.dumps(provenance, indent=2, ensure_ascii=False) + "\n"
     def local_path(value):
@@ -169,7 +176,7 @@ def publish(root, run, *, reviewed=False, part=PART):
             require(not (root / name).exists() or Path(name).name in previous_names,
                     f"Publication would overwrite an unlisted file: {name}")
     affected = sorted(files.keys() | obsolete)
-    scratch = root.parent / "_scratch" / ("part-2" if part == PART else "part-3")
+    scratch = root.parent / "_scratch" / f"part-{PARTS.index(part) + 2}"
     scratch.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="publish-", dir=scratch) as temporary:
         staging = Path(temporary) / "staging"

@@ -9,7 +9,7 @@ These CSVs are direct extracts from the four tabs of the working workbook named 
 | [Senate results](input/senate_results.csv) | Results | 35 | Candidates, recorded winners, estimated vote reporting, and reported vote shares and margins |
 | [House results](input/house_results.csv) | HouseResults | 1 | Reported national vote shares, called and undecided seats, and control derived from called seats |
 
-The CSVs preserve the workbook's headers, row order, values, and units. Formula cells contain their saved values. Empty cells are blank fields. Dates and timestamps use ISO 8601 and preserve the workbook's clock time. Probability and vote-share fields retain their original scales. Kalshi volume units still need source verification.
+The CSVs preserve the workbook's headers, row order, values, and units. Formula cells contain their saved values. Empty cells are blank fields. Dates and timestamps use ISO 8601 and preserve the workbook's clock time. Probability and vote-share fields retain their original scales. The project owner confirmed on November 9, 2026 that the frozen Kalshi volume column is in U.S. dollars. The original source field remains unidentified.
 
 ## Results status
 

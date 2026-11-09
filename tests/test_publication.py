@@ -245,7 +245,7 @@ def test_part_two_rejections_and_rollback(accuracy_publication, monkeypatch, cas
         edit_json(f.run / "tables" / part / "analysis-provenance.json",
                   lambda a: a["figures"][0].update(lint_passed=False))
     elif case == "unknown":
-        part = "03_kalshi_trading_volume"
+        part = "04_unknown"
     elif case.startswith("missing_symbol"):
         edit_json(f.run / "tables" / part / "analysis-provenance.json", lambda a: a.pop("symbol_fonts"))
     elif case in ("altered_symbol", "wrong_symbol_character", "wrong_symbol_role", "wrong_symbol_font"):
@@ -272,3 +272,31 @@ def test_part_two_rejections_and_rollback(accuracy_publication, monkeypatch, cas
         if not str(name).startswith("outputs"):
             assert (f.root / name).read_bytes() == value
     assert not any((f.root / "figures/02_forecast_accuracy").glob("*"))
+
+
+def test_volume_promotion_preserves_previous_parts(accuracy_publication):
+    import shutil
+
+    f = accuracy_publication
+    publisher.publish(f.root, f.run, reviewed=True, part="02_forecast_accuracy")
+    before = {
+        p: p.read_bytes() for p in (
+            f.root / publisher.NOTEBOOK, f.root / "notebooks/02_forecast_accuracy.ipynb",
+            *(f.root / publisher.PUBLICATION).iterdir(),
+            *(f.root / "figures/02_forecast_accuracy").iterdir(),
+        )
+    }
+    part = "03_kalshi_trading_volume"
+    notebook = f"notebooks/{part}.ipynb"
+    shutil.copyfile(f.root / publisher.NOTEBOOK, f.root / notebook)
+    shutil.copyfile(f.run / publisher.NOTEBOOK, f.run / notebook)
+    for directory in ("tables", "figures"):
+        shutil.copytree(f.run / directory / publisher.PART, f.run / directory / part)
+    edit_json(f.run / "tables" / part / "analysis-provenance.json",
+              lambda a: a.update(editable_source=notebook))
+    edit_json(f.manifest, lambda m: m["notebooks"].append(
+        {"name": f"{part}.ipynb", "status": "succeeded", "code_cells": 1}))
+    assert publisher.publish(f.root, f.run, reviewed=True, part=part) == 4
+    assert all(p.read_bytes() == content for p, content in before.items())
+    proof = publisher.read_json(f.root / f"figures/{part}/provenance.json")
+    assert proof["editable_source"] == notebook

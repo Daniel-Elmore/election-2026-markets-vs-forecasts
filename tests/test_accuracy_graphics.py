@@ -105,7 +105,7 @@ def test_complete_power_curves_collapse_and_share_scale(graphics):
                if t.get_text().startswith("Planned = Scored"))
     assert all(t.get_fontsize() == 28 for t in canvas.fig.findobj(match=Text)
                if t.get_text() in ("All Races", "Non-Solid"))
-    assert axes[0].yaxis.labelpad == pytest.approx(4 + 8 * .72)
+    assert axes[0].yaxis.labelpad == pytest.approx(axes[0].xaxis.labelpad)
     assert all(t.get_window_extent().y1 < axes[0].get_window_extent().y0 - 70
                for t in canvas.fig.findobj(match=Text) if t.get_text().startswith("Planned = Scored"))
 

@@ -49,7 +49,7 @@
       "finding": "Original capture does not identify last trade, midpoint, bid or ask, the volume field, or its units. Current API documentation distinguishes these fields, but cannot establish the meaning of an old manual record.",
       "source": "https://docs.kalshi.com/api-reference/market/get-market",
       "approved_exception": "Provisional scoring may use raw recorded probabilities and the explicit A/B-normalized sensitivity.",
-      "omission": "Currency labels and the dollar-denominated thin-market cutoff require unit verification. Recorded-unit shares, ranks, concentration and common relative weights remain available.",
+      "decision": "The project owner confirmed on November 9, 2026 that the frozen volume column is in U.S. dollars. Use USD labels and the under-$250,000 cutoff in the trading-volume analysis. The original Kalshi volume field remains unidentified.",
       "additional_contract_issue": "KY-SEN links to a Louisiana-named Kalshi URL. Its frozen note says link and volume confirmed as entered. Keep the recorded values and flag unresolved contract identity."
     },
     {

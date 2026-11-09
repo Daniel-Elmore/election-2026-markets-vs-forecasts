@@ -99,7 +99,7 @@ class Canvas:
             offset.set_fontproperties(body_font)
             offset.set_fontsize(label_size)
             offset.set_color(BLUE)
-        ax.xaxis.labelpad = 4 + 16 * self.scale * 72 / DPI
+        ax.xaxis.labelpad = ax.yaxis.labelpad = 4 + 16 * self.scale * 72 / DPI
         for spine in ax.spines.values():
             spine.set_visible(False)
         return ax
@@ -119,7 +119,10 @@ def make_canvas(title, *, subtitle, source, fmt="broadcast", logo_size="medium")
     margin_x = width * .05
     margin_y = height * (.12 if fmt == "portrait_9x16" else .05)
     top = height - margin_y
-    title_text = _wrap(fig, title, headline_font, 66 * scale, width - 2 * margin_x)
+    title_text = "\n".join(
+        _wrap(fig, line, headline_font, 66 * scale, width - 2 * margin_x)
+        for line in title.splitlines()
+    )
     headline = fig.text(margin_x / width, top / height, title_text, va="top",
                         color=WHITE, fontproperties=headline_font, fontsize=66 * scale * 72 / DPI)
     # Measure visible glyphs so the title/subtitle gap follows the artwork.

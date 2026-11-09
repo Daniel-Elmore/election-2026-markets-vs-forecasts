@@ -228,7 +228,7 @@ python scripts/validate_inputs.py --snapshot synthetic-complete
 python scripts/run_notebooks.py --snapshot synthetic-complete
 ```
 
-Confirm all notebook records succeeded, `code_cells` is positive for each notebook, and generated tables/figures contain the chosen snapshot label and coverage. Current outlines have zero code cells and are marked `outline_only` with run-level `integration_status="outlines_only"`. Their execution verifies the runner. The tests separately execute notebooks that import the shared context, switch snapshots, export coverage and prove kernel isolation.
+Confirm all notebook records succeeded, `code_cells` is positive for each notebook, and generated tables/figures contain the chosen snapshot label and coverage. Notebook outlines have zero code cells and are marked `outline_only` with run-level `integration_status="outlines_only"`. Their execution verifies the runner. The tests separately execute notebooks that import the shared context, switch snapshots, export coverage and prove kernel isolation.
 
 ## Publishing a reviewed scorecard run
 
@@ -286,7 +286,7 @@ The machine-readable issue register is `data/provenance/issues.json`. Current de
 - Known active recounts are deferred. Archived recount status remains unknown.
 - Rule 10's independent coding is retained as an unresolved methodology assumption, and caucus seats/control stay unavailable. No holdover constant or control tie convention has been invented. A campaign release contradicts Democratic-caucus coding for Osborn, Bodnar and Bengs. [Campaign statement](https://www.sethformontana.com/news/independent-candidates-seth-bodnar-dan-osborn-and-brian-bengs-put-the-caucus-question-to-rest)
 - Kalshi probability scoring is provisionally approved despite missing original price-measure and contract verification. KY-SEN links to a Louisiana-named URL, with a frozen note saying confirmed as entered. The issue is propagated through score qualifications.
-- Kalshi volume units remain unresolved. Recorded-unit shares, concentration and common relative weights can run. Currency labels and the dollar-denominated thin-market cutoff are withheld. Current API field definitions cannot establish which field was manually captured previously. [Kalshi market API](https://docs.kalshi.com/api-reference/market/get-market)
+- The project owner confirmed the frozen Kalshi volume column is in U.S. dollars on November 9, 2026. The trading-volume notebook uses those units for currency labels and its under-$250,000 cutoff. Historical snapshot manifests retain their original unit status. Current API field definitions cannot establish which field was manually captured previously. [Kalshi market API](https://docs.kalshi.com/api-reference/market/get-market)
 - Source-specific forecast publication times, retrieval timezone, captures and Economist model-update metadata are unavailable. Recorded row timestamps remain intact. VoteHub Complete is market-informed and no Legacy forecasts were collected.
 
 The frozen audit command requires the original parent-workspace artifacts.
@@ -299,7 +299,7 @@ python scripts/audit_inputs.py --workspace "absolute-path-to-original-parent"
 
 The audit reconciles all four CSVs with the hashed working workbook, compares the two forecast tabs with the original workbook, checks archived DDHQ call identifiers/timestamps and shares, and validates all three adapters.
 
-Verification covers scoring and data validation, snapshot switching, fresh notebook kernels, preserved run directories, and expected execution failures. The scorecard and forecast-accuracy notebooks are implemented; the trading-volume notebook remains an outline. The synthetic snapshot supplies software test data.
+Verification covers scoring and data validation, snapshot switching, fresh notebook kernels, preserved run directories, and expected execution failures. The three analysis notebooks are implemented. The synthetic snapshot supplies software test data.
 
 ## Forecast-accuracy execution and publication
 
@@ -307,7 +307,7 @@ Notebook 02 uses `load_context("02_forecast_accuracy")` and the same explicit sn
 
 Each run stores numerical tables under `tables/02_forecast_accuracy/` and PNGs under `figures/02_forecast_accuracy/`. Plotted CSVs identify the snapshot and synthetic status. The notebook contains the editable chart source and executed numerical tables. Real vote-share results are unavailable until a new validated snapshot supplies completeness and source-specific target compatibility. Synthetic complete execution verifies that branch without supplying election findings.
 
-The publisher accepts `--part 01_congress_scorecard` (default) or `--part 02_forecast_accuracy`. Python entry points `prepare_publication(root, run, *, part="01_congress_scorecard")` and `publish(root, run, *, reviewed=False, part="01_congress_scorecard")` accept the same selection. Validation and promotion operate only on that part. Numerical and visual review is required before `--reviewed`; synthetic runs remain unpublishable. Historical provenance for the other part continues to describe its original run and is not rewritten when shared code changes.
+The publisher accepts `--part 01_congress_scorecard` (default), `--part 02_forecast_accuracy`, or `--part 03_kalshi_trading_volume`. Python entry points `prepare_publication(root, run, *, part="01_congress_scorecard")` and `publish(root, run, *, reviewed=False, part="01_congress_scorecard")` accept the same selection. Validation and promotion operate only on that part. Numerical and visual review is required before `--reviewed`; synthetic runs remain unpublishable. Historical provenance for the other part continues to describe its original run and is not rewritten when shared code changes.
 
 Forecast-accuracy graphics use VoteHub as the display name; the captured version remains Complete and its Kalshi inputs remain disclosed. Greek ρ is drawn as a standalone symbol with Matplotlib's bundled DejaVu Sans, while surrounding text retains the selected Franklin Gothic or Barlow font. The exact symbol-font filename, SHA-256, character, and role are recorded in analysis and publication provenance. Lint permits only that standalone character from the resolved bundled font, and publication validates its metadata. No font download or additional dependency is required.
 

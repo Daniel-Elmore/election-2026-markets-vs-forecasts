@@ -1,0 +1,168 @@
+{
+  "snapshot": "ddhq-20261104-222052-est",
+  "synthetic": false,
+  "structural_baseline": "29d4965",
+  "run_id": "20261109T061347056425Z-d378a18c",
+  "review": {
+    "numerical_and_visual_review_confirmed": true,
+    "method": "Explicit --reviewed operator attestation; not automated visual approval"
+  },
+  "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
+  "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+  "snapshot_manifest": {
+    "schema_version": 1,
+    "snapshot_id": "ddhq-20261104-222052-est",
+    "synthetic": false,
+    "description": "Preserved preliminary results adapter",
+    "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
+    "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+    "caucus_analysis_approved": false,
+    "volume_units": null,
+    "kalshi_price_measure": null,
+    "qualifications": [
+      "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
+      "Currency volume labels and dollar cutoff unavailable pending unit verification.",
+      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+    ],
+    "approved_exceptions": [
+      "DDHQ district threshold of 218 may establish House control with evidence.",
+      "Provisional Kalshi scoring may use preserved recorded probabilities."
+    ],
+    "hashes": {
+      "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
+      "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
+      "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
+      "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
+      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
+    }
+  },
+  "input_hashes": {
+    "data/input/senate_forecasts.csv": "46f37d594e18c07a6ab6b46528ffd78e8c792175e3f86ff566fb222955e7f942",
+    "data/input/house_forecasts.csv": "25351dd48a982e3503d04efb7b62501e08766c9ac45c2d44b97f97237660a3b8",
+    "data/input/senate_results.csv": "fd69cd30c30cb834ba3ae9839b3b3c5175a7d948d945aeb5d143e0ed43803740",
+    "data/input/house_results.csv": "a93108a4750b51a2399f4a453a9c82e67bd1ef9a570709ef0859317f3b92f028",
+    "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
+    "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
+    "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
+    "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
+    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
+  },
+  "qualifications": [
+    "Preliminary results; eligibility varies by metric.",
+    "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
+    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+  ],
+  "source_colors": {
+    "kalshi": "#58B887",
+    "economist": "#F05B61",
+    "votehub": "#B493DE",
+    "cook": "#80C2FC",
+    "model_mean": "#80C2FC",
+    "blend": "#80C2FC"
+  },
+  "neutral_color": "#80C2FC",
+  "highlight_color": "#EEEAAC",
+  "graphics_assets": {
+    "logo": {
+      "filename": "tkc-logo.png",
+      "status": "available",
+      "sha256": "1b23f47cf4bed5fbd18dc0bcc759792d3d0f435caf4c805efb85896b19e8934d"
+    },
+    "fonts": {
+      "headline": {
+        "filename": "FRADMCN.TTF",
+        "family": "Franklin Gothic Demi Cond",
+        "sha256": "4ab0f4d87991cbda91a625369e2804c4fb88969cdb1e4bd83b6bf37d07cf9cfd",
+        "status": "available",
+        "fallback": false
+      },
+      "body": {
+        "filename": "FRAMDCN.TTF",
+        "family": "Franklin Gothic Medium Cond",
+        "sha256": "1861e0824e53ca60a04ea1bc7bdb159131448fec711ed079ebccbf645dd345d1",
+        "status": "available",
+        "fallback": false
+      },
+      "emphasis": {
+        "filename": "FRADMCN.TTF",
+        "family": "Franklin Gothic Demi Cond",
+        "sha256": "4ab0f4d87991cbda91a625369e2804c4fb88969cdb1e4bd83b6bf37d07cf9cfd",
+        "status": "available",
+        "fallback": false
+      }
+    }
+  },
+  "source_hashes": {
+    "src/congress_scorecard/transforms.py": "b9c949ca289c64aac64667de415971af65535152046f8facb5b87aee96a18bea",
+    "src/congress_scorecard/scoring.py": "c58718e8efb531181def489ab6367d6aebdd30c4bace700e9510e03906c00799",
+    "src/congress_scorecard/data.py": "53a319509534c75af42d5c942d6bf214cbf2067d9df80d7aa28ffd2bef05ea73",
+    "src/congress_scorecard/chambers.py": "d28b865d2be8eeca987e4dceec2df74d7ae692a3e713e3bb0e454d15b096505a",
+    "src/congress_scorecard/__init__.py": "581291a6fab41b27d29f9ebb2e5256657eb7b8e2bbc402280b057ba1502c3f38",
+    "src/congress_scorecard/runtime.py": "5ee115bf11bb55b6056e79570d792afebc3914c1f50f77bdef5e8ec1bab3d95f",
+    "src/congress_scorecard/runner.py": "70d4d85fc1d1dd22bb53c04480305f75af989603909504ed8250efdeb275bf2b",
+    "src/congress_scorecard/plotting.py": "6aa2244cfb3d98d78ebda203dc1786ea63973d3421ca7b40c0a54051d77cb661",
+    "src/congress_scorecard/chart_lint.py": "b1be695265179ac00db3dfcebd8df9db10dd475cb6b4961d3a582f986a974c68",
+    "scripts/build_initial_snapshots.py": "c09f3e3f6e216e6986b8144c2041b3d55b3403197c542da4e9bb812484d17748",
+    "scripts/audit_inputs.py": "5877a1cfff358ed927549b388dbab2e92a41970ef7875045b12470e33cb6cc77",
+    "scripts/validate_inputs.py": "419b741e1cf850bfb1efd2aa06de3cdf588e19629d3f000eb202f8c2eeac4f0b",
+    "scripts/run_notebooks.py": "ec1fc8e6e0b65cf91cbddaad0723b28e40b8e1cd605966829a55cc67febd39c1",
+    "scripts/render_smoke.py": "56de5af2b638cd45c237feccd3afeffcd4187d85a7b44111ba3560af958477f1",
+    "scripts/publish_scorecard.py": "2229ae4c857df84b5ef188834238b820ce8d9aa98479463e19490a7078446896",
+    "pyproject.toml": "d231461374b57d88386e78d62fbc7c5d66a5d963c74cbff9b8720bafd6bc91f6"
+  },
+  "dependencies": {
+    "congress-scorecard": "0.1.0",
+    "numpy": "2.4.0",
+    "pandas": "2.3.3",
+    "nbclient": "0.10.4",
+    "nbformat": "5.10.4",
+    "ipykernel": "7.1.0",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.2.0"
+  },
+  "editable_source": "notebooks/03_kalshi_trading_volume.ipynb",
+  "notebook_sha256": "53c42ef8142f61b17528687c83bcc993ccf6ac5b779e0786a69c6dc6f019ce81",
+  "figures": [
+    {
+      "image": "01-cook-ratings.png",
+      "data": "plot_01-cook-ratings.csv",
+      "lint_passed": true
+    },
+    {
+      "image": "02-largest-markets.png",
+      "data": "plot_02-largest-markets.csv",
+      "lint_passed": true
+    },
+    {
+      "image": "03-volume-surprise.png",
+      "data": "plot_03-volume-surprise.csv",
+      "lint_passed": true
+    },
+    {
+      "image": "04-gap-economist.png",
+      "data": "plot_04-gap-economist.csv",
+      "lint_passed": true
+    },
+    {
+      "image": "05-gap-mixed.png",
+      "data": "plot_05-gap-mixed.csv",
+      "lint_passed": true
+    }
+  ],
+  "artifact_hashes": {
+    "01-cook-ratings.png": "6be4cb360a7b7b13ac3aa10480ed89c6496a5a4f3701159c5b27e0e4ea1eba85",
+    "plot_01-cook-ratings.csv": "60a044f43b81cb5ad93efe9accae51c97ec7da864703ca072d839f198567c17b",
+    "02-largest-markets.png": "67783d7ae76b5f454a3577603e7dbd31fa4ed39bb7e976c7b7045172667eebba",
+    "plot_02-largest-markets.csv": "3f5814d94d55df032ba3c286159773e1b591594eb131977b48791d7857b5a98c",
+    "03-volume-surprise.png": "7a06fbb926d9321828052cc2d70bdd23582cf43b9ff9c2cb8b19624cc817f0b7",
+    "plot_03-volume-surprise.csv": "55784a0580288562d53a3e3d696e455c14062d425d06cd10bb75b158a90a9b44",
+    "04-gap-economist.png": "d0f4ba2fb7ced0005af9d4f8495fbb8bb5f9870ef1f40f7ac85a4faf535f8153",
+    "plot_04-gap-economist.csv": "4931b872afdda7b9daf419d336932020a7f32d67d4047ab978f0269b74699b84",
+    "05-gap-mixed.png": "98e3226ca206c0999508e750546c4e47f5d42f437d415ede68c983a7f11ba19c",
+    "plot_05-gap-mixed.csv": "5c98208ca67336e3f134fc1468d565c6ba9b185f0c12c2e6f0d0fc58fab37a87"
+  },
+  "volume_units": "USD",
+  "volume_unit_evidence": "Project owner confirmation, November 9, 2026",
+  "volume_cutoff": 250000,
+  "recorded_volume": 212163031
+}

@@ -95,22 +95,21 @@ House hit rates by direction: Likely D 424 / 441 = 96.1%, Likely R 433 / 443 = 9
 
 ## Part 3: Volume
 
-Kalshi_Total_Volume is the recorded cumulative trading volume in each race's market as of the snapshot; units await verification against the original source field. Shares are computed against the recorded sum across the 35 races, about $212.2 million. Volume is highly concentrated: TX-SEN alone holds 36.0%, the top three races (TX, MI, ME) hold 57.9%, and the 15 non-Solid races hold 96.5%. Eleven races have recorded volume under $250,000, all rated Solid. Volume is the market-specific dimension of the series. It measures cumulative trading activity and is not a measure of capital invested or of liquidity.
+Kalshi_Total_Volume is the recorded cumulative trading volume in each race's market as of the snapshot. The project owner confirmed the units are U.S. dollars. Shares use the $212,163,031 total across the 35 races. Volume is highly concentrated: TX-SEN alone holds 36.0%, the top three races (TX, MI, ME) hold 57.9%, and the 15 non-Solid races hold 96.5%. Volume is the market-specific dimension of the series. It measures cumulative trading activity and is not a measure of capital invested or of liquidity.
 
 ### General Audience
 
-1. **Where trading volume was.** Share of total volume in races where the market favorite won, in races where it lost, and in races with no market favorite (IA-SEN at 0.50).
-2. **Volume by Cook rating.** How much trading volume sat in Toss-Up, Lean, Likely and Solid races.
-3. **Concentration.** How much of the market's volume was one race (TX-SEN) and what that implies about what traders cared about.
+1. **Volume by Cook rating.** How much trading volume sat in Toss-Up, Lean, Likely and Solid races.
+2. **Concentration.** How much of the market's volume was one race (TX-SEN) and what that implies about what traders cared about.
 
 ### Statistics
 
-1. **Low-volume filter.** Rerun market scores excluding the 11 thin markets and flag any result that depends on them.
-2. **Volume-weighted scoring (secondary).** Weight each race's loss by w_i = V_i / sum of V, using Kalshi volume V_i. Apply the same weights to every source so the comparison stays fair.
-3. **Volume vs. accuracy (exploratory).** Spearman correlation between log volume and Kalshi's surprise (realized loss minus expected loss, p(1-p)). Raw volume against loss is confounded, because close races draw both volume and higher expected loss.
-4. **Volume vs. market-model gap (exploratory).** Whether the absolute gap between Kalshi and the Economist alone, and between Kalshi and the Economist/VoteHub average, narrows as volume rises. The average contains Kalshi information, and VoteHub's reliance on last-trade prices rises with liquidity, so the Economist-only gap is the cleaner version.
+3. **Low-volume filter.** Exclude markets with less than $250,000 in cumulative trading volume before matching to outcomes. Eleven races qualify in the frozen Senate field.
+4. **Volume-weighted scoring (secondary).** Weight each race's loss by w_i = V_i / sum of V, using Kalshi volume V_i. Apply the same weights to every source so the comparison stays fair.
+5. **Volume vs. accuracy (exploratory).** Spearman correlation between log volume and Kalshi's surprise (realized loss minus expected loss, p(1-p)). Raw volume against loss is confounded, because close races draw both volume and higher expected loss.
+6. **Volume vs. market-model gap (exploratory).** Whether the absolute gap between Kalshi and the Economist alone, and between Kalshi and the Economist/VoteHub average, narrows as volume rises. The average contains Kalshi information, and VoteHub's reliance on last-trade prices rises with liquidity, so the Economist-only gap is the cleaner version.
 
-Caveat: volume is cumulative at the snapshot. It does not measure liquidity at the time. Open interest and bid-ask spread were not captured.
+Volume is cumulative at the snapshot. The frozen data contain race-level totals only, so the amount traded on each outcome is unavailable. It does not measure liquidity at the time. Open interest and bid-ask spread were not captured.
 
 ## Limitations
 

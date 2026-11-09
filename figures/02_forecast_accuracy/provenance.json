@@ -2,7 +2,7 @@
   "snapshot": "ddhq-20261104-222052-est",
   "synthetic": false,
   "structural_baseline": "29d4965",
-  "run_id": "20261108T200656569113Z-44831f73",
+  "run_id": "20261109T055838987843Z-78a10263",
   "review": {
     "numerical_and_visual_review_confirmed": true,
     "method": "Explicit --reviewed operator attestation; not automated visual approval"
@@ -101,14 +101,14 @@
     "src/congress_scorecard/__init__.py": "581291a6fab41b27d29f9ebb2e5256657eb7b8e2bbc402280b057ba1502c3f38",
     "src/congress_scorecard/runtime.py": "5ee115bf11bb55b6056e79570d792afebc3914c1f50f77bdef5e8ec1bab3d95f",
     "src/congress_scorecard/runner.py": "70d4d85fc1d1dd22bb53c04480305f75af989603909504ed8250efdeb275bf2b",
-    "src/congress_scorecard/plotting.py": "a029cd9dc1d780ce7af5486685234d2e601646ed45fb3fd46a320f78b6cfaf8b",
+    "src/congress_scorecard/plotting.py": "6aa2244cfb3d98d78ebda203dc1786ea63973d3421ca7b40c0a54051d77cb661",
     "src/congress_scorecard/chart_lint.py": "b1be695265179ac00db3dfcebd8df9db10dd475cb6b4961d3a582f986a974c68",
     "scripts/build_initial_snapshots.py": "c09f3e3f6e216e6986b8144c2041b3d55b3403197c542da4e9bb812484d17748",
     "scripts/audit_inputs.py": "5877a1cfff358ed927549b388dbab2e92a41970ef7875045b12470e33cb6cc77",
     "scripts/validate_inputs.py": "419b741e1cf850bfb1efd2aa06de3cdf588e19629d3f000eb202f8c2eeac4f0b",
     "scripts/run_notebooks.py": "ec1fc8e6e0b65cf91cbddaad0723b28e40b8e1cd605966829a55cc67febd39c1",
     "scripts/render_smoke.py": "56de5af2b638cd45c237feccd3afeffcd4187d85a7b44111ba3560af958477f1",
-    "scripts/publish_scorecard.py": "e0df1c7709ae7e48f889d9021e6cde73bd09e69f897f31fd2cc5a7d734299655",
+    "scripts/publish_scorecard.py": "2229ae4c857df84b5ef188834238b820ce8d9aa98479463e19490a7078446896",
     "pyproject.toml": "d231461374b57d88386e78d62fbc7c5d66a5d963c74cbff9b8720bafd6bc91f6"
   },
   "dependencies": {
@@ -122,7 +122,7 @@
     "Pillow": "12.2.0"
   },
   "editable_source": "notebooks/02_forecast_accuracy.ipynb",
-  "notebook_sha256": "84bfae25254e94201be926f4971ea3af63b3094fc7e90ac8f13e27f65edd27f0",
+  "notebook_sha256": "1941dfe6b2e1cb9d05bd1e62dbe2e2fa2b71ecb10336e21a1d16a488addd43f7",
   "figures": [
     {
       "image": "01-primary-race-differences.png",
@@ -196,7 +196,7 @@
     "plot_07-longshot-pattern.csv": "3658c11f420b506b3ab29c00bc819a69db075587ebb41ad70909c43e99369811",
     "08-cook-mappings.png": "dd424a2039a51e6283be387f3ac63ac725fbcebd6645396143ff2af6b6d093e0",
     "plot_08-cook-mappings.csv": "0f5b5cf6bbf020b0fa2954ba17d1e84f79fcc6e70c6adb0882b1487a4775af6e",
-    "09-power-dependence.png": "7a50a5cd491bad8ee4e3e6769927e6a745ebb3e6449521066b4da09092cfb51c",
+    "09-power-dependence.png": "47d6b117f3daf42a843d0c78d1e83c293fcfff01ae70601577443c1d7ccf8694",
     "plot_09-power-dependence.csv": "9eede87f855a1fe467c864846a6b6e27db95af10acb917cca4703a229f96eadc"
   },
   "settings": {
