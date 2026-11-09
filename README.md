@@ -26,8 +26,6 @@ The published analyses use the November 4 DDHQ archive (`ddhq-20261104-222052-es
 | Forecast accuracy | [Brier scores, paired comparisons, calibration, and simulation](notebooks/02_forecast_accuracy.ipynb) | [Accuracy figures](figures/02_forecast_accuracy/) |
 | Kalshi trading volume | [Volume concentration and sensitivity to a $250,000 cutoff](notebooks/03_kalshi_trading_volume.ipynb) | [Trading-volume figures](figures/03_kalshi_trading_volume/) |
 
-![Chart comparing trading volume in the largest Kalshi Senate markets in U.S. dollars](figures/03_kalshi_trading_volume/02-largest-markets.png)
-
 ## Data and limitations
 
 The frozen inputs cover Kalshi, The Economist, and VoteHub Complete forecasts, Cook Political Report race ratings, and DDHQ results. Scoring coverage varies by metric and snapshot. Real vote-share comparisons require documented completeness and compatibility with the forecast target. See the [data inventory](data/README.md), [scoring guide](docs/data-and-scoring.md), and [analysis plan](docs/analysis-plan.md).
