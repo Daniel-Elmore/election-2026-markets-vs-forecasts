@@ -1,6 +1,6 @@
 race_id,candidate_a,candidate_b,cook_rating,kalshi_a_probability,comparator_a_probability,gap_pp,eligible,winner,paired_brier_difference,closer,absolute_gap_pp,snapshot,synthetic,senate_timestamp,house_timestamp
-TX-SEN,James Talarico,Ken Paxton,Toss-Up,0.76,0.52,24.0,True,James Talarico,-0.1728,Kalshi,24.0,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-IA-SEN,Josh Turek,Ashley Hinson,Toss-Up,0.5,0.29,21.000000000000004,True,Josh Turek,-0.2541,Kalshi,21.000000000000004,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-KS-SEN,Adam Hamilton,Roger Marshall,Toss-Up,0.63,0.44,19.0,True,Adam Hamilton,-0.17670000000000005,Kalshi,19.0,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-OH-SEN,Sherrod Brown,Jon Husted,Toss-Up,0.71,0.53,17.999999999999993,True,Sherrod Brown,-0.13679999999999998,Kalshi,17.999999999999993,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-NE-SEN,Dan Osborn,Pete Ricketts,Lean R,0.3,0.14,15.999999999999998,True,Pete Ricketts,0.07039999999999999,Economist,15.999999999999998,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+TX-SEN,James Talarico,Ken Paxton,Toss-Up,0.76,0.52,24.0,True,James Talarico,-0.1728,Kalshi,24.0,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+IA-SEN,Josh Turek,Ashley Hinson,Toss-Up,0.5,0.29,21.000000000000004,True,Josh Turek,-0.2541,Kalshi,21.000000000000004,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+KS-SEN,Adam Hamilton,Roger Marshall,Toss-Up,0.63,0.44,19.0,True,Adam Hamilton,-0.17670000000000005,Kalshi,19.0,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+OH-SEN,Sherrod Brown,Jon Husted,Toss-Up,0.71,0.53,17.999999999999993,True,Sherrod Brown,-0.13679999999999998,Kalshi,17.999999999999993,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+NE-SEN,Dan Osborn,Pete Ricketts,Lean R,0.3,0.14,15.999999999999998,True,Pete Ricketts,0.07039999999999999,Economist,15.999999999999998,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00

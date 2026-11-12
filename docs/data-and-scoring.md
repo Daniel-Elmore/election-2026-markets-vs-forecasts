@@ -110,15 +110,16 @@ Bootstrap, sign-flip, copula diagnostics and their interpretation belong to Part
 
 ## Results snapshots and validation
 
-The release provides three explicit selections.
+The release provides four explicit selections.
 
 | Snapshot | Senate | House | Purpose |
 | --- | --- | --- | --- |
+| `ddhq-20261112-manual` | MS updated November 12, 34 verified calls; other Senate rows retain November 4 data | November 12 observation, 255 D / 168 R / 12 undecided; explicit DDHQ control projection; preliminary RCP shares | Latest manually updated release |
 | `current-partial` | November 4 at 22:05 Eastern, 33 verified calls | Frozen November 6 at 20:25 Eastern, 254 D / 161 R / 20 undecided | Preserve current recorded inputs |
 | `ddhq-20261104-222052-est` | Same November 4 Senate capture | November 4 at 22:20 Eastern, 247 D / 152 R / 36 undecided | Evidence-backed threshold control |
 | `synthetic-complete` | 35 invented complete outcomes | Invented 240 D / 195 R final seats | Software fixture, always labeled synthetic |
 
-The current House row lacks a matching capture for its later counts, so its control remains unverified for scoring. The separate archived snapshot supports Democratic control under the approved 218-seat threshold rule. Both real snapshots withhold final House seat error and national-vote scoring.
+The current House row lacks a matching capture for its later counts, so its control remains unverified for scoring. The separate archived snapshot supports Democratic control under the approved 218-seat threshold rule. All real snapshots withhold final House seat error and national-vote scoring.
 
 Place future results in a new `data/results/<dated-id>/` directory. Use a descriptive identifier such as `ddhq-YYYYMMDD-HHMMSS-est` with the actual capture date. Each directory contains `senate_results.csv`, `house_results.csv` and `manifest.json`. Preserve previous snapshots. The bootstrap script is a one-time reconstruction tool and refuses to overwrite existing initial snapshot directories.
 
@@ -237,14 +238,14 @@ Confirm all notebook records succeeded, `code_cells` is positive for each notebo
 Before publication, reconcile headlines, rankings, exclusions, and plotted marks against the exported rows. Inspect every graphic at native, intended display, and thumbnail sizes, and confirm chart lint passed. Review qualifications, snapshot identifiers, chamber timestamps, and preliminary-result gates. Both approved font configurations have automated rendering checks; visual review remains a separate human or agent task.
 
 ```powershell
-python scripts/publish_scorecard.py --run outputs/ddhq-20261104-222052-est/<run-id> --reviewed
+python scripts/publish_scorecard.py --run outputs/ddhq-20261112-manual/<run-id> --reviewed
 ```
 
 The command requires an explicit numerical-and-visual-review attestation. It accepts only successful non-synthetic runs with an executed scorecard notebook matching the current notebook source. It checks the snapshot manifest, current input and source hashes, error-free executed cells, timestamps, chart lint records, PNG dimensions, CSV snapshot labels, and exact PNG/CSV hashes recorded in the run's `analysis-provenance.json`. Changed code or inputs require a fresh execution and review. The command does not independently establish scientific correctness or visual approval.
 
 Validation completes before publication changes. Replacements and backups are staged in the parent workspace's `_scratch/part-2/`. A replacement failure restores the prior managed files; the command returns a nonzero exit code. A successful promotion updates the executed notebook and the selected run's listed PNGs, CSVs, and `provenance.json`. Only superseded artifacts listed in the previous publication manifest are removed. Unlisted files and historical run directories remain intact. Publication provenance records the run identifier, review attestation, snapshot, inputs, source code, dependencies, brand assets, and final artifact hashes without local machine paths.
 
-An existing run without artifact hashes predates this procedure: rerun and review it rather than publishing it. Current-partial may be promoted after review with its own coverage and withheld-control labels; the dated archive remains the selected release until an explicit promotion changes it. Synthetic-complete remains verification-only.
+An existing run without artifact hashes predates this procedure: rerun and review it rather than publishing it. Current-partial may be promoted after review with its own coverage and withheld-control labels; the reviewed November 12 manual update is the selected release; older dated archives retain their historical provenance. Synthetic-complete remains verification-only.
 
 ## TKC plotting
 
@@ -280,7 +281,7 @@ Run python scripts/render_smoke.py to create an illustrative chart under outputs
 The machine-readable issue register is `data/provenance/issues.json`. Current decisions and omissions are:
 
 - DDHQ determines binary outcomes under the current plan. The older AP wording in import provenance is historical.
-- A vote lead never becomes a call. AK-SEN and MS-SEN remain pending. Current primary paired scoring uses 13 of the 15 planned non-Solid races.
+- A vote lead never becomes a call. In the November 12 update, DDHQ’s November 11 MS-SEN call makes Mississippi eligible; AK-SEN remains pending. Primary paired scoring uses 14 of the 15 planned non-Solid races. Older snapshots retain their original exclusions.
 - Reporting estimates are separate from completeness. All current primary share comparisons are unavailable. AK-SEN and ME-SEN also lack documented ranked-choice target compatibility.
 - The approved House district-threshold exception can score the dated November 4 archive. The later frozen November 6 row lacks matching evidence. Final seat error and national-vote comparisons remain gated.
 - Known active recounts are deferred. Archived recount status remains unknown.
@@ -312,8 +313,8 @@ The publisher accepts `--part 01_congress_scorecard` (default), `--part 02_forec
 Forecast-accuracy graphics use VoteHub as the display name; the captured version remains Complete and its Kalshi inputs remain disclosed. Greek ρ is drawn as a standalone symbol with Matplotlib's bundled DejaVu Sans, while surrounding text retains the selected Franklin Gothic or Barlow font. The exact symbol-font filename, SHA-256, character, and role are recorded in analysis and publication provenance. Lint permits only that standalone character from the resolved bundled font, and publication validates its metadata. No font download or additional dependency is required.
 
 ```powershell
-python scripts/run_notebooks.py --snapshot ddhq-20261104-222052-est
-python scripts/publish_scorecard.py --run outputs/ddhq-20261104-222052-est/<run-id> --part 02_forecast_accuracy --reviewed
+python scripts/run_notebooks.py --snapshot ddhq-20261112-manual
+python scripts/publish_scorecard.py --run outputs/ddhq-20261112-manual/<run-id> --part 02_forecast_accuracy --reviewed
 ```
 
 ## Senate caucus follow-up

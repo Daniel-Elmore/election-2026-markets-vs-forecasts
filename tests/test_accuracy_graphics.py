@@ -33,7 +33,8 @@ def graphics(request, monkeypatch, tmp_path):
              if isinstance(n, (ast.Import, ast.ImportFrom, ast.FunctionDef)) or
              (isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id in names for t in n.targets))]
     exec(compile(ast.Module(body=nodes, type_ignores=[]), "accuracy_graphics", "exec"), namespace)
-    namespace["inputs"] = SimpleNamespace(snapshot_id="test-real", manifest={"synthetic": False})
+    namespace["inputs"] = SimpleNamespace(snapshot_id="test-real", manifest={
+        "synthetic": False, "senate_timestamp": "2026-11-04T22:05:02-05:00"})
     namespace["colors"] = namespace["source_colors"]()
     captured = []
     namespace["save_figure"] = lambda name, canvas, data: captured.append((name, canvas, data))

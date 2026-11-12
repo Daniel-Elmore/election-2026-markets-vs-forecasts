@@ -1,56 +1,74 @@
 {
-  "snapshot": "ddhq-20261104-222052-est",
+  "snapshot": "ddhq-20261112-manual",
   "synthetic": false,
   "structural_baseline": "29d4965",
-  "run_id": "20261109T061347056425Z-d378a18c",
+  "run_id": "20261112T210402349037Z-7d148f8c",
   "review": {
     "numerical_and_visual_review_confirmed": true,
     "method": "Explicit --reviewed operator attestation; not automated visual approval"
   },
-  "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
-  "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+  "senate_timestamp": "2026-11-12T12:24:00-05:00",
+  "house_timestamp": "2026-11-12T14:23:01-05:00",
   "snapshot_manifest": {
     "schema_version": 1,
-    "snapshot_id": "ddhq-20261104-222052-est",
+    "snapshot_id": "ddhq-20261112-manual",
     "synthetic": false,
-    "description": "Preserved preliminary results adapter",
-    "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
-    "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+    "description": "Manual November 12 update: DDHQ Mississippi call and House counts; preliminary RCP national vote. Other Senate rows retained from November 4.",
+    "senate_timestamp": "2026-11-12T12:24:00-05:00",
+    "house_timestamp": "2026-11-12T14:23:01-05:00",
     "caucus_analysis_approved": false,
-    "volume_units": null,
+    "volume_units": "USD",
     "kalshi_price_measure": null,
     "qualifications": [
       "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
-      "Currency volume labels and dollar cutoff unavailable pending unit verification.",
-      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld.",
+      "Mixed-vintage Senate snapshot: only MS-SEN refreshed. The other 34 rows retain November 4 vote/call data and evidence. snapshot_timestamp denotes the assembled component, not a new capture for every row.",
+      "MS-SEN DDHQ call is November 11 at 18:28 EST; displayed vote update November 12 at 12:24 EST. Minute-precision timestamps use zero seconds.",
+      "MS reporting is displayed as >95%; numeric percent_reporting withheld to avoid asserting an exact estimate. Vote shares remain incomplete and ineligible for share scoring.",
+      "House control uses explicit DDHQ chamber projection, not reconstructed district-threshold evidence. House counts remain preliminary: 255 D / 168 R / 12 undecided.",
+      "RCP national shares are 55.9% D and 42.7% R at displayed 93% reporting; observed November 12, source clock time unavailable. National vote scoring and final seat errors remain unavailable.",
+      "Frozen Kalshi volume confirmed USD by project owner November 9; original captured volume field remains unidentified."
     ],
     "approved_exceptions": [
       "DDHQ district threshold of 218 may establish House control with evidence.",
       "Provisional Kalshi scoring may use preserved recorded probabilities."
     ],
     "hashes": {
-      "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
-      "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
       "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
       "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
-      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
-    }
+      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7",
+      "data/provenance/ddhq-ms-senate-call-20261112.json": "18e35374b1223b490dbd4bbf720ac2438e5137ad931e3fb5bf29bad3d92e0b2c",
+      "data/provenance/ddhq-house-projection-20261112.json": "7a1df7216d638bd1cbca36506844e34a741fe36ad0551c4112917b8bef2769fc",
+      "data/provenance/manual-results-20261112.json": "d8eaf30bd5e20f265c4fdb91445b90f94057b860cec4142c5f046a19816932d6",
+      "data/results/ddhq-20261112-manual/senate_results.csv": "af6763ac29ce3486bdf00dc817820d227d4b14d0440368ff9263cb8bce5291d4",
+      "data/results/ddhq-20261112-manual/house_results.csv": "e7f479ebc6a1addaa80fe9041f270863bc79886514aace8136611e1ac3b4bc28"
+    },
+    "senate_result_label": "MS Nov. 12; other races Nov. 4"
   },
   "input_hashes": {
     "data/input/senate_forecasts.csv": "46f37d594e18c07a6ab6b46528ffd78e8c792175e3f86ff566fb222955e7f942",
     "data/input/house_forecasts.csv": "25351dd48a982e3503d04efb7b62501e08766c9ac45c2d44b97f97237660a3b8",
     "data/input/senate_results.csv": "fd69cd30c30cb834ba3ae9839b3b3c5175a7d948d945aeb5d143e0ed43803740",
     "data/input/house_results.csv": "a93108a4750b51a2399f4a453a9c82e67bd1ef9a570709ef0859317f3b92f028",
-    "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
-    "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
     "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
     "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
-    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
+    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7",
+    "data/provenance/ddhq-ms-senate-call-20261112.json": "18e35374b1223b490dbd4bbf720ac2438e5137ad931e3fb5bf29bad3d92e0b2c",
+    "data/provenance/ddhq-house-projection-20261112.json": "7a1df7216d638bd1cbca36506844e34a741fe36ad0551c4112917b8bef2769fc",
+    "data/provenance/manual-results-20261112.json": "d8eaf30bd5e20f265c4fdb91445b90f94057b860cec4142c5f046a19816932d6",
+    "data/results/ddhq-20261112-manual/senate_results.csv": "af6763ac29ce3486bdf00dc817820d227d4b14d0440368ff9263cb8bce5291d4",
+    "data/results/ddhq-20261112-manual/house_results.csv": "e7f479ebc6a1addaa80fe9041f270863bc79886514aace8136611e1ac3b4bc28"
   },
   "qualifications": [
     "Preliminary results; eligibility varies by metric.",
     "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
-    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld.",
+    "Mixed-vintage Senate snapshot: only MS-SEN refreshed. The other 34 rows retain November 4 vote/call data and evidence. snapshot_timestamp denotes the assembled component, not a new capture for every row.",
+    "MS-SEN DDHQ call is November 11 at 18:28 EST; displayed vote update November 12 at 12:24 EST. Minute-precision timestamps use zero seconds.",
+    "MS reporting is displayed as >95%; numeric percent_reporting withheld to avoid asserting an exact estimate. Vote shares remain incomplete and ineligible for share scoring.",
+    "House control uses explicit DDHQ chamber projection, not reconstructed district-threshold evidence. House counts remain preliminary: 255 D / 168 R / 12 undecided.",
+    "RCP national shares are 55.9% D and 42.7% R at displayed 93% reporting; observed November 12, source clock time unavailable. National vote scoring and final seat errors remain unavailable.",
+    "Frozen Kalshi volume confirmed USD by project owner November 9; original captured volume field remains unidentified."
   ],
   "source_colors": {
     "kalshi": "#58B887",
@@ -121,7 +139,7 @@
     "Pillow": "12.2.0"
   },
   "editable_source": "notebooks/03_kalshi_trading_volume.ipynb",
-  "notebook_sha256": "53c42ef8142f61b17528687c83bcc993ccf6ac5b779e0786a69c6dc6f019ce81",
+  "notebook_sha256": "134413a1f5b1020547621e09fe43c6b46f646b918ac105b5bf3d2b90158ee442",
   "figures": [
     {
       "image": "01-cook-ratings.png",
@@ -151,15 +169,15 @@
   ],
   "artifact_hashes": {
     "01-cook-ratings.png": "6be4cb360a7b7b13ac3aa10480ed89c6496a5a4f3701159c5b27e0e4ea1eba85",
-    "plot_01-cook-ratings.csv": "60a044f43b81cb5ad93efe9accae51c97ec7da864703ca072d839f198567c17b",
+    "plot_01-cook-ratings.csv": "493ce9c8cd4b91fb726695dc84991fc9148c89eb5ab0739ae9afdcbd6beba467",
     "02-largest-markets.png": "67783d7ae76b5f454a3577603e7dbd31fa4ed39bb7e976c7b7045172667eebba",
-    "plot_02-largest-markets.csv": "3f5814d94d55df032ba3c286159773e1b591594eb131977b48791d7857b5a98c",
-    "03-volume-surprise.png": "7a06fbb926d9321828052cc2d70bdd23582cf43b9ff9c2cb8b19624cc817f0b7",
-    "plot_03-volume-surprise.csv": "55784a0580288562d53a3e3d696e455c14062d425d06cd10bb75b158a90a9b44",
+    "plot_02-largest-markets.csv": "aa4ced4a93e2edf080912793b1729f2b124f89143405192ca1dd1f35bdf162b1",
+    "03-volume-surprise.png": "cbd97fdb03b665f0701b334d76bb7a66d52f9ee1ed07b14ad97d3027988f701b",
+    "plot_03-volume-surprise.csv": "690a85897ad4d2a5407c7d523fc865beed5ea275f3824bb17755a4902fd4a0cb",
     "04-gap-economist.png": "d0f4ba2fb7ced0005af9d4f8495fbb8bb5f9870ef1f40f7ac85a4faf535f8153",
-    "plot_04-gap-economist.csv": "4931b872afdda7b9daf419d336932020a7f32d67d4047ab978f0269b74699b84",
+    "plot_04-gap-economist.csv": "601f5aebced338506fa5bebdf8c0b1d05793a5bbea46726ab947a3000c6bc070",
     "05-gap-mixed.png": "98e3226ca206c0999508e750546c4e47f5d42f437d415ede68c983a7f11ba19c",
-    "plot_05-gap-mixed.csv": "5c98208ca67336e3f134fc1468d565c6ba9b185f0c12c2e6f0d0fc58fab37a87"
+    "plot_05-gap-mixed.csv": "cf47348c21c91f5b63f8ebb9fc4aa2950ba5c0492144413cbec0a997cb4a2189"
   },
   "volume_units": "USD",
   "volume_unit_evidence": "Project owner confirmation, November 9, 2026",

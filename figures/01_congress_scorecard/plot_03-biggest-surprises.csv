@@ -1,7 +1,8 @@
 race_id,winner,Kalshi,Economist,VoteHub Complete,minimum_probability,ranked_kalshi,ranked_economist,ranked_votehub,snapshot,synthetic,senate_timestamp,house_timestamp
-SC-SEN,Annie Andrews,0.33,0.21,0.27,0.21,True,True,True,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-IA-SEN,Josh Turek,0.5,0.29,0.465,0.29,True,True,True,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-KS-SEN,Adam Hamilton,0.63,0.44,0.484,0.44,True,True,True,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-TX-SEN,James Talarico,0.76,0.52,0.702,0.52,False,True,True,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-OH-SEN,Sherrod Brown,0.71,0.53,0.69,0.53,True,True,True,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-NE-SEN,Pete Ricketts,0.7,0.86,0.706,0.7,True,False,False,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+MS-SEN,Scott Colom,0.15,0.06,0.088,0.06,True,True,True,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+SC-SEN,Annie Andrews,0.33,0.21,0.27,0.21,True,True,True,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+IA-SEN,Josh Turek,0.5,0.29,0.465,0.29,True,True,True,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+KS-SEN,Adam Hamilton,0.63,0.44,0.484,0.44,True,True,True,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+TX-SEN,James Talarico,0.76,0.52,0.702,0.52,False,True,False,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+OH-SEN,Sherrod Brown,0.71,0.53,0.69,0.53,False,False,True,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+NE-SEN,Pete Ricketts,0.7,0.86,0.706,0.7,True,False,False,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00

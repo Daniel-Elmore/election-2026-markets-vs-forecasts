@@ -1,57 +1,74 @@
 {
-  "snapshot": "ddhq-20261104-222052-est",
+  "snapshot": "ddhq-20261112-manual",
   "synthetic": false,
   "structural_baseline": "29d4965",
-  "run_id": "20261108T200656569113Z-44831f73",
+  "run_id": "20261112T210402349037Z-7d148f8c",
   "review": {
     "numerical_and_visual_review_confirmed": true,
     "method": "Explicit --reviewed operator attestation; not automated visual approval"
   },
-  "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
-  "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+  "senate_timestamp": "2026-11-12T12:24:00-05:00",
+  "house_timestamp": "2026-11-12T14:23:01-05:00",
   "snapshot_manifest": {
     "schema_version": 1,
-    "snapshot_id": "ddhq-20261104-222052-est",
+    "snapshot_id": "ddhq-20261112-manual",
     "synthetic": false,
-    "description": "Preserved preliminary results adapter",
-    "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
-    "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+    "description": "Manual November 12 update: DDHQ Mississippi call and House counts; preliminary RCP national vote. Other Senate rows retained from November 4.",
+    "senate_timestamp": "2026-11-12T12:24:00-05:00",
+    "house_timestamp": "2026-11-12T14:23:01-05:00",
     "caucus_analysis_approved": false,
-    "volume_units": null,
+    "volume_units": "USD",
     "kalshi_price_measure": null,
     "qualifications": [
       "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
-      "Currency volume labels and dollar cutoff unavailable pending unit verification.",
-      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld.",
+      "Mixed-vintage Senate snapshot: only MS-SEN refreshed. The other 34 rows retain November 4 vote/call data and evidence. snapshot_timestamp denotes the assembled component, not a new capture for every row.",
+      "MS-SEN DDHQ call is November 11 at 18:28 EST; displayed vote update November 12 at 12:24 EST. Minute-precision timestamps use zero seconds.",
+      "MS reporting is displayed as >95%; numeric percent_reporting withheld to avoid asserting an exact estimate. Vote shares remain incomplete and ineligible for share scoring.",
+      "House control uses explicit DDHQ chamber projection, not reconstructed district-threshold evidence. House counts remain preliminary: 255 D / 168 R / 12 undecided.",
+      "RCP national shares are 55.9% D and 42.7% R at displayed 93% reporting; observed November 12, source clock time unavailable. National vote scoring and final seat errors remain unavailable.",
+      "Frozen Kalshi volume confirmed USD by project owner November 9; original captured volume field remains unidentified."
     ],
     "approved_exceptions": [
       "DDHQ district threshold of 218 may establish House control with evidence.",
       "Provisional Kalshi scoring may use preserved recorded probabilities."
     ],
     "hashes": {
-      "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
-      "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
       "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
       "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
-      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
-    }
+      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7",
+      "data/provenance/ddhq-ms-senate-call-20261112.json": "18e35374b1223b490dbd4bbf720ac2438e5137ad931e3fb5bf29bad3d92e0b2c",
+      "data/provenance/ddhq-house-projection-20261112.json": "7a1df7216d638bd1cbca36506844e34a741fe36ad0551c4112917b8bef2769fc",
+      "data/provenance/manual-results-20261112.json": "d8eaf30bd5e20f265c4fdb91445b90f94057b860cec4142c5f046a19816932d6",
+      "data/results/ddhq-20261112-manual/senate_results.csv": "af6763ac29ce3486bdf00dc817820d227d4b14d0440368ff9263cb8bce5291d4",
+      "data/results/ddhq-20261112-manual/house_results.csv": "e7f479ebc6a1addaa80fe9041f270863bc79886514aace8136611e1ac3b4bc28"
+    },
+    "senate_result_label": "MS Nov. 12; other races Nov. 4"
   },
   "input_hashes": {
     "data/input/senate_forecasts.csv": "46f37d594e18c07a6ab6b46528ffd78e8c792175e3f86ff566fb222955e7f942",
     "data/input/house_forecasts.csv": "25351dd48a982e3503d04efb7b62501e08766c9ac45c2d44b97f97237660a3b8",
     "data/input/senate_results.csv": "fd69cd30c30cb834ba3ae9839b3b3c5175a7d948d945aeb5d143e0ed43803740",
     "data/input/house_results.csv": "a93108a4750b51a2399f4a453a9c82e67bd1ef9a570709ef0859317f3b92f028",
-    "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
-    "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
     "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
     "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
-    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
+    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7",
+    "data/provenance/ddhq-ms-senate-call-20261112.json": "18e35374b1223b490dbd4bbf720ac2438e5137ad931e3fb5bf29bad3d92e0b2c",
+    "data/provenance/ddhq-house-projection-20261112.json": "7a1df7216d638bd1cbca36506844e34a741fe36ad0551c4112917b8bef2769fc",
+    "data/provenance/manual-results-20261112.json": "d8eaf30bd5e20f265c4fdb91445b90f94057b860cec4142c5f046a19816932d6",
+    "data/results/ddhq-20261112-manual/senate_results.csv": "af6763ac29ce3486bdf00dc817820d227d4b14d0440368ff9263cb8bce5291d4",
+    "data/results/ddhq-20261112-manual/house_results.csv": "e7f479ebc6a1addaa80fe9041f270863bc79886514aace8136611e1ac3b4bc28"
   },
   "qualifications": [
     "Preliminary results; eligibility varies by metric.",
     "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
-    "Currency volume labels and dollar cutoff unavailable pending unit verification.",
-    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld.",
+    "Mixed-vintage Senate snapshot: only MS-SEN refreshed. The other 34 rows retain November 4 vote/call data and evidence. snapshot_timestamp denotes the assembled component, not a new capture for every row.",
+    "MS-SEN DDHQ call is November 11 at 18:28 EST; displayed vote update November 12 at 12:24 EST. Minute-precision timestamps use zero seconds.",
+    "MS reporting is displayed as >95%; numeric percent_reporting withheld to avoid asserting an exact estimate. Vote shares remain incomplete and ineligible for share scoring.",
+    "House control uses explicit DDHQ chamber projection, not reconstructed district-threshold evidence. House counts remain preliminary: 255 D / 168 R / 12 undecided.",
+    "RCP national shares are 55.9% D and 42.7% R at displayed 93% reporting; observed November 12, source clock time unavailable. National vote scoring and final seat errors remain unavailable.",
+    "Frozen Kalshi volume confirmed USD by project owner November 9; original captured volume field remains unidentified."
   ],
   "source_colors": {
     "kalshi": "#58B887",
@@ -101,14 +118,14 @@
     "src/congress_scorecard/__init__.py": "581291a6fab41b27d29f9ebb2e5256657eb7b8e2bbc402280b057ba1502c3f38",
     "src/congress_scorecard/runtime.py": "5ee115bf11bb55b6056e79570d792afebc3914c1f50f77bdef5e8ec1bab3d95f",
     "src/congress_scorecard/runner.py": "70d4d85fc1d1dd22bb53c04480305f75af989603909504ed8250efdeb275bf2b",
-    "src/congress_scorecard/plotting.py": "a029cd9dc1d780ce7af5486685234d2e601646ed45fb3fd46a320f78b6cfaf8b",
+    "src/congress_scorecard/plotting.py": "6aa2244cfb3d98d78ebda203dc1786ea63973d3421ca7b40c0a54051d77cb661",
     "src/congress_scorecard/chart_lint.py": "b1be695265179ac00db3dfcebd8df9db10dd475cb6b4961d3a582f986a974c68",
     "scripts/build_initial_snapshots.py": "c09f3e3f6e216e6986b8144c2041b3d55b3403197c542da4e9bb812484d17748",
     "scripts/audit_inputs.py": "5877a1cfff358ed927549b388dbab2e92a41970ef7875045b12470e33cb6cc77",
     "scripts/validate_inputs.py": "419b741e1cf850bfb1efd2aa06de3cdf588e19629d3f000eb202f8c2eeac4f0b",
     "scripts/run_notebooks.py": "ec1fc8e6e0b65cf91cbddaad0723b28e40b8e1cd605966829a55cc67febd39c1",
     "scripts/render_smoke.py": "56de5af2b638cd45c237feccd3afeffcd4187d85a7b44111ba3560af958477f1",
-    "scripts/publish_scorecard.py": "e0df1c7709ae7e48f889d9021e6cde73bd09e69f897f31fd2cc5a7d734299655",
+    "scripts/publish_scorecard.py": "2229ae4c857df84b5ef188834238b820ce8d9aa98479463e19490a7078446896",
     "pyproject.toml": "d231461374b57d88386e78d62fbc7c5d66a5d963c74cbff9b8720bafd6bc91f6"
   },
   "dependencies": {
@@ -122,7 +139,7 @@
     "Pillow": "12.2.0"
   },
   "editable_source": "notebooks/01_congress_scorecard.ipynb",
-  "notebook_sha256": "4a643959ac99b86351361e1531e0887617181afd12db1cda9555881675ae884d",
+  "notebook_sha256": "b8d78763f6db0e01efde5d0702a1501e06815867fea7c774bb4e6874a57944f8",
   "figures": [
     {
       "image": "01-correct-calls.png",
@@ -136,13 +153,13 @@
       "data": "plot_02-expected-wins.csv",
       "lint_passed": true,
       "title": "Every Source Expected Fewer Non-Republican Wins",
-      "subtitle": "Bars sum each source's win probabilities across the same 33 resolved races; the yellow line marks 20 actual wins."
+      "subtitle": "Bars sum each source's win probabilities across the same 34 resolved races; the yellow line marks 21 actual wins."
     },
     {
       "image": "03-biggest-surprises.png",
       "data": "plot_03-biggest-surprises.csv",
       "lint_passed": true,
-      "title": "South Carolina Was Everyone's Biggest Surprise",
+      "title": "Scott Colom Was Every Source's Biggest Surprise",
       "subtitle": "Each percentage is the chance a source gave the eventual winner; lower means a bigger surprise."
     },
     {
@@ -156,15 +173,15 @@
       "image": "05-gap-votehub.png",
       "data": "plot_05-gap-votehub.csv",
       "lint_passed": true,
-      "title": "Kalshi Was Closer in Three Major VoteHub Disagreements",
-      "subtitle": "Among the five widest gaps, Louisiana favored VoteHub and Mississippi was uncalled; the other three outcomes favored Kalshi."
+      "title": "The Largest Kalshi–VoteHub Disagreements",
+      "subtitle": "Kalshi was closer to the called outcome in four of these five races; Louisiana favored VoteHub."
     },
     {
       "image": "06-gap-economist.png",
       "data": "plot_06-gap-economist.csv",
       "lint_passed": true,
-      "title": "Kalshi Was Closer in Four of Five Major Disagreements",
-      "subtitle": "Nebraska was the lone exception favoring The Economist among the five races with the widest probability gaps."
+      "title": "The Largest Kalshi-Economist Disagreements",
+      "subtitle": "Kalshi was closer to the called outcome in four of these five races; Nebraska favored The Economist."
     },
     {
       "image": "07-house-control.png",
@@ -177,26 +194,26 @@
       "image": "08-cook-rating-outcomes.png",
       "data": "plot_08-cook-rating-outcomes.csv",
       "lint_passed": true,
-      "title": "Democrats Won All Six Resolved Toss-Ups",
-      "subtitle": "South Carolina was Cook's lone directional miss; its Toss-Up ratings did not pick a side."
+      "title": "Democrats Won Two Races Cook Favored Republicans to Win",
+      "subtitle": "Mississippi was rated Likely Republican and South Carolina Lean Republican; gold rings mark both upsets."
     }
   ],
   "artifact_hashes": {
-    "01-correct-calls.png": "e82d65f39416a12b8c52171a1907554bcd6286d45855860b8c3eb944b3090f92",
-    "plot_01-correct-calls.csv": "ae58f8b2a94e44df921c10c3849e60b67915571d81f9a18daa6993c032b6e194",
-    "02-expected-wins.png": "c38d246e337661959ee18443b77edb03dc3fb7a1fea658e7c4aba3061ab9e635",
-    "plot_02-expected-wins.csv": "359c0a4d515fdf2f75758c7807384275294d5a0a74c8e268ee4d0d5f4bff76f5",
-    "03-biggest-surprises.png": "bc65d3a08e67d73b00cca2e7cc07ebd4dbfad53fa2ea522f1c4f6e2c7ea1dbde",
-    "plot_03-biggest-surprises.csv": "cc1a9a4fd16628ac8cf38b1b1bbcb30dfec2a2f79543965e7ec62e16b9c59c8f",
-    "04-gap-mixed.png": "880bc753d4b531e293e9edc059ddd131a54e0c8883608e94bccb61f07f8b824a",
-    "plot_04-gap-mixed.csv": "52372ab12e4623c5c91343aa3783ec7bf4544fe4cf1b163574487530ddbcb178",
-    "05-gap-votehub.png": "dcf990e78f2bb4e7d9c746268bbb0d868218f29e148d7db48a7c403e95894f0c",
-    "plot_05-gap-votehub.csv": "a300c205661fbdf247209fb76121c76a951000b0e56d4322d3f42c2bac1d4ec9",
-    "06-gap-economist.png": "4bf17016e6d91fbaa776b084a802f9f5d2e060a5262feb1dc9556a108912378f",
-    "plot_06-gap-economist.csv": "38d5048874de51c5d33c43e52f72e754518a1f48eaae49164acb66b85106244f",
-    "07-house-control.png": "4611f0a87c5b5721a984321c4466d89c3e3b51d2093cce736fe7502a73e86c5f",
-    "plot_07-house-control.csv": "e398587ff7c2cecf962f9fd89becd5dcf8f616449dd22135cb294cce0c47da76",
-    "08-cook-rating-outcomes.png": "b443674a62901a8419cb8bd80768d0b8ea607909fc9f29e73ee4bd8c16b989c5",
-    "plot_08-cook-rating-outcomes.csv": "cf2a37041ec40b2bd6a71c54f8b92786f91bb4a55ece609cf947a819d8178c21"
+    "01-correct-calls.png": "09372fc71e036b6c7282391daf1f1d536dd34cb54547a94e9af735b28ff4df4a",
+    "plot_01-correct-calls.csv": "91da4534704cf535c6126906aece18307e1491635bde1444f187565a0adee7f3",
+    "02-expected-wins.png": "ca3de67533f0f02cfdaed7b50f4c0897cb8a09fa7e786e798a56dfb8284e9478",
+    "plot_02-expected-wins.csv": "71d3a9eb3bbd54f6a0a799f6b897b9f6fa91c45ffe2ff8f3d230a3fbef877930",
+    "03-biggest-surprises.png": "255315b79466506c2fa0f527413054645c91d2b5f366b7527263484ac3d8d38d",
+    "plot_03-biggest-surprises.csv": "9c003103dd56b275397491af636299cf6943f27ce03ba10c8733e316fa5df417",
+    "04-gap-mixed.png": "2cd13f3faa27423b5d5edca8baad51e6067c07e5ccef44f4d311a70e521a4ead",
+    "plot_04-gap-mixed.csv": "4ceba117a399d915aae43d2b5361ba85af28941a9cc6faeb669cc32df9d082e1",
+    "05-gap-votehub.png": "697260a61e9b0c75d5f76f008587cd1984f764cf884fa9b5c80c83e193ac56a2",
+    "plot_05-gap-votehub.csv": "ac75fb8292ffc1e1eb6d21f6cca39e1e5ad9faa6a9e0cb2e3a32a4159e2bd748",
+    "06-gap-economist.png": "660dca1a7f20e1b4efa6c71a08c7e106c98112b02233a705a3efc6364bf5be63",
+    "plot_06-gap-economist.csv": "9bf3dc9e46f6c1457c6b82efce2a6a2b1c159a5517c37f136010e72f04f03edc",
+    "07-house-control.png": "8fb5e2f61d960838fe2582f83c539debc599be909712ce049aa7986f0d4dbbce",
+    "plot_07-house-control.csv": "3064c4061bf0c8f06b4949e3138baab1da0142647d639668f2249c6536c7a6dc",
+    "08-cook-rating-outcomes.png": "ad1a6a5e44a37ecabeb1e6240df1db6f618bb0e133590651eb34753a9d37f001",
+    "plot_08-cook-rating-outcomes.csv": "57d123ef1de99fc1513caf5f1456eb612b9dc45da9a8fd30f0f38fd9246dc2e4"
   }
 }

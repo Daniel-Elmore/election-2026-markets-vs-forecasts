@@ -1,6 +1,6 @@
 race_id,candidate_a,candidate_b,cook_rating,kalshi_a_probability,comparator_a_probability,gap_pp,eligible,winner,paired_brier_difference,closer,absolute_gap_pp,snapshot,synthetic,senate_timestamp,house_timestamp
-KS-SEN,Adam Hamilton,Roger Marshall,Toss-Up,0.63,0.484,14.600000000000001,True,Adam Hamilton,-0.129356,Kalshi,14.600000000000001,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-LA-SEN,Jamie Davis,Julia Letlow,Solid R,0.14,0.021,11.9,True,Julia Letlow,0.019159000000000002,VoteHub,11.9,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-MS-SEN,Scott Colom,Cindy Hyde-Smith,Likely R,0.15,0.088,6.2,False,,,Unavailable,6.2,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-SC-SEN,Annie Andrews,Darline Graham,Lean R,0.33,0.27,6.0,True,Annie Andrews,-0.08400000000000002,Kalshi,6.0,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
-TX-SEN,James Talarico,Ken Paxton,Toss-Up,0.76,0.702,5.800000000000005,True,James Talarico,-0.031204000000000023,Kalshi,5.800000000000005,ddhq-20261104-222052-est,False,2026-11-04T22:05:02.090703-05:00,2026-11-04T22:20:52.470153-05:00
+KS-SEN,Adam Hamilton,Roger Marshall,Toss-Up,0.63,0.484,14.600000000000001,True,Adam Hamilton,-0.129356,Kalshi,14.600000000000001,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+LA-SEN,Jamie Davis,Julia Letlow,Solid R,0.14,0.021,11.9,True,Julia Letlow,0.019159000000000002,VoteHub,11.9,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+MS-SEN,Scott Colom,Cindy Hyde-Smith,Likely R,0.15,0.088,6.2,True,Scott Colom,-0.10924400000000012,Kalshi,6.2,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+SC-SEN,Annie Andrews,Darline Graham,Lean R,0.33,0.27,6.0,True,Annie Andrews,-0.08400000000000002,Kalshi,6.0,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00
+TX-SEN,James Talarico,Ken Paxton,Toss-Up,0.76,0.702,5.800000000000005,True,James Talarico,-0.031204000000000023,Kalshi,5.800000000000005,ddhq-20261112-manual,False,2026-11-12T12:24:00-05:00,2026-11-12T14:23:01-05:00

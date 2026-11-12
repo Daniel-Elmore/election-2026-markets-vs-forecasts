@@ -1,0 +1,43 @@
+{
+  "status": "documented_manual_update_inputs",
+  "received_date": "2026-11-12",
+  "senate": {
+    "race_id": "MS-SEN",
+    "source_as_supplied": "DDHQ",
+    "display_timestamp": "2026-11-12T12:24:00-05:00",
+    "candidate_votes": {
+      "Scott Colom": 474178,
+      "Cindy Hyde-Smith": 468840,
+      "Ty Pinkins": 20260
+    },
+    "candidate_percentages_displayed": {
+      "Scott Colom": 49.23,
+      "Cindy Hyde-Smith": 48.67,
+      "Ty Pinkins": 2.1
+    },
+    "total_votes": 963278,
+    "reporting_displayed": ">95%",
+    "call_confirmation": "DDHQ called Scott Colom; user confirmed and public page checked",
+    "call_timestamp": "2026-11-11T18:28:00-05:00",
+    "source_url": "https://votes.decisiondeskhq.com/races/2026-11-03/mississippi-us-senate-general-election",
+    "note": "DDHQ called Scott Colom on November 11 at 6:28 p.m. EST. The user confirmed the call time, and the public DDHQ page was independently checked against the supplied vote totals and timestamp. Greater-than reporting estimate must not be represented as exact 95%."
+  },
+  "house": {
+    "seat_source_as_supplied": "DDHQ",
+    "dem_seats": 255,
+    "gop_seats": 168,
+    "undecided_seats_derived": 12,
+    "seat_capture_timestamp": "2026-11-12T14:23:01-05:00",
+    "seat_source_url": "https://votes.decisiondeskhq.com/balance-of-power/2026/house",
+    "dem_share": 55.9,
+    "gop_share": 42.7,
+    "reporting_displayed": "93%",
+    "share_source_url": "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote",
+    "share_source_linked_results": "https://www.realclearpolitics.com/elections/live_results/2026/house/",
+    "share_independently_observed_on": "2026-11-12",
+    "seats_final": false,
+    "vote_complete": false,
+    "note": "The public DDHQ House page independently confirmed 255 Democratic seats and 168 Republican seats on November 12 and explicitly projected Democratic control. RCP independently confirmed the supplied displayed shares and 93% reporting. The DDHQ observation time is recorded separately from the source update time, which was not supplied. No district-level evidence was constructed from aggregate totals.",
+    "user_confirmed_date": "2026-11-12"
+  }
+}

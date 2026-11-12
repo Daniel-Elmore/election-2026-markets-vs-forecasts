@@ -1,0 +1,15 @@
+{
+  "source": "DDHQ",
+  "synthetic": false,
+  "source_url": "https://votes.decisiondeskhq.com/balance-of-power/2026/house",
+  "projectedControl": "Democratic",
+  "projection_timestamp": "2026-11-03T21:09:00-05:00",
+  "retrievedAtEastern": "2026-11-12T14:23:01-05:00",
+  "calledSeatsByParty": {
+    "Democratic": 255,
+    "Republican": 168
+  },
+  "undecided_seats": 12,
+  "evidence_type": "Public-page transcription; page explicitly projects Democratic House control and shows 255 D / 168 R. No API used.",
+  "capture_note": "User dates supplied counts November 12 without a clock time; retrieval timestamp records this independent check, not source last-update time."
+}

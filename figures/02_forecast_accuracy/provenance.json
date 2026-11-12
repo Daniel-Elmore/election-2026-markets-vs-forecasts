@@ -1,57 +1,74 @@
 {
-  "snapshot": "ddhq-20261104-222052-est",
+  "snapshot": "ddhq-20261112-manual",
   "synthetic": false,
   "structural_baseline": "29d4965",
-  "run_id": "20261109T055838987843Z-78a10263",
+  "run_id": "20261112T210402349037Z-7d148f8c",
   "review": {
     "numerical_and_visual_review_confirmed": true,
     "method": "Explicit --reviewed operator attestation; not automated visual approval"
   },
-  "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
-  "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+  "senate_timestamp": "2026-11-12T12:24:00-05:00",
+  "house_timestamp": "2026-11-12T14:23:01-05:00",
   "snapshot_manifest": {
     "schema_version": 1,
-    "snapshot_id": "ddhq-20261104-222052-est",
+    "snapshot_id": "ddhq-20261112-manual",
     "synthetic": false,
-    "description": "Preserved preliminary results adapter",
-    "senate_timestamp": "2026-11-04T22:05:02.090703-05:00",
-    "house_timestamp": "2026-11-04T22:20:52.470153-05:00",
+    "description": "Manual November 12 update: DDHQ Mississippi call and House counts; preliminary RCP national vote. Other Senate rows retained from November 4.",
+    "senate_timestamp": "2026-11-12T12:24:00-05:00",
+    "house_timestamp": "2026-11-12T14:23:01-05:00",
     "caucus_analysis_approved": false,
-    "volume_units": null,
+    "volume_units": "USD",
     "kalshi_price_measure": null,
     "qualifications": [
       "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
-      "Currency volume labels and dollar cutoff unavailable pending unit verification.",
-      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+      "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld.",
+      "Mixed-vintage Senate snapshot: only MS-SEN refreshed. The other 34 rows retain November 4 vote/call data and evidence. snapshot_timestamp denotes the assembled component, not a new capture for every row.",
+      "MS-SEN DDHQ call is November 11 at 18:28 EST; displayed vote update November 12 at 12:24 EST. Minute-precision timestamps use zero seconds.",
+      "MS reporting is displayed as >95%; numeric percent_reporting withheld to avoid asserting an exact estimate. Vote shares remain incomplete and ineligible for share scoring.",
+      "House control uses explicit DDHQ chamber projection, not reconstructed district-threshold evidence. House counts remain preliminary: 255 D / 168 R / 12 undecided.",
+      "RCP national shares are 55.9% D and 42.7% R at displayed 93% reporting; observed November 12, source clock time unavailable. National vote scoring and final seat errors remain unavailable.",
+      "Frozen Kalshi volume confirmed USD by project owner November 9; original captured volume field remains unidentified."
     ],
     "approved_exceptions": [
       "DDHQ district threshold of 218 may establish House control with evidence.",
       "Provisional Kalshi scoring may use preserved recorded probabilities."
     ],
     "hashes": {
-      "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
-      "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
       "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
       "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
-      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
-    }
+      "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7",
+      "data/provenance/ddhq-ms-senate-call-20261112.json": "18e35374b1223b490dbd4bbf720ac2438e5137ad931e3fb5bf29bad3d92e0b2c",
+      "data/provenance/ddhq-house-projection-20261112.json": "7a1df7216d638bd1cbca36506844e34a741fe36ad0551c4112917b8bef2769fc",
+      "data/provenance/manual-results-20261112.json": "d8eaf30bd5e20f265c4fdb91445b90f94057b860cec4142c5f046a19816932d6",
+      "data/results/ddhq-20261112-manual/senate_results.csv": "af6763ac29ce3486bdf00dc817820d227d4b14d0440368ff9263cb8bce5291d4",
+      "data/results/ddhq-20261112-manual/house_results.csv": "e7f479ebc6a1addaa80fe9041f270863bc79886514aace8136611e1ac3b4bc28"
+    },
+    "senate_result_label": "MS Nov. 12; other races Nov. 4"
   },
   "input_hashes": {
     "data/input/senate_forecasts.csv": "46f37d594e18c07a6ab6b46528ffd78e8c792175e3f86ff566fb222955e7f942",
     "data/input/house_forecasts.csv": "25351dd48a982e3503d04efb7b62501e08766c9ac45c2d44b97f97237660a3b8",
     "data/input/senate_results.csv": "fd69cd30c30cb834ba3ae9839b3b3c5175a7d948d945aeb5d143e0ed43803740",
     "data/input/house_results.csv": "a93108a4750b51a2399f4a453a9c82e67bd1ef9a570709ef0859317f3b92f028",
-    "data/results/ddhq-20261104-222052-est/senate_results.csv": "dfe616e519fbaf66eee30ec4856746ce4eb3a43ae8ed99b7c218d91ce8f529d4",
-    "data/results/ddhq-20261104-222052-est/house_results.csv": "4df81c9cdd95bd75ea8573e683aa540115692abeaa63ef1ac214305710861d01",
     "data/provenance/ddhq-house-provenance-20261104-222052-EST.json": "087a880274875981dacf0025401e6aa8a91ddd2101a32e2f8c62817b8dba3e75",
     "data/provenance/ddhq-senate-call-extract.json": "f501f35ec2d012545c6d2c38013b655785c9419ae6e5530d1af6637981ba30a9",
-    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7"
+    "data/provenance/ddhq-senate-provenance-20261104-220502-EST.json": "5ca8b0ef2d10b7dff268aeefb0aa36fb907490cb56ff0a86874dad6f4a7780d7",
+    "data/provenance/ddhq-ms-senate-call-20261112.json": "18e35374b1223b490dbd4bbf720ac2438e5137ad931e3fb5bf29bad3d92e0b2c",
+    "data/provenance/ddhq-house-projection-20261112.json": "7a1df7216d638bd1cbca36506844e34a741fe36ad0551c4112917b8bef2769fc",
+    "data/provenance/manual-results-20261112.json": "d8eaf30bd5e20f265c4fdb91445b90f94057b860cec4142c5f046a19816932d6",
+    "data/results/ddhq-20261112-manual/senate_results.csv": "af6763ac29ce3486bdf00dc817820d227d4b14d0440368ff9263cb8bce5291d4",
+    "data/results/ddhq-20261112-manual/house_results.csv": "e7f479ebc6a1addaa80fe9041f270863bc79886514aace8136611e1ac3b4bc28"
   },
   "qualifications": [
     "Preliminary results; eligibility varies by metric.",
     "Kalshi recorded probabilities provisionally approved despite unverified price measures and KY contract URL.",
-    "Currency volume labels and dollar cutoff unavailable pending unit verification.",
-    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld."
+    "Independent caucus evidence contradicts plan assumption; caucus seat/control reporting withheld.",
+    "Mixed-vintage Senate snapshot: only MS-SEN refreshed. The other 34 rows retain November 4 vote/call data and evidence. snapshot_timestamp denotes the assembled component, not a new capture for every row.",
+    "MS-SEN DDHQ call is November 11 at 18:28 EST; displayed vote update November 12 at 12:24 EST. Minute-precision timestamps use zero seconds.",
+    "MS reporting is displayed as >95%; numeric percent_reporting withheld to avoid asserting an exact estimate. Vote shares remain incomplete and ineligible for share scoring.",
+    "House control uses explicit DDHQ chamber projection, not reconstructed district-threshold evidence. House counts remain preliminary: 255 D / 168 R / 12 undecided.",
+    "RCP national shares are 55.9% D and 42.7% R at displayed 93% reporting; observed November 12, source clock time unavailable. National vote scoring and final seat errors remain unavailable.",
+    "Frozen Kalshi volume confirmed USD by project owner November 9; original captured volume field remains unidentified."
   ],
   "source_colors": {
     "kalshi": "#58B887",
@@ -122,13 +139,13 @@
     "Pillow": "12.2.0"
   },
   "editable_source": "notebooks/02_forecast_accuracy.ipynb",
-  "notebook_sha256": "1941dfe6b2e1cb9d05bd1e62dbe2e2fa2b71ecb10336e21a1d16a488addd43f7",
+  "notebook_sha256": "79dcad24fc4f2acd8a3cbcfe26d8e7457ece6c19117a30b6a11502d7ea571539",
   "figures": [
     {
       "image": "01-primary-race-differences.png",
       "data": "plot_01-primary-race-differences.csv",
       "lint_passed": true,
-      "title": "Kalshi Scored Better in 10 of 13 Competitive Senate Races",
+      "title": "Kalshi Scored Better in 11 of 14 Competitive Senate Races",
       "subtitle": "Each bar compares errors in one resolved race. Left favors Kalshi; right favors the mixed forecast."
     },
     {
@@ -163,8 +180,8 @@
       "image": "07-longshot-pattern.png",
       "data": "plot_07-longshot-pattern.csv",
       "lint_passed": true,
-      "title": "One Longshot Won Where About Three Were Expected",
-      "subtitle": "Longshot wins fell below the combined expectation from the recorded probabilities."
+      "title": "Longshots Recorded 2 Wins Against 3.13 Expected",
+      "subtitle": "Observed and probability-based expected wins are compared within the same eligible races."
     },
     {
       "image": "08-cook-mappings.png",
@@ -182,22 +199,22 @@
     }
   ],
   "artifact_hashes": {
-    "01-primary-race-differences.png": "0477a3e1de8afb4c3783a3d9c9cc658e5f1ab7640f558f954c347994c5b9624f",
-    "plot_01-primary-race-differences.csv": "fe1b35b125837ff1ab20d77e134f287f1dd190a814cbd9cd793f8280fb49709c",
-    "02-primary-influence.png": "7f528ecb4ae8c5c01868af44d24f2fe0ec836eb903803650951e5188203944f9",
-    "plot_02-primary-influence.csv": "8ae84c7a327c80e703d916405685a0370f8b7131cbbcd18dfd44d72bda7584a6",
-    "03-bootstrap-sensitivity.png": "cae94785e1c08d30faf140c96814e7e866cf7332bc574366e3201ff0dbd7345c",
-    "plot_03-bootstrap-sensitivity.csv": "d046f14b5a66be9f7b3ba66a51bb98203b4ef32731f6052c5b84222e9841d08f",
-    "04-calibration.png": "4644d05c8b898ef83da6d1806e7346283bc9d3b8acf121d17c16c6da4356b9eb",
-    "plot_04-calibration.csv": "05c1f0f20a72daa73e4fe9d6578a736bc3954506aecb1dcf3e47771e63cf89c7",
-    "06-fixed-combinations.png": "10fb12ae1fcbf08ed69ff30ec5671ef0fd9dfb31ff261d44de8dc618a4c648c5",
-    "plot_06-fixed-combinations.csv": "debeae4ec2d555630fcc1ce952731b2cd6e0696d6b2daefc008cda4893216949",
-    "07-longshot-pattern.png": "4ddef45644964effccd8e494e9c808eedba2ab19bece148a854b5829819f9323",
-    "plot_07-longshot-pattern.csv": "3658c11f420b506b3ab29c00bc819a69db075587ebb41ad70909c43e99369811",
-    "08-cook-mappings.png": "dd424a2039a51e6283be387f3ac63ac725fbcebd6645396143ff2af6b6d093e0",
-    "plot_08-cook-mappings.csv": "0f5b5cf6bbf020b0fa2954ba17d1e84f79fcc6e70c6adb0882b1487a4775af6e",
-    "09-power-dependence.png": "47d6b117f3daf42a843d0c78d1e83c293fcfff01ae70601577443c1d7ccf8694",
-    "plot_09-power-dependence.csv": "9eede87f855a1fe467c864846a6b6e27db95af10acb917cca4703a229f96eadc"
+    "01-primary-race-differences.png": "b03118d524b616110d9536a3bc8986b26396dad0f52e6c4d60f84b7696d05ee7",
+    "plot_01-primary-race-differences.csv": "f45f82d7e3d366261e2bcffed7581445c47e0e76ccd7aa3afec9e8d1b226b25b",
+    "02-primary-influence.png": "6a78189890b9f04d6dce684c1f777ea890422ec58af44e90fba0802b22f43b33",
+    "plot_02-primary-influence.csv": "54f13cd8d79b065b1354b55807a73adc06cd3fad10b8c6a3d2f4b5696bde5705",
+    "03-bootstrap-sensitivity.png": "6181f11d8b3de1d3595969ba05af5d8d19624349a07e49cf5ecb9829803940f5",
+    "plot_03-bootstrap-sensitivity.csv": "b21fb8f388edfc0dab1ea79350ee899e994b263dda55dd660a5686731e4159e9",
+    "04-calibration.png": "2c722f538a90031d4710e20083169a9dfcf4b8eb20e8ed537e84914d602a922c",
+    "plot_04-calibration.csv": "3d4ae27bd5ba06a087cf7a1b78b05d1144b57edfba4000b97bcb22440ea9b5ea",
+    "06-fixed-combinations.png": "37ccd8614e7882fe4c87251c38565a9e77d22df245f743d31e1f1c62dff01daf",
+    "plot_06-fixed-combinations.csv": "a7cf967ed33359b92cd72e1a81ac2c96bed3ca90c570e53cd58b49b52275b073",
+    "07-longshot-pattern.png": "066dbe3f6e35150479415c6dd1d56ad07f6bb560880af69f878ba38a7cb4a7f0",
+    "plot_07-longshot-pattern.csv": "db49a410dc726848d7322036235f2ad6d88633798bbc682f414dc251e74fbe87",
+    "08-cook-mappings.png": "0c94f59f6bfa79d0e93d0f8c22e16823ceb33494259df108e1ec313f18aeacc1",
+    "plot_08-cook-mappings.csv": "4b851723da8bd5158c8f707b09841478e7fda74f194df5e05299cd83a8996e80",
+    "09-power-dependence.png": "8758f3d4327406dab654eb2adc920b3028a88bbd287ecbe2ebb2644e5c0ea9eb",
+    "plot_09-power-dependence.csv": "fe5738e5572c40a9c86a7342cff9e3ec990e6a9bfca6bb766d9413ba9510ba23"
   },
   "settings": {
     "bootstrap_seed": 20261104,
@@ -212,10 +229,10 @@
     ]
   },
   "primary": {
-    "value": -0.042976615384615405,
+    "value": -0.04954800000000002,
     "status": "qualified",
     "n_planned": 15,
-    "n_eligible": 13,
+    "n_eligible": 14,
     "race_ids": [
       "FL-SEN",
       "GA-SEN",
@@ -224,6 +241,7 @@
       "ME-SEN",
       "MI-SEN",
       "MN-SEN",
+      "MS-SEN",
       "NC-SEN",
       "NE-SEN",
       "NH-SEN",
@@ -235,14 +253,10 @@
       "AK-SEN": [
         "missing y",
         "no verified DDHQ call"
-      ],
-      "MS-SEN": [
-        "missing y",
-        "no verified DDHQ call"
       ]
     },
     "weighted": false,
-    "weight_sum": 13.0,
+    "weight_sum": 14.0,
     "qualifications": [
       "Preliminary results; eligibility varies by metric.",
       "Kalshi provenance incomplete; recorded probabilities approved for provisional scoring. Model mean includes market-informed VoteHub Complete."
@@ -250,10 +264,10 @@
   },
   "primary_sign_flip": {
     "status": "qualified",
-    "n_pairs": 13,
-    "n_nonzero": 13,
-    "patterns": 8192,
-    "p_two_sided": 0.037841796875
+    "n_pairs": 14,
+    "n_nonzero": 14,
+    "patterns": 16384,
+    "p_two_sided": 0.0189208984375
   },
   "symbol_fonts": [
     {

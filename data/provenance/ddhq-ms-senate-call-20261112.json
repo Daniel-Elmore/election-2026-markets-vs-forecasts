@@ -1,0 +1,41 @@
+{
+  "source": "DDHQ",
+  "synthetic": false,
+  "source_url": "https://votes.decisiondeskhq.com/races/2026-11-03/mississippi-us-senate-general-election",
+  "evidence_type": "Public-page transcription independently checked against user-provided figures and call time; no API used",
+  "displayed_results_timestamp": "2026-11-12T12:24:00-05:00",
+  "observed_at": "2026-11-12T14:23:01-05:00",
+  "timestamp_precision": "minute; seconds set to zero, not claimed as source precision",
+  "rows": [
+    {
+      "raceId": "MS-SEN",
+      "ddhqRaceId": 294688,
+      "candidateAId": 808400,
+      "candidateBId": 808399,
+      "candidate_id_lineage": "Candidate IDs retained from preserved November 4 DDHQ evidence; not newly obtained from the public page.",
+      "winner": "Scott Colom",
+      "calledCandidateIds": [
+        808400
+      ],
+      "callTimes": [
+        {
+          "cand_id": 808400,
+          "called_time": "2026-11-11T18:28:00-05:00"
+        }
+      ],
+      "votes": {
+        "Scott Colom": 474178,
+        "Cindy Hyde-Smith": 468840,
+        "Ty Pinkins": 20260
+      },
+      "total_votes": 963278,
+      "displayed_shares": [
+        49.23,
+        48.67,
+        2.1
+      ],
+      "percent_reporting_displayed": ">95%",
+      "call_confirmation": "User confirmed DDHQ call at Nov 11, 6:28 PM EST; public DDHQ page independently shows #DecisionMade at the same time."
+    }
+  ]
+}

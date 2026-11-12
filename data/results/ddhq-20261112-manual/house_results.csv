@@ -1,0 +1,2 @@
+race_id,dem_seats,gop_seats,undecided_seats,control,control_source,control_timestamp,control_verified,control_evidence,control_method,seats_final,seats_evidence,dem_share,gop_share,vote_complete,vote_evidence,vote_compatible,snapshot_timestamp
+House,255,168,12,Democratic,DDHQ,2026-11-03T21:09:00-05:00,True,data/provenance/ddhq-house-projection-20261112.json,chamber_projection,False,,55.9,42.7,False,data/provenance/manual-results-20261112.json,False,2026-11-12T14:23:01-05:00
